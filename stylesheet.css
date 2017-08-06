@@ -61,3 +61,22 @@
 .title {
     color: grey;
 }
+/* dotyczy tła*/
+.background-image {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+    z-index: -100;
+}
+
+body {
+    height: 5000px;
+}
+
+header {
+    background: yellow;
+    border: 1px solid black;
+    position: fixed;
+    left: 0;
+    right: 0;
+}
