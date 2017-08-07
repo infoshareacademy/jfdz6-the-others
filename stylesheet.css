@@ -25,13 +25,14 @@
     background-color: #519fff;
     z-index: 1000;
 }
-#cookieInfo span{
+#cookieInfo span {
     position: relative;
     left: 95%;
     top: 10px;
     font-size: 30px;
     color: red;
     cursor: pointer;
+}
 
 /* Display the columns below each other instead of side by side on small screens */
 @media (max-width: 600px) {
@@ -60,4 +61,40 @@
 
 .title {
     color: grey;
+}
+
+
+.fb {
+    background-color:#00aced;
+}
+
+.tw {
+    background-color:#3B5998;
+}
+.gplus {
+    background-color:#d34836;
+
+}
+
+.btn:hover {
+    color:white;
+    background-color:#686f7a;
+
+}
+
+a:hover {
+    text-decoration: none;
+
+
+}
+
+.float {
+    float:right;
+
+}
+
+.icon {
+    width:50px;
+    height:50px;
+    color:white;
 }
