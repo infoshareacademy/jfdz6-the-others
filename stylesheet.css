@@ -1,6 +1,25 @@
 .red{
-    color:red;
+    color:blue;
 }
+
+
+.fix{
+    display:block;
+    height:50px;
+}
+
+.for{
+    margin-top:50px;
+}
+
+.nav{
+    background-color:silver;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+    z-index:50;
+}
+
 .form-area
 {
     background-color: #FAFAFA;
