@@ -25,14 +25,14 @@
     background-color: #519fff;
     z-index: 1000;
 }
-#cookieInfo span{
+#cookieInfo span {
     position: relative;
     left: 95%;
     top: 10px;
     font-size: 30px;
     color: red;
     cursor: pointer;
-
+}
 /* Display the columns below each other instead of side by side on small screens */
 @media (max-width: 600px) {
     .column {
