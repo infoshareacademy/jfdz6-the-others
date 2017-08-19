@@ -1,25 +1,6 @@
 .red{
-    color:blue;
+    color:red;
 }
-
-
-.fix{
-    display:block;
-    height:50px;
-}
-
-.for{
-    margin-top:50px;
-}
-
-.nav{
-    background-color:silver;
-    position: fixed; /* Set the navbar to fixed position */
-    top: 0; /* Position the navbar at the top of the page */
-    width: 100%; /* Full width */
-    z-index:50;
-}
-
 .form-area
 {
     background-color: #FAFAFA;
@@ -52,7 +33,6 @@
     color: red;
     cursor: pointer;
 }
-
 /* Display the columns below each other instead of side by side on small screens */
 @media (max-width: 600px) {
     .column {
@@ -81,39 +61,92 @@
 .title {
     color: grey;
 }
-
-
-.fb {
-    background-color:#00aced;
+/* dotyczy tła*/
+.background-image {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+    z-index: -100;
 }
 
-.tw {
-    background-color:#3B5998;
-}
-.gplus {
-    background-color:#d34836;
-
+body {
+    height: 5000px;
 }
 
-.btn:hover {
-    color:white;
-    background-color:#686f7a;
-
+header {
+    background: yellow;
+    border: 1px solid black;
+    position: fixed;
+    left: 0;
+    right: 0;
 }
 
-a:hover {
-    text-decoration: none;
 
-
+.text {
+    color:black;
+    font-size: 20px;
+    font-family:"fantasy";
 }
 
-.float {
-    float:right;
-
+.box:hover .zdj {
+    opacity: 0.2;
 }
 
-.icon {
-    width:50px;
+.box:hover .inside {
+    opacity: 1;
+}
+
+.inside {
+    transition: 1.5s ;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.zdj {
+    opacity: 1;
+    display: block;
+    width:100%;
+    height:650px;
+    transition: 1.5s ;
+}
+
+.box {
+    position: relative;
+    border-style:solid;
+    border-width:2px 4px 2px 4px;
+    border-color:red;
+}
+
+div.all {
+    width:100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+p.main {
+    background-color:darkred;
+    width:100%;
     height:50px;
-    color:white;
+    text-align:center;
+    font-size:50px;
+    font-style: italic;
+    color:silver;
+    margin-bottom:0%;
+    margin-top:0%;
+    display: block;
+    border-width:2px 2px 2px 2px;
+    border-color:black;
+    border-style: solid;
+    box-sizing:border-box;
+    padding-top:-30px;
 }
+
+p.content {
+    font-size:20px;
+    color:red;
+}
+
+
