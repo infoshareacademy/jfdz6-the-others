@@ -1,25 +1,7 @@
-.red{
-    color:blue;
-}
-
-
-.fix{
-    display:block;
-    height:50px;
-}
-
+/*contact form*/
 .for{
     margin-top:50px;
 }
-
-.nav{
-    background-color:silver;
-    position: fixed; /* Set the navbar to fixed position */
-    top: 0; /* Position the navbar at the top of the page */
-    width: 100%; /* Full width */
-    z-index:50;
-}
-
 .form-area
 {
     background-color: #FAFAFA;
@@ -27,6 +9,7 @@
     margin: 10px 0px 60px;
     border: 1px solid GREY;
 }
+/*koniec contact form*/
 /*O nas*/
 .flex-container_onas {
     display: flex;
@@ -55,7 +38,7 @@
     left: -9999px;
 }
 /*koniec o nas*/
-
+/*cookies*/
 #cookieInfo{
     position: fixed;
     bottom: 0;
@@ -73,8 +56,8 @@
     color: red;
     cursor: pointer;
 }
-
-
+/*koniec cookies*/
+/*social media*/
 .fb {
     background-color:#00aced;
 }
@@ -92,16 +75,12 @@
     background-color:#686f7a;
 
 }
-
 a:hover {
     text-decoration: none;
-
-
 }
 
 .float {
     float:right;
-
 }
 
 .icon {
@@ -109,12 +88,7 @@ a:hover {
     height:50px;
     color:white;
 }
-
-
-
-
-
-
+/*koniec social media*/
 /*menu*/
 .menu-nav-bar {
     list-style-type: none;
@@ -123,14 +97,9 @@ a:hover {
     overflow: hidden;
     background-color: #333;
     z-index:2;
-
-
-
-
-    position: fixed; /* Set the navbar to fixed position */
-    top: 0; /* Position the navbar at the top of the page */
-    width: 100%; /* Full width */
-
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 .menu {
@@ -154,15 +123,15 @@ a, label, input[type=submit] {
     padding: 14px 16px;
 
 }
-
-
-
-.fixed-bg {
-    background-image: url(girl-sitting-in-a-abus.jpg);
-    height: 1000px;
-    width:100%;
-    background-attachment: fixed;
+/*koniec menu*/
+/*tło*/
+.scroll-bg {
+    background-image: url(Assets/Photos/girl-sitting-in-a-abus.jpg);
+    height: 80vh;
+    width:100vw;
+    background-attachment: scroll;
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
 }
+/*koniec tła*/
