@@ -127,11 +127,53 @@ a, label, input[type=submit] {
 /*tło*/
 .scroll-bg {
     background-image: url(Assets/Photos/girl-sitting-in-a-abus.jpg);
-    height: 80vh;
+    height: 100vh;
     width:100vw;
     background-attachment: scroll;
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
+    opacity: 0.8;
 }
 /*koniec tła*/
+/*zajawka*/
+.zajawka {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 50vw;
+    height:70vh;
+    display: flex;
+    flex-direction: column;
+}
+.pzajawka, .divzajawka {
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    overflow: hidden;
+    font-size: xx-large;
+    flex: 1;
+}
+.divzajawka:after {
+    display: inline-block;
+    margin: 0 0 52px 8px;
+    height: 8px;
+    content: " ";
+    text-shadow: none;
+    background-color: white;
+    width: 200px;
+}
+.divzajawka:before {
+    display: inline-block;
+    margin: 0 8px 52px 0;
+    height: 8px;
+    content: " ";
+    text-shadow: none;
+    background-color: white;
+    width: 200px;
+}
+/*koniec zajawki*/
+
