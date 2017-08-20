@@ -6,7 +6,7 @@
 {
     background-color: #FAFAFA;
     padding: 10px 40px 60px;
-    margin: 10px 0px 60px;
+    margin: 10px 40px 60px;
     border: 1px solid GREY;
 }
 /*koniec contact form*/
@@ -44,7 +44,7 @@
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 80px;
+    height: 110px;
     background-color: #519fff;
     z-index: 1000;
 }
@@ -52,7 +52,7 @@
     position: relative;
     left: 95%;
     top: 10px;
-    font-size: 30px;
+    font-size: 40px;
     color: red;
     cursor: pointer;
 }
@@ -126,12 +126,9 @@ a, label, input[type=submit] {
 /*koniec menu*/
 /*tło*/
 .scroll-bg {
-    background-image: url(Assets/Photos/girl-sitting-in-a-abus.jpg);
     height: 80vh;
     width:100vw;
-    background-attachment: scroll;
-    background-position: top;
-    background-repeat: no-repeat;
+    background: url(Assets/Photos/girl-sitting-in-a-abus.jpg) no-repeat scroll top;
     background-size: cover;
 }
 /*koniec tła*/
