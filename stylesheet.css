@@ -117,3 +117,60 @@ a:hover {
     height:50px;
     color:white;
 }
+
+
+
+
+
+
+/*menu*/
+.menu-nav-bar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    z-index:2;
+
+
+
+
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+
+}
+
+.menu {
+    float: left;
+    z-index:2;
+    padding-bottom:50px;
+}
+.menu-float-right {
+    float: right;
+}
+a, label, input[type=submit] {
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+
+}
+.menu, .menu-float-right {
+    display: block;
+    padding: 14px 16px;
+
+}
+
+
+
+.fixed-bg {
+    background-image: url(girl-sitting-in-a-abus.jpg);
+    height: 1000px;
+    width:100%;
+    background-attachment: fixed;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
