@@ -27,13 +27,34 @@
     margin: 10px 0px 60px;
     border: 1px solid GREY;
 }
-/*o nas*/
-.column {
-    float: left;
-    width: 20%;
-    margin-bottom: 16px;
-    padding: 0 8px;
+/*O nas*/
+.flex-container_onas {
+    display: flex;
 }
+.flex-item_onas {
+    flex: 1;
+}
+
+.img-responsive {
+    height: auto;
+    max-width: 100%;
+}
+.flex-photo {
+    position: relative;
+}
+
+.flex-photo:hover .p_onas {
+    left: 30px;
+}
+.img-responsive:hover {
+    opacity: 0.2;
+}
+.p_onas {
+    position: absolute;
+    top: 25%;
+    left: -9999px;
+}
+/*koniec o nas*/
 
 #cookieInfo{
     position: fixed;
@@ -51,35 +72,6 @@
     font-size: 30px;
     color: red;
     cursor: pointer;
-}
-
-/* Display the columns below each other instead of side by side on small screens */
-@media (max-width: 600px) {
-    .column {
-        width: 100%;
-        display: block;
-    }
-}
-
-/* Add some shadows to create a card effect */
-.card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-}
-
-/* Some left and right padding inside the container */
-.container {
-    padding: 0 16px;
-}
-
-/* Clear floats */
-.container::after, .row::after {
-    content: "";
-    clear: both;
-    display: table;
-}
-
-.title {
-    color: grey;
 }
 
 
