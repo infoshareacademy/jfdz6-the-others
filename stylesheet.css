@@ -48,9 +48,17 @@
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
+.picturesofus {
+    height: 50vh;
+    max-height: 300px;
+    width: 100%;
+    max-width: 300px;
+}
+
 /* Some left and right padding inside the container */
 .container {
     padding: 0 16px;
+    height: 50vh;
 }
 
 /* Clear floats */
@@ -61,7 +69,7 @@
 }
 
 .title {
-    color: grey;
+    color: red;
 }
 
 /* social media */
