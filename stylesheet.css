@@ -143,7 +143,6 @@ a, label, input[type=submit] {
 .scroll-bg {
     background-image: url(Assets/Photos/girl-sitting-in-a-abus.jpg);
     height: 100vh;
-    width:100vw;
     background-attachment: scroll;
     background-position: top;
     background-repeat: no-repeat;
