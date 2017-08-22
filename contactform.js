@@ -2,20 +2,18 @@
  * Created by marcinfortuna on 23.07.17.
  */
 $(document).ready(function(){
-    $('#characterLeft').text('140 characters left');
+    $('#characterLeft').text('Pozostało 140 znaków');
     $('#message').keydown(function () {
         var max = 140;
         var len = $(this).val().length;
         if (len >= max) {
-            $('#characterLeft').text('You have reached the limit');
-            $('#characterLeft').addClass('red');
+            $('#characterLeft').text('Przekroczono limit znaków');
             $('#btnSubmit').addClass('disabled');
         }
         else {
             var ch = max - len;
-            $('#characterLeft').text(ch + ' characters left');
+            $('#characterLeft').text('Pozostało ' + ch + ' znaków');
             $('#btnSubmit').removeClass('disabled');
-            $('#characterLeft').removeClass('red');
         }
     });
 });
