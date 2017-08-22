@@ -59,15 +59,16 @@
     left: 0;
     width: 100%;
     height: 80px;
-    background-color: #519fff;
+    background-color: black;
     z-index: 1000;
 }
 #cookieInfo span {
     position: relative;
     left: 95%;
     top: 10px;
-    font-size: 30px;
-    color: red;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
     cursor: pointer;
 }
 /*koniec cookies*/
