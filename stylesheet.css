@@ -94,7 +94,7 @@ a:hover {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    overflow: hidden;
+    /*overflow: hidden;*/
     background-color: #333;
     z-index:2;
     position: fixed;
@@ -118,7 +118,7 @@ a, label, input[type=submit] {
     font-weight: bold;
 
 }
-.menu, .menu-float-right {
+.menu, .menu-float-right, .dropdown {
     display: block;
     padding: 14px 16px;
 

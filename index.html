@@ -11,6 +11,11 @@
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script src="contactform.js"></script>
+
+   <!-- <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
+
+
     <link rel="icon" type="image/png" sizes="32x32" href="Assets/Favicon/Favicon.jpg">
     <meta name="theme-color" content="#ffffff">
         </head>
@@ -21,31 +26,42 @@
 <!-- menu -->
  <div class="div-menu">
             <ul class="menu-nav-bar">
-                <li class="menu"><a href="#KMG"><i class="fa fa-connectdevelop" aria-hidden="true"></i>Komunikacja Miejska
-                    Gdańsk</a></li>
-                <li class="menu"><a href="#Rozkład jazdy"><i class="fa fa-book" aria-hidden="true"></i>Rozkład jazdy</a></li>
+                <ul class="menu nav-tabs">
+                <li class="menu"><a href="#KMG"><i class="fa fa-connectdevelop" aria-hidden="true"></i>Komunikacja MiejskaGdańsk</a></li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#Rozkład jazdy"><i class="fa fa-book" aria-hidden="true"></i>Rozkład jazdy<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Autobusy</a></li>
+                            <li><a href="#">Tramwaje</a></li>
+                            <li><a href="#">SKM</a></li>
+                            <li><a href="#">PKM</a></li>
+                        </ul>
+
+                    <!--<li class="menu"><a href="#Rozkład jazdy"><i class="fa fa-book" aria-hidden="true"></i>Rozkład jazdy</a></li>-->
                 <li class="menu"><a href="#Wyznacz trasę"><i class="fa fa-street-view" aria-hidden="true"></i>Wyznacz trasę</a></li>
                 <li class="menu"><a href="#Informacje o komunikacj"><i class="fa fa-subway" aria-hidden="true"></i>Informacje o komunikacji</a></li>
                 <li class="menu"><a href="#KONTAKT"><i class="fa fa-envelope-o" aria-hidden="true"></i>Kontakt</a></li>
                 <li class="menu"><a href="#ABOUT"><i class="fa fa-users" aria-hidden="true"></i>O nas</a></li>
+
 <!--koniec menu-->
 <!--social media-->
         <div class="float">
             <a href="http://facebook.com">
-                <button   type="button" class="icon fb btn btn-fb"><i class="fa fa-facebook fa-2x"></i></button>
+                <button  type="button" class="icon fb btn btn-fb"><i class="fa fa-facebook fa-2x"></i></button>
             </a>
             <a  href="http://twitter.com">
-                <button   type="button" class="margin icon tw btn btn-tw"><i class="fa fa-twitter fa-2x"></i></button>
+                <button  type="button" class="margin icon tw btn btn-tw"><i class="fa fa-twitter fa-2x"></i></button>
             </a>
             <a  href="https://plus.google.com/collections/featured?hl=pl">
-                <button   type="button" class="margin icon gplus btn btn-gplus"><i class="fa fa-google-plus fa-2x"></i></button>
+                <button  type="button" class="margin icon gplus btn btn-gplus"><i class="fa fa-google-plus fa-2x"></i></button>
             </a>
         </div>
-            </ul>
+                </ul>
+ </ul>
  </div>
-     <!--koniec social media-->
-     <!--formularz kontaktowy-->
-     <ul>
+
+
+<ul>
 <li class="for" role="presentation"><a href="kontakt">Kontakt</a>
         <div class="container">
             <div class="col-md-5">
@@ -141,5 +157,9 @@
     <!--koniec o nas-->
 
 <script src="cookies.js"></script>
+
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
 </body>
 </html>
