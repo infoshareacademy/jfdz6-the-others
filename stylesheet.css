@@ -179,3 +179,14 @@ li.dropdown {
 .dropdown:hover .dropdown-content {
     display: block;
 }
+/*sekcje rozkładu jazdy*/
+.section {
+    background-color: #333333;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: white;
+    /*height: 80vh;
+    width:100vw;
+    background: url(Assets/Photos/autobus.jpg) no-repeat scroll top;
+    background-size: cover;*/
+}
