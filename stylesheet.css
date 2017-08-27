@@ -1,3 +1,8 @@
+/*style do całości*/
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
 /*contact form*/
 .for{
     margin-top:50px;
@@ -44,7 +49,6 @@
 .p_onas, .flex-onas {
     text-align: center;
     text-decoration: none;
-    font-family: 'Montserrat', sans-serif;
     font-weight: bold;
 }
 .flex-onas {
@@ -123,7 +127,6 @@ a, label, input[type=submit] {
     color: white;
     text-align: center;
     text-decoration: none;
-    font-family: 'Montserrat', sans-serif;
     font-weight: bold;
 
 }
@@ -210,20 +213,15 @@ li.dropdown {
 /*sekcje rozkładu jazdy*/
 .rozkladjazdy {
     background-color: #333333;
-    font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     color: white;
-    /*height: 80vh;
-    width:100vw;
-    background: url(Assets/Photos/autobus.jpg) no-repeat scroll top;
-    background-size: cover;*/
+
 }
 
 .pzajawka, .divzajawka {
     color: white;
     text-align: center;
     text-decoration: none;
-    font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     overflow: hidden;
     font-size: xx-large;
