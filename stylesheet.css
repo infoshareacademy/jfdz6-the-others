@@ -25,18 +25,32 @@
 .flex-photo {
     position: relative;
 }
-
 .flex-photo:hover .p_onas {
-    left: 30px;
+    left: 10px;
+    right: 10px;
 }
+
 .img-responsive:hover {
     opacity: 0.2;
+    transition: 1s;
 }
 .p_onas {
     position: absolute;
-    top: 25%;
+    top: 50%;
+    transform: translateY(-50%);
     left: -9999px;
+    color: black;
 }
+.p_onas, .flex-onas {
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+.flex-onas {
+    color: black;
+    background-color: white;
+    }
 /*koniec o nas*/
 /*cookies*/
 #cookieInfo{
@@ -120,12 +134,25 @@ a, label, input[type=submit] {
 /*koniec menu*/
 /*tło*/
 .scroll-bg {
-    height: 80vh;
+    background-image: url(Assets/Photos/girl-sitting-in-a-abus.jpg);
+    height: 100vh;
     width:100vw;
     background: url(Assets/Photos/girl-sitting-in-a-abus.jpg) no-repeat scroll top;
     background-size: cover;
+    opacity: 0.8;
 }
 /*koniec tła*/
+/*zajawka*/
+.zajawka {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 50vw;
+    height:70vh;
+    display: flex;
+    flex-direction: column;
+}
 
 /* nowe menu*/
 
@@ -190,3 +217,34 @@ li.dropdown {
     background: url(Assets/Photos/autobus.jpg) no-repeat scroll top;
     background-size: cover;*/
 }
+
+.pzajawka, .divzajawka {
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    overflow: hidden;
+    font-size: xx-large;
+    flex: 1;
+}
+.divzajawka:after {
+    display: inline-block;
+    margin: 0 0 52px 8px;
+    height: 8px;
+    content: " ";
+    text-shadow: none;
+    background-color: white;
+    width: 200px;
+}
+.divzajawka:before {
+    display: inline-block;
+    margin: 0 8px 52px 0;
+    height: 8px;
+    content: " ";
+    text-shadow: none;
+    background-color: white;
+    width: 200px;
+}
+/*koniec zajawki*/
+
