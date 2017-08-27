@@ -1,21 +1,31 @@
+/*style do całości*/
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+section {
+   margin-top: 50px;
+}
+
 /*contact form*/
 .for{
-    margin-top:50px;
+    margin-top:100px;
 }
 .form-area
 {
     background-color: #FAFAFA;
     padding: 10px 40px 60px;
-    margin: 10px 0 60px;
+    margin: 10px 40px 60px;
     border: 1px solid GREY;
 }
 /*koniec contact form*/
 /*O nas*/
 .flex-container_onas {
     display: flex;
+    justify-content: space-around;
 }
 .flex-item_onas {
     flex: 1;
+
 }
 
 .img-responsive {
@@ -35,6 +45,8 @@
     transition: 1s;
 }
 .p_onas {
+    display: block;
+    max-width: inherit;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -44,13 +56,12 @@
 .p_onas, .flex-onas {
     text-align: center;
     text-decoration: none;
-    font-family: 'Montserrat', sans-serif;
     font-weight: bold;
 }
 .flex-onas {
     color: black;
     background-color: white;
-    }
+}
 /*koniec o nas*/
 /*cookies*/
 #cookieInfo{
@@ -58,45 +69,47 @@
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 80px;
-    background-color: #519fff;
+    height: 10%;
+    background-color: black;
     z-index: 1000;
+}
+#cookieInfo p {
+    padding: 10px 60px 5px 60px;
+    text-align: center;
+    font-size: medium;
+    color: white;
 }
 #cookieInfo span {
     position: relative;
-    left: 95%;
-    top: 10px;
-    font-size: 30px;
-    color: red;
+    left: 97%;
+    top: -5vh;
+    font-size: 40px;
+    color: white;
     cursor: pointer;
+    border: 1px solid white;
 }
 /*koniec cookies*/
 /*social media*/
 .fb {
     background-color:#00aced;
 }
-
 .tw {
     background-color:#3B5998;
 }
 .gplus {
     background-color:#d34836;
-
 }
-
 .btn:hover {
     color:white;
     background-color:#686f7a;
-
 }
 a:hover {
     text-decoration: none;
 }
-
-.float {
-    float:right;
+.socialmedia {
+    position: absolute;
+    right: 1%;
 }
-
 .icon {
     width:50px;
     height:50px;
@@ -108,44 +121,26 @@ a:hover {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    overflow: hidden;
-    background-color: #333;
-    z-index:2;
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 1000;
 }
 
-.menu {
-    float: left;
-    z-index:2;
-    padding-bottom:50px;
-}
-.menu-float-right {
-    float: right;
-}
 a, label, input[type=submit] {
     color: white;
     text-align: center;
     text-decoration: none;
-    font-family: 'Montserrat', sans-serif;
     font-weight: bold;
 
 }
-.menu, .menu-float-right {
-    display: block;
-    padding: 14px 16px;
 
-}
 /*koniec menu*/
 /*tło*/
 .scroll-bg {
-    background-image: url(Assets/Photos/girl-sitting-in-a-abus.jpg);
     height: 100vh;
-    width:100vw;
-    background-attachment: scroll;
-    background-position: top;
-    background-repeat: no-repeat;
+    width:100%;
+    background: url(Assets/Photos/girl-sitting-in-a-abus.jpg) no-repeat scroll top;
     background-size: cover;
     opacity: 0.8;
 }
@@ -156,8 +151,8 @@ a, label, input[type=submit] {
     top: 70%;
     left: 50%;
     transform: translate(-50%,-50%);
-    width: 50vw;
-    height:70vh;
+    width: 50%;
+    height:70%;
     display: flex;
     flex-direction: column;
 }
@@ -165,7 +160,6 @@ a, label, input[type=submit] {
     color: white;
     text-align: center;
     text-decoration: none;
-    font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     overflow: hidden;
     font-size: xx-large;
@@ -178,7 +172,7 @@ a, label, input[type=submit] {
     content: " ";
     text-shadow: none;
     background-color: white;
-    width: 200px;
+    width: 20%;
 }
 .divzajawka:before {
     display: inline-block;
@@ -187,7 +181,69 @@ a, label, input[type=submit] {
     content: " ";
     text-shadow: none;
     background-color: white;
-    width: 200px;
+    width: 20%;
 }
 /*koniec zajawki*/
+
+/* nowe menu*/
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+    }
+
+li {
+    float: left;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: #333333;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: black;
+    min-width: 160px;
+    /*box-shadow: 0px 8px 16px 0px ;*/
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #333333;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+/*sekcje rozkładu jazdy*/
+.rozkladjazdy {
+    background-color: #333333;
+    font-weight: bold;
+    color: white;
+
+}
+
+
 
