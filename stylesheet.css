@@ -3,12 +3,12 @@
     font-family: 'Montserrat', sans-serif;
 }
 section {
-    top: 50px;
+   margin-top: 50px;
 }
 
 /*contact form*/
 .for{
-    margin-top:50px;
+    margin-top:100px;
 }
 .form-area
 {
@@ -21,9 +21,11 @@ section {
 /*O nas*/
 .flex-container_onas {
     display: flex;
+    justify-content: space-around;
 }
 .flex-item_onas {
     flex: 1;
+
 }
 
 .img-responsive {
@@ -43,6 +45,8 @@ section {
     transition: 1s;
 }
 .p_onas {
+    display: block;
+    max-width: inherit;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -147,11 +151,39 @@ a, label, input[type=submit] {
     top: 70%;
     left: 50%;
     transform: translate(-50%,-50%);
-    width: 50vw;
-    height:70vh;
+    width: 50%;
+    height:70%;
     display: flex;
     flex-direction: column;
 }
+.pzajawka, .divzajawka {
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    overflow: hidden;
+    font-size: xx-large;
+    flex: 1;
+}
+.divzajawka:after {
+    display: inline-block;
+    margin: 0 0 52px 8px;
+    height: 8px;
+    content: " ";
+    text-shadow: none;
+    background-color: white;
+    width: 20%;
+}
+.divzajawka:before {
+    display: inline-block;
+    margin: 0 8px 52px 0;
+    height: 8px;
+    content: " ";
+    text-shadow: none;
+    background-color: white;
+    width: 20%;
+}
+/*koniec zajawki*/
 
 /* nowe menu*/
 
@@ -161,7 +193,7 @@ ul {
     padding: 0;
     overflow: hidden;
     background-color: black;
-}
+    }
 
 li {
     float: left;
@@ -213,32 +245,5 @@ li.dropdown {
 
 }
 
-.pzajawka, .divzajawka {
-    color: white;
-    text-align: center;
-    text-decoration: none;
-    font-weight: bold;
-    overflow: hidden;
-    font-size: xx-large;
-    flex: 1;
-}
-.divzajawka:after {
-    display: inline-block;
-    margin: 0 0 52px 8px;
-    height: 8px;
-    content: " ";
-    text-shadow: none;
-    background-color: white;
-    width: 200px;
-}
-.divzajawka:before {
-    display: inline-block;
-    margin: 0 8px 52px 0;
-    height: 8px;
-    content: " ";
-    text-shadow: none;
-    background-color: white;
-    width: 200px;
-}
-/*koniec zajawki*/
+
 
