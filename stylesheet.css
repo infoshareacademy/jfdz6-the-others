@@ -99,8 +99,9 @@
 a:hover {
     text-decoration: none;
 }
-.float {
-    float:right;
+.socialmedia {
+    position: absolute;
+    right: 1%;
 }
 .icon {
     width:50px;
@@ -113,23 +114,12 @@ a:hover {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    /*overflow: hidden;
-    background-color: #333;
-    z-index:2;*/
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 1000;
 }
 
-.menu {
-    float: left;
-    z-index:2;
-    padding-bottom:50px;
-}
-.menu-float-right {
-    float: right;
-}
 a, label, input[type=submit] {
     color: white;
     text-align: center;
@@ -137,11 +127,7 @@ a, label, input[type=submit] {
     font-weight: bold;
 
 }
-/*.menu, .menu-float-right {
-    display: block;
-    padding: 14px 16px;
 
-}
 /*koniec menu*/
 /*tło*/
 .scroll-bg {
