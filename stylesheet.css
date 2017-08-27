@@ -145,9 +145,8 @@ a, label, input[type=submit] {
 /*koniec menu*/
 /*tło*/
 .scroll-bg {
-    background-image: url(Assets/Photos/girl-sitting-in-a-abus.jpg);
     height: 100vh;
-    width:100vw;
+    width:100%;
     background: url(Assets/Photos/girl-sitting-in-a-abus.jpg) no-repeat scroll top;
     background-size: cover;
     opacity: 0.8;
