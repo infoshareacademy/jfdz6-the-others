@@ -50,7 +50,7 @@
 .flex-onas {
     color: black;
     background-color: white;
-    }
+}
 /*koniec o nas*/
 /*cookies*/
 #cookieInfo{
@@ -108,6 +108,7 @@ a:hover {
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 1000;
 }
 
 .menu {
@@ -207,7 +208,7 @@ li.dropdown {
     display: block;
 }
 /*sekcje rozkładu jazdy*/
-.section {
+.rozkladjazdy {
     background-color: #333333;
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;

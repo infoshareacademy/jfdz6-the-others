@@ -18,16 +18,12 @@
     <meta name="theme-color" content="#ffffff">
 </head>
 <body>
-<!--tło-->
-<div class="scroll-bg"></div>
-<!--koniec tła-->
-
 
 <!-- NOWE MENU-->
-<div class="div-menu">
+<nav class="div-menu">
     <div class="menu-nav-bar">
         <ul>
-            <li><a href="#Komunikacja Miejska Gdańsk"><i class="fa fa-connectdevelop" aria-hidden="true"></i> Komunikacja Miejska Gdańsk</a></li>
+            <li><a href="#mainpage"><i class="fa fa-connectdevelop" aria-hidden="true"></i> Komunikacja Miejska Gdańsk</a></li>
             <li class="dropdown">
                 <a href="javascript:void(0)" class="dropbtn"><i class="fa fa-book" aria-hidden="true"></i> Rozkład Jazdy</a>
                 <div class="dropdown-content">
@@ -35,31 +31,12 @@
                     <a href="#Tramwaje"><i class="fa fa-subway" aria-hidden="true"></i> Tramwaje</a>
                     <a href="#SKM"><i class="fa fa-train" aria-hidden="true"></i> SKM</a>
                     <a href="#PKM"><i class="fa fa-train" aria-hidden="true"></i> PKM</a>
-            <li><a href="#Wyznacz trasę"><i class="fa fa-street-view" aria-hidden="true"></i> Wyznacz trasę</a></li>
-            <li><a href="#Informacje o komunikacji"><i class="fa fa-subway" aria-hidden="true"></i> Informacje o komunikacji</a></li>
+            <li><a href="#navigate"><i class="fa fa-street-view" aria-hidden="true"></i> Wyznacz trasę</a></li>
+            <li><a href="#info"><i class="fa fa-subway" aria-hidden="true"></i> Informacje o komunikacji</a></li>
             <li><a href="#Kontakt"><i class="fa fa-envelope-o" aria-hidden="true"></i> Kontakt</a></li>
-            <li><a href="#O nas"><i class="fa fa-users" aria-hidden="true"></i> O nas</a></li>
+            <li><a href="#onas"><i class="fa fa-users" aria-hidden="true"></i> O nas</a></li>
             </li>
-<!-- menu
- <div class="div-menu">
-            <ul class="menu-nav-bar">
-                <ul class="menu-nav-tabs">
-                <li class="menu"><a href="#KMG"><i class="fa fa-connectdevelop" aria-hidden="true"></i>Komunikacja MiejskaGdańsk</a></li>
-                    <li class="dropdown">
-                        <a class="dropdown-toggle" data-toggle="dropdown" href="#Rozkład jazdy"><i class="fa fa-book" aria-hidden="true"></i>Rozkład jazdy<span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">Autobusy</a></li>
-                            <li><a href="#">Tramwaje</a></li>
-                            <li><a href="#">SKM</a></li>
-                            <li><a href="#">PKM</a></li>
-                        </ul>
 
-                    <!--<li class="menu"><a href="#Rozkład jazdy"><i class="fa fa-book" aria-hidden="true"></i>Rozkład jazdy</a></li>--
-                <li class="menu"><a href="#Wyznacz trasę"><i class="fa fa-street-view" aria-hidden="true"></i>Wyznacz trasę</a></li>
-                <li class="menu"><a href="#Informacje o komunikacj"><i class="fa fa-subway" aria-hidden="true"></i>Informacje o komunikacji</a></li>
-                <li class="menu"><a href="#KONTAKT"><i class="fa fa-envelope-o" aria-hidden="true"></i>Kontakt</a></li>
-                <li class="menu"><a href="#ABOUT"><i class="fa fa-users" aria-hidden="true"></i>O nas</a></li>-->
-<!--koniec menu-->
 <!--social media-->
         <div class="float">
             <a href="http://facebook.com">
@@ -74,13 +51,19 @@
         </div>
                 </ul>
     </div>
- </div>
+ </nav>
+<header id="mainpage">
+    <!--tło-->
+    <div class="scroll-bg"></div>
+    <!--koniec tła-->
    <!--zajawka-->
+
     <div class="zajawka">
         <div class="divzajawka"><i class="fa fa-connectdevelop fa-5x"></i></div>
         <p class="pzajawka">Twój przewodnik po komunikacji miejskiej w Gdańsku</p>
     </div>
     <!--koniec zajawki-->
+</header>
 <!--Kontakt-->
 <section id="Kontakt">
 <ul>
@@ -119,8 +102,10 @@
             </div>
         </li>
     </ul>
+</section>
 
     <!--o nas-->
+<section id="onas">
     <div class="flex-container_onas">
         <div class="flex-item_onas">
             <div class="flex-photo">
@@ -177,9 +162,13 @@
                 <p>delivery@theothers.com</p>
             </div>
         </div>
+    </div>
+</section>
         <!--koniec o nas-->
+
     
     <!--poczatek sekcji info-->
+<section id="info">
     <div class="info">
         <h1 class="skm-hist-button">Historia SKM</h1>
         <div class="skm-hist">
@@ -417,31 +406,34 @@
                 w innych częściach województwa.</p>
         </div>
     </div>
+</section>
   <!--koniec sekcji info-->
 
 
 <!--sekcje rozkładu jazdy-->
-<div class="section">
-<section id="Autobusy"><i class="fa fa-bus fa-5x" aria-hidden="true"></i>
+<section id="rozkladjazdy">
+<div class="rozkladjazdy">
+<div id="Autobusy"><i class="fa fa-bus fa-5x" aria-hidden="true"></i>
     <h3><p>Tu powstanie rozkład jazdy i informacje o Gdańskich autobusach.</p></h3>
     <img src="bus.jpg" alt="autobus">
-</section>
+</div>
 
-<section id="Tramwaje"><i class="fa fa-subway fa-5x" aria-hidden="true"></i>
+<div id="Tramwaje"><i class="fa fa-subway fa-5x" aria-hidden="true"></i>
     <h3><p>Tu powstanie rozkład jazdy i informacje o Gdańskich tramwajach.</p></h3>
     <img src="tramwaj.jpg" alt="tramwaj">
-</section>
+</div>
 
-<section id="SKM"><i class="fa fa-train fa-5x" aria-hidden="true"></i>
+<div id="SKM"><i class="fa fa-train fa-5x" aria-hidden="true"></i>
     <h3><p>Tu powstanie rozkład jazdy i informacje o Trójmiejskich SKM.</p></h3>
     <img src="skm1.jpg" alt="skm">
-</section>
+</div>
 
-<section id="PKM"><i class="fa fa-train fa-5x" aria-hidden="true"></i>
+<div id="PKM"><i class="fa fa-train fa-5x" aria-hidden="true"></i>
     <h3><p>Tu powstanie rozkład jazdy i informacje o Trójmiejskich PKM.</p></h3>
     <img src="pkm1.jpg" alt="pkm">
-</section>
 </div>
+</div>
+</section>
 <!--koniec sekcji rozkładu jazdy-->
   
     <script src="cookies.js"></script>
