@@ -160,7 +160,7 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color: black;
 }
 
 li {
@@ -176,7 +176,7 @@ li a, .dropbtn {
 }
 
 li a:hover, .dropdown:hover .dropbtn {
-    background-color: #7C9BCF;
+    background-color: #333333;
 }
 
 li.dropdown {
@@ -186,7 +186,7 @@ li.dropdown {
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #333;
+    background-color: black;
     min-width: 160px;
     /*box-shadow: 0px 8px 16px 0px ;*/
     z-index: 1;
@@ -200,7 +200,7 @@ li.dropdown {
     text-align: left;
 }
 
-.dropdown-content a:hover {background-color: #7C9BCF;
+.dropdown-content a:hover {background-color: #333333;
 }
 .dropdown:hover .dropdown-content {
     display: block;
