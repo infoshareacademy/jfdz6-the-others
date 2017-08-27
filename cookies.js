@@ -9,7 +9,7 @@
             " w celu świadczenia usług, dostosowania serwisu do indywidualnych preferencji użytkowników oraz w celach" +
             " statystycznych i reklamowych. Możesz zawsze wyłączyć ten mechanizm w ustawieniach przeglądarki. Korzystanie" +
             " z naszego serwisu bez zmiany ustawień przeglądarki oznacza," +
-            " że cookies będą zapisane w pamięci urządzenia. </p><span id='closeCookieInfo'>&times;</span>";
+            " że cookies będą zapisane w pamięci urządzenia. </p><div><span id='closeCookieInfo'>&times;</span></div>";
         document.body.appendChild(cookieInfo);
         document.getElementById('closeCookieInfo').addEventListener('click', function(){
             document.body.removeChild(document.getElementById('cookieInfo'));
