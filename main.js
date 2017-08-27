@@ -122,3 +122,23 @@ function main() {
 }
 
 $(document).ready(main);
+
+
+// ZTM
+
+$('.ztmhsjq').hide();
+
+$(document).ready(function () {
+    $(".ztm-hist-button").click(function () {
+        $(".ztmhsjq").toggle();
+    });
+});
+
+
+$(document).ready(function () {
+    $(".ztm-tab-button").click(function () {
+        $(".ztmtbjq").toggle();
+    });
+});
+
+// ZTM
