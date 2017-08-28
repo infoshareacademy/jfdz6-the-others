@@ -330,3 +330,9 @@ table, th ,td {
     text-align: center;
     float: none;git
 }
+/*wyznacz trase*/
+.trasa {
+    background-color: black;
+    text-align: center;
+    color: white;
+}
