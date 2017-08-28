@@ -312,5 +312,21 @@ table, th ,td {
 }
 
 
-
 /*ZTM*/
+
+/*Karuzele*/
+.carousel-container {
+    margin: auto;
+    width: 75%;
+    padding: 20px;
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: auto;
+}
+
+.carousel-indicators li {
+    text-align: center;
+    float: none;git
+}
