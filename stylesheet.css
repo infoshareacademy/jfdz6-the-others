@@ -111,6 +111,7 @@ section {
 }
 a:hover {
     text-decoration: none;
+    color: white;
 }
 .socialmedia {
     position: absolute;
@@ -258,12 +259,15 @@ li a, .dropbtn {
     text-decoration: none;
 }
 
-li a:hover, .dropdown:hover .dropbtn {
+li a:hover, a:focus, .dropdown:hover .dropbtn {
     background-color: #333333;
+    color: white;
+    text-decoration: none;
 }
 
 li.dropdown {
     display: inline-block;
+    position: inherit;
 }
 
 .dropdown-content {
