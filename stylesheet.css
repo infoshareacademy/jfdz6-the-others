@@ -132,7 +132,10 @@ a:hover {
     top: 0;
     width: 100%;
     z-index: 1000;
-    margin-bottom:50px;
+
+}
+.ulmenu {
+height: 50px;
 }
 
 a, label, input[type=submit] {
@@ -211,7 +214,7 @@ a, label, input[type=submit] {
 .flex-container-functions {
      flex: 1;
      display: flex;
-     flex-wrap: no-wrap;
+     flex-wrap: nowrap;
      justify-content: space-around;
      align-items: center;
     flex-direction: column;
@@ -246,6 +249,7 @@ ul {
     padding: 0;
     overflow: hidden;
     background-color: black;
+
     }
 
 li {
@@ -305,16 +309,39 @@ li.dropdown {
 
 .ztmhsjq{
     display:none;
+
+
 }
 
 .ztmtbjq {
     display:none;
+
+}
+
+.center {
+    text-align:center;
 }
 
 table, th ,td {
     border: 1px solid black;
     border-collapse:collapse;
 }
+
+
+.info {
+    text-align:center;
+
+}
+
+table {
+    display: table;
+    margin: auto;
+}
+
+#info {
+    background: silver;
+}
+
 
 
 /*ZTM*/
