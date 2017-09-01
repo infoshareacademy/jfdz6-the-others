@@ -19,54 +19,107 @@ section {
 }
 /*koniec contact form*/
 /*O nas*/
-.flex-container_onas {
-    display: flex;
-    justify-content: space-between;
+.key-personnel {
+    background: #e2e2e2;
+    padding: 5% 0 5%;
 }
 
-.flex-item_onas {
-    flex: 1;
+.key-personnel h1 {
+    text-transform: uppercase;
 }
 
-.img-responsive {
-    height: auto;
-    max-width: 100%;
-    transition: all 400ms linear;
+.key-personnel .persons-list {
+    margin: 55px -15px;
 }
 
-.flex-photo {
-    position: relative;
-    max-width: 400px;
-    max-height: 400px;
-}
-
-.flex-photo:hover .p_onas {
-    left: 10px;
-    right: 10px;
-}
-
-.flex-photo:hover .img-responsive {
-    opacity: 0.2;
-    transition: 1s;
-}
-
-.p_onas {
-    position: absolute;
-    top: 50%;
-    transform:translateY(-50%);
-    color: black;
-    left: -9999px;
-}
-
-.p_onas, .flex-onas {
+.key-personnel .person {
     text-align: center;
-    text-decoration: none;
 }
 
-.flex-onas {
+.key-personnel .person .name {
+    margin-top: 20px;
+    text-transform: uppercase;
+    font-size: 2.2rem;
     color: black;
-    background-color: white;
+}
+
+.key-personnel .person .title .title>a {
+    line-height: 22px;
+    font-size: 1.4rem;
+    color: #656565;
     font-weight: bold;
+}
+
+.key-personnel .social {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.key-personnel .social .fa {
+    margin: 10px;
+    color: #656565;
+}
+.hover-effect-onas {
+    margin: 2%;
+    cursor: pointer;
+    position: relative;
+
+}
+
+figcaption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0;
+    margin: auto;
+    color: #fff;
+    backface-visibility: hidden;
+}
+
+figure>figcaption {
+    padding: 0;
+    color: #fff;
+    backface-visibility: hidden;
+}
+
+figcaption>p {
+    position: absolute;
+    letter-spacing: 1px;
+    font-size: 100%;
+    top: 2em;
+    bottom: 2em;
+    left: 2em;
+    right: 2em;
+
+}
+
+figcaption::before {
+    position: absolute;
+    top: 1em;
+    right: 1em;
+    bottom: 1em;
+    left: 1em;
+    border: 1px solid #fff;
+    content: '';
+}
+
+figcaption::before,
+figcaption>p {
+    opacity: 0;
+    transition: opacity 0.35s, transform 0.35s;
+    transform: scale(0);
+}
+
+figure.hover-effect-onas:hover figcaption::before,
+figure.hover-effect-onas:hover p {
+    opacity: 1;
+    transform: scale(1);
+}
+
+figure.hover-effect-onas:hover figcaption {
+    background: -webkit-linear-gradient(top, rgba(34, 104, 42, 0.5) 0%, rgba(155, 74, 27, 0.5), rgba(58, 52, 42, 0.5) 100%);
 }
 /*koniec o nas*/
 /*cookies*/
