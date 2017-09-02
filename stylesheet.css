@@ -8,8 +8,11 @@ section {
 }
 
 /*O nas*/
-.key-personnel {
+#onas {
     background: #e2e2e2;
+}
+
+.key-personnel {
     padding: 5% 0 5%;
 }
 
