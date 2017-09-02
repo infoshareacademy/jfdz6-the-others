@@ -421,4 +421,5 @@ table {
     background-color: black;
     text-align: center;
     color: white;
+    min-height:100vh;
 }
