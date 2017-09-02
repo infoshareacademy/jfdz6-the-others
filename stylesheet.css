@@ -4,6 +4,7 @@
 }
 section {
    margin-top: 50px;
+   min-height: 100vh;
 }
 
 /*O nas*/
@@ -401,13 +402,13 @@ li.dropdown {
 }
 
 table, th ,td {
-    border: 1px solid black;
+    border: 1px solid white;
     border-collapse:collapse;
 }
 
 
 .info {
-    text-align:center;z
+    text-align:center;
 
 }
 
@@ -417,8 +418,8 @@ table {
 }
 
 #info {
-    background: silver;
-    min-height:100vh;
+    background: black;
+    color: white;
 }
 
 
@@ -447,4 +448,9 @@ table {
     text-align: center;
     color: white;
     min-height:100vh;
+    padding-top: 20px;
+}
+
+.trasa img {
+    margin: auto;
 }
