@@ -276,14 +276,12 @@ a, label, input[type=submit] {
     text-align:center;
     vertical-align: bottom;
 }
-.functionalities-description i {
+.functionalities-description a i {
     padding: 0.5em;
+    color: black;
 }
 .functionalities-description p {
     margin: 10px;
-}
-.functionalities-description a {
-    color: black;
 }
 .white-thumbnail {
     background: #E8E8E8;
