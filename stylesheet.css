@@ -9,7 +9,7 @@ section {
 
 /*O nas*/
 #onas {
-    background: #e2e2e2;
+    background: #E8E8E8;
 }
 
 .key-personnel {
@@ -18,6 +18,8 @@ section {
 
 .key-personnel h1 {
     text-transform: uppercase;
+    color: black;
+    font-weight: bold
 }
 
 .key-personnel .persons-list {
@@ -33,24 +35,39 @@ section {
     text-transform: uppercase;
     font-size: 2.2rem;
     color: black;
+    font-weight: bold;
 }
 
 .key-personnel .person .title a {
     line-height: 22px;
     font-size: 1.4rem;
-    color: #656565;
-    font-weight: bold;
+    color: black;
+    font-weight: bold
 }
+.key-personnel .person .title {
+    color: black;
+    font-weight: bold
+}
+
 
 .key-personnel .social {
     margin-top: 10px;
     margin-bottom: 10px;
 }
 
-.key-personnel .social .fa {
+.key-personnel .social a .fa {
     margin: 10px;
-    color: #656565;
 }
+.key-personnel .social a i.fa-twitter {
+    color: #00aced;
+}
+.key-personnel .social a i.fa-instagram {
+    color: orangered;
+}
+.key-personnel .social a i.fa-linkedin {
+    color: #3B5998;
+}
+
 .hover-effect-onas {
     margin: 2%;
     cursor: pointer;
@@ -245,7 +262,7 @@ a, label, input[type=submit] {
     letter-spacing: 1px;
     text-transform: uppercase;
     font-weight: bold;
-    background-color: #fff;
+    /*background-color: #fff;*/
     padding-bottom: 1em;
     text-align:center;
 }
@@ -269,7 +286,7 @@ a, label, input[type=submit] {
     color: black;
 }
 .white-thumbnail {
-    background-color: white;
+    background: #E8E8E8;
     padding-top: 10%;
     padding-bottom: 10%;
     color: black;
