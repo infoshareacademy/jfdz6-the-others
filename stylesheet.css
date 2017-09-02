@@ -382,7 +382,7 @@ table, th ,td {
 
 
 .info {
-    text-align:center;
+    text-align:center;z
 
 }
 
@@ -393,6 +393,7 @@ table {
 
 #info {
     background: silver;
+    min-height:100vh;
 }
 
 
