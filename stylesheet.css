@@ -427,6 +427,11 @@ table {
     color: white;
 }
 
+#info span:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
 
 
 /*ZTM*/
