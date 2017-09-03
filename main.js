@@ -10,6 +10,7 @@ function main() {
     $('#wyznacz-trase').hide();
 
     $('.fa-connectdevelop').parent().on('click', function () {
+            document.title = 'Komunikacja Miejska w Gdańsku';
             $('#onas').hide();
             $('#mainpage').show();
             $('#Kontakt').hide();
@@ -20,6 +21,7 @@ function main() {
     );
 
     $('.fa-users').parent().on('click', function () {
+            document.title = 'O nas';
             $('#onas').show();
             $('#mainpage').hide();
             $('#Kontakt').hide();
@@ -30,6 +32,7 @@ function main() {
     );
 
     $('.fa-envelope-o').parent().on('click', function () {
+            document.title = 'Kontakt';
             $('#onas').hide();
             $('#mainpage').hide();
             $('#Kontakt').show();
@@ -40,6 +43,7 @@ function main() {
     );
 
     $('.fa-info').parent().on('click', function () {
+            document.title = 'Informacje o komunikacji';
             $('#onas').hide();
             $('#mainpage').hide();
             $('#Kontakt').hide();
@@ -50,6 +54,7 @@ function main() {
     );
 
     $('.fa-street-view').parent().on('click', function () {
+            document.title = 'Wyznacz trasę';
             $('#onas').hide();
             $('#mainpage').hide();
             $('#Kontakt').hide();
@@ -60,6 +65,7 @@ function main() {
     );
 
     $('.fa-book').parent().on('click', function () {
+            document.title = 'Rozkład jazdy';
             $('#onas').hide();
             $('#mainpage').hide();
             $('#Kontakt').hide();
@@ -70,6 +76,7 @@ function main() {
     );
 
     $('.fa-bus').parent().on('click', function () {
+            document.title = 'Rozkład jazdy';
             $('#onas').hide();
             $('#mainpage').hide();
             $('#Kontakt').hide();
@@ -80,6 +87,7 @@ function main() {
     );
 
     $('.fa-subway').parent().on('click', function () {
+            document.title = 'Rozkład jazdy';
             $('#onas').hide();
             $('#mainpage').hide();
             $('#Kontakt').hide();
@@ -90,6 +98,18 @@ function main() {
     );
 
     $('.fa-train').parent().on('click', function () {
+            document.title = 'Rozkład jazdy';
+            $('#onas').hide();
+            $('#mainpage').hide();
+            $('#Kontakt').hide();
+            $('#info').hide();
+            $('#rozkladjazdy').show();
+            $('#wyznacz-trase').hide();
+        }
+    );
+
+    $('.fa-calendar').parent().on('click', function () {
+            document.title = 'Rozkład jazdy';
             $('#onas').hide();
             $('#mainpage').hide();
             $('#Kontakt').hide();
