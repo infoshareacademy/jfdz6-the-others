@@ -1,56 +1,135 @@
-/*contact form*/
-.for{
-    margin-top:50px;
-}
-.form-area
-{
-    background-color: #FAFAFA;
-    padding: 10px 40px 60px;
-    margin: 10px 0 60px;
-    border: 1px solid GREY;
-}
-/*koniec contact form*/
-/*O nas*/
-.flex-container_onas {
-    display: flex;
-}
-.flex-item_onas {
-    flex: 1;
-}
-
-.img-responsive {
-    height: auto;
-    max-width: 100%;
-}
-.flex-photo {
-    position: relative;
-}
-.flex-photo:hover .p_onas {
-    left: 10px;
-    right: 10px;
-}
-
-.img-responsive:hover {
-    opacity: 0.2;
-    transition: 1s;
-}
-.p_onas {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    left: -9999px;
-    color: black;
-}
-.p_onas, .flex-onas {
-    text-align: center;
-    text-decoration: none;
+/*style do całości*/
+* {
     font-family: 'Montserrat', sans-serif;
+}
+section {
+   margin-top: 50px;
+   min-height: 100vh;
+}
+
+/*O nas*/
+#onas {
+    background: #E8E8E8;
+}
+
+.key-personnel {
+    padding: 5% 0 5%;
+}
+
+.key-personnel h1 {
+    text-transform: uppercase;
+    color: black;
+    font-weight: bold
+}
+
+.key-personnel .persons-list {
+    margin: 55px -15px;
+}
+
+.key-personnel .person {
+    text-align: center;
+}
+
+.key-personnel .person .name {
+    margin-top: 20px;
+    text-transform: uppercase;
+    font-size: 2.2rem;
+    color: black;
     font-weight: bold;
 }
-.flex-onas {
+
+.key-personnel .person .title a {
+    line-height: 22px;
+    font-size: 1.4rem;
     color: black;
-    background-color: white;
-    }
+    font-weight: bold
+}
+.key-personnel .person .title {
+    color: black;
+    font-weight: bold
+}
+
+
+.key-personnel .social {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.key-personnel .social a .fa {
+    margin: 10px;
+}
+.key-personnel .social a i.fa-twitter {
+    color: #00aced;
+}
+.key-personnel .social a i.fa-instagram {
+    color: orangered;
+}
+.key-personnel .social a i.fa-linkedin {
+    color: #3B5998;
+}
+
+.hover-effect-onas {
+    margin: 2%;
+    cursor: pointer;
+    position: relative;
+
+}
+
+figcaption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0;
+    margin: auto;
+    color: #fff;
+    backface-visibility: hidden;
+}
+
+figure>figcaption {
+    padding: 0;
+    color: #fff;
+    backface-visibility: hidden;
+}
+
+figcaption>p {
+    position: absolute;
+    letter-spacing: 1px;
+    font-size: 100%;
+    top: 2em;
+    bottom: 2em;
+    left: 2em;
+    right: 2em;
+
+}
+
+figcaption::before {
+    position: absolute;
+    top: 1em;
+    right: 1em;
+    bottom: 1em;
+    left: 1em;
+    border: 1px solid #fff;
+    content: '';
+}
+
+figcaption::before,
+figcaption>p {
+    opacity: 0;
+    transition: opacity 0.35s, transform 0.35s;
+    transform: scale(0);
+}
+
+figure.hover-effect-onas:hover figcaption::before,
+figure.hover-effect-onas:hover p {
+    opacity: 1;
+    transform: scale(1);
+}
+
+figure.hover-effect-onas:hover figcaption {
+    background: -webkit-linear-gradient(top, rgba(0,0,0, 0.7) 0%, rgba(105,105,105, 0.7), rgba(128,128,128, 0.7) 100%);
+}
 /*koniec o nas*/
 /*cookies*/
 #cookieInfo{
@@ -58,46 +137,48 @@
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 80px;
+    height: 15%;
     background-color: black;
     z-index: 1000;
 }
+#cookieInfo p {
+    padding: 10px 60px 5px 60px;
+    text-align: center;
+    font-size: medium;
+    color: white;
+}
 #cookieInfo span {
     position: relative;
-    left: 95%;
-    top: 10px;
+    left: 97%;
+    top: -7vh;
+    font-size: 40px;
     color: white;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
     cursor: pointer;
+    border: 1px solid white;
 }
 /*koniec cookies*/
 /*social media*/
 .fb {
     background-color:#00aced;
 }
-
 .tw {
     background-color:#3B5998;
 }
 .gplus {
     background-color:#d34836;
-
 }
-
 .btn:hover {
     color:white;
     background-color:#686f7a;
-
 }
 a:hover {
     text-decoration: none;
+    color: white;
 }
-
-.float {
-    float:right;
+.socialmedia {
+    position: absolute;
+    right: 1%;
 }
-
 .icon {
     width:50px;
     height:50px;
@@ -109,43 +190,30 @@ a:hover {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    overflow: hidden;
-    background-color: #333;
-    z-index:2;
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 1000;
+
+}
+.ulmenu {
+height: 50px;
 }
 
-.menu {
-    float: left;
-    z-index:2;
-    padding-bottom:50px;
-}
-.menu-float-right {
-    float: right;
-}
 a, label, input[type=submit] {
     color: white;
     text-align: center;
     text-decoration: none;
-    font-family: 'Montserrat', sans-serif;
     font-weight: bold;
 
 }
-.menu, .menu-float-right {
-    display: block;
-    padding: 14px 16px;
 
-}
 /*koniec menu*/
 /*tło*/
 .scroll-bg {
-    background-image: url(Assets/Photos/girl-sitting-in-a-abus.jpg);
     height: 100vh;
-    background-attachment: scroll;
-    background-position: top;
-    background-repeat: no-repeat;
+    width:100%;
+    background: url(Assets/Photos/girl-sitting-in-a-abus.jpg) no-repeat scroll top;
     background-size: cover;
     opacity: 0.8;
 }
@@ -156,8 +224,8 @@ a, label, input[type=submit] {
     top: 70%;
     left: 50%;
     transform: translate(-50%,-50%);
-    width: 50vw;
-    height:70vh;
+    width: 50%;
+    height:70%;
     display: flex;
     flex-direction: column;
 }
@@ -165,7 +233,6 @@ a, label, input[type=submit] {
     color: white;
     text-align: center;
     text-decoration: none;
-    font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     overflow: hidden;
     font-size: xx-large;
@@ -178,7 +245,7 @@ a, label, input[type=submit] {
     content: " ";
     text-shadow: none;
     background-color: white;
-    width: 200px;
+    width: 20%;
 }
 .divzajawka:before {
     display: inline-block;
@@ -187,7 +254,223 @@ a, label, input[type=submit] {
     content: " ";
     text-shadow: none;
     background-color: white;
-    width: 200px;
+    width: 20%;
 }
 /*koniec zajawki*/
+/*spis funkcjonalności*/
+.functions-title {
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: bold;
+    /*background-color: #fff;*/
+    padding-bottom: 1em;
+    text-align:center;
+}
+.functionalities-description {
+    border: 2px solid black;
+    border-radius: 25px;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    min-height: 200px;
+    min-width:200px;
+    text-align:center;
+    vertical-align: bottom;
+}
+.functionalities-description a i {
+    padding: 0.5em;
+    color: black;
+}
+.functionalities-description p {
+    margin: 10px;
+}
+.white-thumbnail {
+    background: #E8E8E8;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    color: black;
+}
+.functionalities-center-img {
+    padding-top: 2.5%;
+    margin-right: 0;
+}
+.functionalities-hide-img {
+    display: block;
+}
+/*koniec spisu funkcjonalności*/
 
+/* nowe menu*/
+
+.ulmenu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+
+    }
+
+li {
+    float: left;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, a:focus, .dropdown:hover .dropbtn {
+    background-color: #333333;
+    color: white;
+    text-decoration: none;
+}
+
+li.dropdown {
+    display: inline-block;
+    position: inherit;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: black;
+    min-width: 160px;
+    /*box-shadow: 0px 8px 16px 0px ;*/
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #333333;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+/*sekcje rozkładu jazdy*/
+.rozkladjazdy {
+    background-color: #333333;
+    font-weight: bold;
+    color: white;
+
+}
+
+/*contact form*/
+#Kontakt {
+    padding-top:100px;
+    background: black;
+}
+.form-area
+{
+    background-color: #333333;
+    padding: 10px 40px 60px;
+    margin: 10px 40px 60px;
+    border: 1px solid GREY;
+}
+
+.form-area h3 {
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+
+.btn-primary {
+    background-image: linear-gradient(to bottom, grey 0, black 100%);
+    border: 0;
+    background-color: black;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active {
+    background-image: linear-gradient(to bottom, black 0, grey 100%);
+    border: 0;
+    background-color: grey;
+}
+
+.form-group input:focus, .form-group textarea:focus {
+    border-color: black;
+    border: 2px;
+}
+/*koniec contact form*/
+
+/*ZTM*/
+
+.ztmhsjq{
+    display:none;
+
+
+}
+
+.ztmtbjq {
+    display:none;
+
+}
+
+.center {
+    text-align:center;
+}
+
+table, th ,td {
+    border: 1px solid white;
+    border-collapse:collapse;
+}
+
+
+.info {
+    text-align:center;
+
+}
+
+table {
+    display: table;
+    margin: auto;
+}
+
+#info {
+    background: black;
+    color: white;
+}
+
+#info span:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+
+/*ZTM*/
+
+/*Karuzele*/
+.carousel-container {
+    margin: auto;
+    width: 50%;
+    padding: 20px;
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: auto;
+}
+
+.carousel-indicators li {
+    text-align: center;
+    float: none;
+}
+/*wyznacz trase*/
+.trasa {
+    background-color: black;
+    text-align: center;
+    color: white;
+    min-height:100vh;
+    padding-top: 20px;
+}
+
+.trasa img {
+    margin: auto;
+}
