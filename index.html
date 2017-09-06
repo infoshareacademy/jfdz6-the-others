@@ -63,44 +63,31 @@
     <!--koniec zajawki-->
     <!--spis funkcjonalności-->
     <div class="white-thumbnail">
-        <div class="container functionalities">
-            <div class="functions-title">
-                <h1>Co chciałbyś zrobić?</h1></div>
-            <div class="functions-content">
-                <!--<div class="col-xs-6 col-sm-3 functionalities-center-img functionalities-hide-img"><img-->
-                <!--class="img-responsive"-->
-                <!--src="Assets/Photos/old-gdansk-functions.jpg">-->
-                <!--</div>-->
-                <div class="col-xs-6">
-                    <div class=" col-xs-6">
-                        <div class="functionalities-description"><a href="#info"><i class="fa fa-info fa-3x"
+        <div class="container-fluid functionalities">
+            <div class="col-md-3">
+                <div class="functionalities-description"><a href="#info"><i class="fa fa-info fa-3x"
+                                                                            aria-hidden="true"></i></a>
+                    <p>Dowiesz się tutaj o najnowszych planach rozwoju oraz sprawdzisz historię KMG.</p></div>
+            </div>
+            <div class="col-md-3">
+                <div class="functionalities-description"><a href="#rozkladjazdy"><i class="fa fa-calendar fa-3x"
                                                                                     aria-hidden="true"></i></a>
-                            <p>Dowiesz się tutaj o najnowszych planach rozwoju oraz sprawdzisz historię KMG.</p></div>
-                    </div>
-                    <div class="col-xs-6">
-                        <div class="functionalities-description"><a href="#Autobusy"><i class="fa fa-calendar fa-3x"
-                                                                                        aria-hidden="true"></i></a>
-                            <p>Znajdziesz u nas wszystkie aktualne rozkłady jazdy!</p></div>
-                    </div>
-                    <div class="col-xs-6">
-                        <div class="functionalities-description"><a href="#navigate"><i class="fa fa-street-view fa-3x"
-                                                                                        aria-hidden="true"></i></a>
-                            <p>Sprawdzisz z nami najszybszą trasę dojazdu!</p></div>
-                    </div>
-                    <div class="col-xs-6">
-                        <div class="functionalities-description"><a href="#Kontakt"><i class="fa fa-envelope-o fa-3x"
-                                                                                       aria-hidden="true"></i></a>
-                            <p>Powiadom nas korkach, awariach i spóźnieniach. Zbieraj punkty i wymieniaj na nagrody!</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xs-6 col-sm-6 functionalities-center-img functionalities-hide-img"><img
-                        class="img-responsive"
-                        src="Assets/Photos/new-gdansk-functions.jpg">
+                    <p>Znajdziesz u nas wszystkie aktualne rozkłady jazdy!</p></div>
+            </div>
+            <div class="col-md-3">
+                <div class="functionalities-description"><a href="#navigate"><i class="fa fa-street-view fa-3x"
+                                                                                aria-hidden="true"></i></a>
+                    <p>Sprawdzisz z nami najszybszą trasę dojazdu!</p></div>
+            </div>
+            <div class="col-md-3">
+                <div class="functionalities-description"><a href="#Kontakt"><i class="fa fa-envelope-o fa-3x"
+                                                                               aria-hidden="true"></i></a>
+                    <p>Powiadom nas korkach, awariach i spóźnieniach. Zbieraj punkty i wymieniaj na nagrody!</p>
                 </div>
             </div>
         </div>
     </div>
+
 </header>
 <!--Kontakt-->
 <section id="Kontakt">
@@ -943,12 +930,13 @@
 
 
 </section>
-
-
 <!--koniec sekcji rozkładu jazdy-->
+<!--przycisk powrotu na górę strony-->
+<button onclick="topFunction()" id="top-button" title="Powrót na górę strony"><i class="fa fa-arrow-circle-up fa-3x" aria-hidden="true"></i></button>
+<!--koniec przycisku-->
 
 <script src="cookies.js"></script>
-
+<script src="top-button.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <!-- Latest compiled and minified JavaScript -->
 
