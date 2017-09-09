@@ -485,3 +485,81 @@ table {
     color: #3B5998;;
 }
 /*koniec przycisku*/
+
+
+
+/*new menu*/
+
+
+
+.dropdown-menu {
+    background:grey;
+}
+
+.icons {
+    color:black;
+}
+
+.navbar-default {
+    background:grey;
+    left:0; right:0;
+    margin:auto;
+    /*position:fixed;*/
+    z-index:999;
+
+}
+
+.navbar-default .navbar-brand {
+    color:white;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color:white;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: black;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: black;
+}
+
+.navbar-default {
+    border-color: black;
+
+}
+
+
+.navbar-nav>li>.dropdown-menu {
+    border-color: black;
+}
+
+@media (max-width: 767px) {
+
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+        color:black;
+    }
+}
+
+
+@media (min-width: 768px) and (max-width:1024px ) {
+    .collapse, .navbar-collapse {
+        font-size:10px;
+    }
+}
+
+
+@media (min-width: 1024px) {
+    .navbar-nav {
+
+        font-size:14px
+    }
+}
+
+@media (min-width: 1440px) {
+    .navbar-nav {
+
+        font-size:19px
+    }
+}
