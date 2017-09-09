@@ -287,60 +287,60 @@ a, label, input[type=submit] {
 
 /* nowe menu*/
 
-.ulmenu {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: black;
+/*.ulmenu {*/
+    /*list-style-type: none;*/
+    /*margin: 0;*/
+    /*padding: 0;*/
+    /*overflow: hidden;*/
+    /*background-color: black;*/
 
-    }
+    /*}*/
 
-li {
-    float: left;
-}
+/*li {*/
+    /*float: left;*/
+/*}*/
 
-li a, .dropbtn {
-    display: inline-block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
+/*li a, .dropbtn {*/
+    /*display: inline-block;*/
+    /*color: white;*/
+    /*text-align: center;*/
+    /*padding: 14px 16px;*/
+    /*text-decoration: none;*/
+/*}*/
 
-li a:hover, a:focus, .dropdown:hover .dropbtn {
-    background-color: #333333;
-    color: white;
-    text-decoration: none;
-}
+/*li a:hover, a:focus, .dropdown:hover .dropbtn {*/
+    /*background-color: #333333;*/
+    /*color: white;*/
+    /*text-decoration: none;*/
+/*}*/
 
-li.dropdown {
-    display: inline-block;
-    position: inherit;
-}
+/*li.dropdown {*/
+    /*display: inline-block;*/
+    /*position: inherit;*/
+/*}*/
 
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: black;
-    min-width: 160px;
-    /*box-shadow: 0px 8px 16px 0px ;*/
-    z-index: 1;
-}
+/*.dropdown-content {*/
+    /*display: none;*/
+    /*position: absolute;*/
+    /*background-color: black;*/
+    /*min-width: 160px;*/
+    /*!*box-shadow: 0px 8px 16px 0px ;*!*/
+    /*z-index: 1;*/
+/*}*/
 
-.dropdown-content a {
-    color: white;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-}
+/*.dropdown-content a {*/
+    /*color: white;*/
+    /*padding: 12px 16px;*/
+    /*text-decoration: none;*/
+    /*display: block;*/
+    /*text-align: left;*/
+/*}*/
 
-.dropdown-content a:hover {background-color: #333333;
-}
-.dropdown:hover .dropdown-content {
-    display: block;
-}
+/*.dropdown-content a:hover {background-color: #333333;*/
+/*}*/
+/*.dropdown:hover .dropdown-content {*/
+    /*display: block;*/
+/*}*/
 /*sekcje rozkładu jazdy*/
 .rozkladjazdy {
     background-color: #333333;
@@ -485,3 +485,81 @@ table {
     color: #3B5998;;
 }
 /*koniec przycisku*/
+
+
+
+/*new menu*/
+
+
+
+.dropdown-menu {
+    background:grey;
+}
+
+.icons {
+    color:black;
+}
+
+.navbar-default {
+    background:grey;
+    left:0; right:0;
+    margin:auto;
+    /*position:fixed;*/
+    z-index:999;
+
+}
+
+.navbar-default .navbar-brand {
+    color:white;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color:white;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: black;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: black;
+}
+
+.navbar-default {
+    border-color: black;
+
+}
+
+
+.navbar-nav>li>.dropdown-menu {
+    border-color: black;
+}
+
+@media (max-width: 767px) {
+
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+        color:black;
+    }
+}
+
+
+@media (min-width: 768px) and (max-width:1024px ) {
+    .collapse, .navbar-collapse {
+        font-size:10px;
+    }
+}
+
+
+@media (min-width: 1024px) {
+    .navbar-nav {
+
+        font-size:14px
+    }
+}
+
+@media (min-width: 1440px) {
+    .navbar-nav {
+
+        font-size:19px
+    }
+}
