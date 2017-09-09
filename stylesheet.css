@@ -1,152 +1,487 @@
-.red{
-    color:red;
+/*style do całości*/
+* {
+    font-family: 'Montserrat', sans-serif;
 }
-.form-area
-{
-    background-color: #FAFAFA;
-    padding: 10px 40px 60px;
-    margin: 10px 0px 60px;
-    border: 1px solid GREY;
-}
-/*o nas*/
-.column {
-    float: left;
-    width: 20%;
-    margin-bottom: 16px;
-    padding: 0 8px;
+section {
+   margin-top: 50px;
+   min-height: 100vh;
 }
 
+/*O nas*/
+#onas {
+    background: #E8E8E8;
+}
+
+.key-personnel {
+    padding: 5% 0 5%;
+}
+
+.key-personnel h1 {
+    text-transform: uppercase;
+    color: black;
+    font-weight: bold
+}
+
+.key-personnel .persons-list {
+    margin: 55px -15px;
+}
+
+.key-personnel .person {
+    text-align: center;
+}
+
+.key-personnel .person .name {
+    margin-top: 20px;
+    text-transform: uppercase;
+    font-size: 2.2rem;
+    color: black;
+    font-weight: bold;
+}
+
+.key-personnel .person .title a {
+    line-height: 22px;
+    font-size: 1.4rem;
+    color: black;
+    font-weight: bold
+}
+.key-personnel .person .title {
+    color: black;
+    font-weight: bold
+}
+
+
+.key-personnel .social {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.key-personnel .social a .fa {
+    margin: 10px;
+}
+.key-personnel .social a i.fa-twitter {
+    color: #00aced;
+}
+.key-personnel .social a i.fa-instagram {
+    color: orangered;
+}
+.key-personnel .social a i.fa-linkedin {
+    color: #3B5998;
+}
+
+.hover-effect-onas {
+    margin: 2%;
+    cursor: pointer;
+    position: relative;
+
+}
+
+figcaption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0;
+    margin: auto;
+    color: #fff;
+    backface-visibility: hidden;
+}
+
+figure>figcaption {
+    padding: 0;
+    color: #fff;
+    backface-visibility: hidden;
+}
+
+figcaption>p {
+    position: absolute;
+    letter-spacing: 1px;
+    font-size: 100%;
+    top: 2em;
+    bottom: 2em;
+    left: 2em;
+    right: 2em;
+
+}
+
+figcaption::before {
+    position: absolute;
+    top: 1em;
+    right: 1em;
+    bottom: 1em;
+    left: 1em;
+    border: 1px solid #fff;
+    content: '';
+}
+
+figcaption::before,
+figcaption>p {
+    opacity: 0;
+    transition: opacity 0.35s, transform 0.35s;
+    transform: scale(0);
+}
+
+figure.hover-effect-onas:hover figcaption::before,
+figure.hover-effect-onas:hover p {
+    opacity: 1;
+    transform: scale(1);
+}
+
+figure.hover-effect-onas:hover figcaption {
+    background: -webkit-linear-gradient(top, rgba(0,0,0, 0.7) 0%, rgba(105,105,105, 0.7), rgba(128,128,128, 0.7) 100%);
+}
+/*koniec o nas*/
+/*cookies*/
 #cookieInfo{
     position: fixed;
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 80px;
-    background-color: #519fff;
+    height: 15%;
+    background-color: black;
     z-index: 1000;
+}
+#cookieInfo p {
+    padding: 10px 60px 5px 60px;
+    text-align: center;
+    font-size: medium;
+    color: white;
 }
 #cookieInfo span {
     position: relative;
-    left: 95%;
-    top: 10px;
-    font-size: 30px;
-    color: red;
+    left: 97%;
+    top: -7vh;
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+    border: 1px solid white;
+}
+/*koniec cookies*/
+/*social media*/
+.fb {
+    background-color:#00aced;
+}
+.tw {
+    background-color:#3B5998;
+}
+.gplus {
+    background-color:#d34836;
+}
+.btn:hover {
+    color:white;
+    background-color:#686f7a;
+}
+a:hover {
+    text-decoration: none;
+    color: white;
+}
+.socialmedia {
+    position: absolute;
+    right: 1%;
+}
+.icon {
+    width:50px;
+    height:50px;
+    color:white;
+}
+/*koniec social media*/
+/*menu*/
+.menu-nav-bar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+
+}
+.ulmenu {
+height: 50px;
+}
+
+a, label, input[type=submit] {
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+
+}
+
+/*koniec menu*/
+/*tło*/
+.scroll-bg {
+    height: 100vh;
+    width:100%;
+    background: url(Assets/Photos/girl-sitting-in-a-abus.jpg) no-repeat scroll top;
+    background-size: cover;
+    opacity: 0.8;
+}
+/*koniec tła*/
+/*zajawka*/
+.zajawka {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 50%;
+    height:70%;
+    display: flex;
+    flex-direction: column;
+}
+.pzajawka, .divzajawka {
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    overflow: hidden;
+    font-size: xx-large;
+    flex: 1;
+}
+.divzajawka:after {
+    display: inline-block;
+    margin: 0 0 52px 8px;
+    height: 8px;
+    content: " ";
+    text-shadow: none;
+    background-color: white;
+    width: 20%;
+}
+.divzajawka:before {
+    display: inline-block;
+    margin: 0 8px 52px 0;
+    height: 8px;
+    content: " ";
+    text-shadow: none;
+    background-color: white;
+    width: 20%;
+}
+/*koniec zajawki*/
+/*spis funkcjonalności*/
+
+.functionalities-description {
+    border: 2px solid black;
+    border-radius: 25px;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    min-height: 200px;
+    min-width:200px;
+    text-align:center;
+    vertical-align: bottom;
+}
+.functionalities-description a i {
+    padding: 0.5em;
+    color: black;
+}
+.functionalities-description p {
+    margin: 10px;
+}
+.white-thumbnail {
+    background: #E8E8E8;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    color: black;
+}
+
+/*koniec spisu funkcjonalności*/
+
+/* nowe menu*/
+
+.ulmenu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+
+    }
+
+li {
+    float: left;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, a:focus, .dropdown:hover .dropbtn {
+    background-color: #333333;
+    color: white;
+    text-decoration: none;
+}
+
+li.dropdown {
+    display: inline-block;
+    position: inherit;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: black;
+    min-width: 160px;
+    /*box-shadow: 0px 8px 16px 0px ;*/
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #333333;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+/*sekcje rozkładu jazdy*/
+.rozkladjazdy {
+    background-color: #333333;
+    font-weight: bold;
+    color: white;
+
+}
+
+/*contact form*/
+#Kontakt {
+    padding-top:100px;
+    background: black;
+}
+.form-area
+{
+    background-color: #333333;
+    padding: 10px 40px 60px;
+    margin: 10px 40px 60px;
+    border: 1px solid GREY;
+}
+
+.form-area h3 {
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+
+.btn-primary {
+    background-image: linear-gradient(to bottom, grey 0, black 100%);
+    border: 0;
+    background-color: black;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active {
+    background-image: linear-gradient(to bottom, black 0, grey 100%);
+    border: 0;
+    background-color: grey;
+}
+
+.form-group input:focus, .form-group textarea:focus {
+    border-color: black;
+    border: 2px;
+}
+/*koniec contact form*/
+
+/*ZTM*/
+
+.ztmhsjq{
+    display:none;
+
+
+}
+
+.ztmtbjq {
+    display:none;
+
+}
+
+.center {
+    text-align:center;
+}
+
+table, th ,td {
+    border: 1px solid white;
+    border-collapse:collapse;
+}
+
+
+.info {
+    text-align:center;
+
+}
+
+table {
+    display: table;
+    margin: auto;
+}
+
+#info {
+    background: black;
+    color: white;
+}
+
+#info span:hover {
+    text-decoration: underline;
     cursor: pointer;
 }
-/* Display the columns below each other instead of side by side on small screens */
-@media (max-width: 600px) {
-    .column {
-        width: 100%;
-        display: block;
-    }
+
+
+
+/*ZTM*/
+
+/*Karuzele*/
+.carousel-container {
+    margin: auto;
+    width: 50%;
+    padding: 20px;
 }
 
-/* Add some shadows to create a card effect */
-.card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-}
-
-/* Some left and right padding inside the container */
-.container {
-    padding: 0 16px;
-}
-
-/* Clear floats */
-.container::after, .row::after {
-    content: "";
-    clear: both;
-    display: table;
-}
-
-.title {
-    color: grey;
-}
-/* dotyczy tła*/
-.background-image {
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+.carousel-inner img {
     width: 100%;
-    z-index: -100;
+    height: auto;
 }
 
-body {
-    height: 5000px;
+.carousel-indicators li {
+    text-align: center;
+    float: none;
+}
+/*wyznacz trase*/
+.trasa {
+    background-color: black;
+    text-align: center;
+    color: white;
+    min-height:100vh;
+    padding-top: 20px;
 }
 
-header {
-    background: yellow;
-    border: 1px solid black;
+.trasa img {
+    margin: auto;
+}
+
+/*przycisk powrotu na górę strony*/
+#top-button {
+    display: none;
     position: fixed;
-    left: 0;
-    right: 0;
+    border: 2px solid #00aced;
+    padding: 0 2px;
+    border-radius: 25px;
+    background-color: #fff;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    color: #00aced;
+    cursor: pointer;
+    font-weight: bold;
 }
-
-
-.text {
-    color:black;
-    font-size: 20px;
-    font-family:"fantasy";
+#top-button:focus {
+    outline: none;
 }
-
-.box:hover .zdj {
-    opacity: 0.2;
+#top-button:hover {
+    border: 2px solid #3B5998;;
+    color: #3B5998;;
 }
-
-.box:hover .inside {
-    opacity: 1;
-}
-
-.inside {
-    transition: 1.5s ;
-    opacity: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.zdj {
-    opacity: 1;
-    display: block;
-    width:100%;
-    height:650px;
-    transition: 1.5s ;
-}
-
-.box {
-    position: relative;
-    border-style:solid;
-    border-width:2px 4px 2px 4px;
-    border-color:red;
-}
-
-div.all {
-    width:100%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-p.main {
-    background-color:darkred;
-    width:100%;
-    height:50px;
-    text-align:center;
-    font-size:50px;
-    font-style: italic;
-    color:silver;
-    margin-bottom:0%;
-    margin-top:0%;
-    display: block;
-    border-width:2px 2px 2px 2px;
-    border-color:black;
-    border-style: solid;
-    box-sizing:border-box;
-    padding-top:-30px;
-}
-
-p.content {
-    font-size:20px;
-    color:red;
-}
-
-
+/*koniec przycisku*/
