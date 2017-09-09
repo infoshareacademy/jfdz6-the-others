@@ -287,60 +287,60 @@ a, label, input[type=submit] {
 
 /* nowe menu*/
 
-.ulmenu {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: black;
+/*.ulmenu {*/
+    /*list-style-type: none;*/
+    /*margin: 0;*/
+    /*padding: 0;*/
+    /*overflow: hidden;*/
+    /*background-color: black;*/
 
-    }
+    /*}*/
 
-li {
-    float: left;
-}
+/*li {*/
+    /*float: left;*/
+/*}*/
 
-li a, .dropbtn {
-    display: inline-block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
+/*li a, .dropbtn {*/
+    /*display: inline-block;*/
+    /*color: white;*/
+    /*text-align: center;*/
+    /*padding: 14px 16px;*/
+    /*text-decoration: none;*/
+/*}*/
 
-li a:hover, a:focus, .dropdown:hover .dropbtn {
-    background-color: #333333;
-    color: white;
-    text-decoration: none;
-}
+/*li a:hover, a:focus, .dropdown:hover .dropbtn {*/
+    /*background-color: #333333;*/
+    /*color: white;*/
+    /*text-decoration: none;*/
+/*}*/
 
-li.dropdown {
-    display: inline-block;
-    position: inherit;
-}
+/*li.dropdown {*/
+    /*display: inline-block;*/
+    /*position: inherit;*/
+/*}*/
 
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: black;
-    min-width: 160px;
-    /*box-shadow: 0px 8px 16px 0px ;*/
-    z-index: 1;
-}
+/*.dropdown-content {*/
+    /*display: none;*/
+    /*position: absolute;*/
+    /*background-color: black;*/
+    /*min-width: 160px;*/
+    /*!*box-shadow: 0px 8px 16px 0px ;*!*/
+    /*z-index: 1;*/
+/*}*/
 
-.dropdown-content a {
-    color: white;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-}
+/*.dropdown-content a {*/
+    /*color: white;*/
+    /*padding: 12px 16px;*/
+    /*text-decoration: none;*/
+    /*display: block;*/
+    /*text-align: left;*/
+/*}*/
 
-.dropdown-content a:hover {background-color: #333333;
-}
-.dropdown:hover .dropdown-content {
-    display: block;
-}
+/*.dropdown-content a:hover {background-color: #333333;*/
+/*}*/
+/*.dropdown:hover .dropdown-content {*/
+    /*display: block;*/
+/*}*/
 /*sekcje rozkładu jazdy*/
 .rozkladjazdy {
     background-color: #333333;
@@ -490,22 +490,43 @@ table {
 
 /*new menu*/
 
+.nav>li>a {
+    position: relative;
+    display: block;
+    padding: 10px 8px;
+}
+
+
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
+    background:grey;
+}
+
+.navbar-nav {
+    font-size:1.5vw;
+}
+
+
+.navbar-collapse {
+    border-top-width: 0px;
+}
 
 
 .dropdown-menu {
-    background:grey;
+    background:black;
 }
 
 .icons {
-    color:black;
+    color:white;
 }
 
 .navbar-default {
-    background:grey;
+    background:black;
     left:0; right:0;
     margin:auto;
     /*position:fixed;*/
     z-index:999;
+    border-color:black;
+    border-radius:0;
 
 }
 
@@ -517,49 +538,72 @@ table {
     color:white;
 }
 
-.navbar-default .navbar-toggle {
-    border-color: black;
+.navbar-toggle {
+    border-color: white;
+    padding: 17px 10px;
+}
+
+.navbar-toggle .icon-bar {
+    display: block;
+    width: 35px;
+    height: 2px;
+    border-radius: 1px;
 }
 
 .navbar-default .navbar-toggle .icon-bar {
-    background-color: black;
+    background-color: white;
 }
 
-.navbar-default {
-    border-color: black;
 
+.dropdown-menu>li>a {
+    color:white;
 }
-
 
 .navbar-nav>li>.dropdown-menu {
-    border-color: black;
+    border-color: white;
 }
 
 @media (max-width: 767px) {
 
     .navbar-default .navbar-nav .open .dropdown-menu > li > a {
-        color:black;
+        color:white;
     }
 }
 
 
-@media (min-width: 768px) and (max-width:1024px ) {
+@media only screen and (min-width: 426px) {
+    .collapse {
+        display: block;
+    }
+
+    .navbar-header {
+        display: none;
+    }
+
+
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+
     .collapse, .navbar-collapse {
-        font-size:10px;
+        height:40px;
+
+    }
+    .nav>li>a {
+        padding: 10px 6px;
+    }
+
+
+
+    .float {
+        float:left;
     }
 }
 
+@media (max-width:425px) {
 
-@media (min-width: 1024px) {
     .navbar-nav {
-
-        font-size:14px
+        font-size:4vw;
     }
-}
 
-@media (min-width: 1440px) {
-    .navbar-nav {
-
-        font-size:19px
-    }
 }
