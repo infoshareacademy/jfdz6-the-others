@@ -287,60 +287,60 @@ a, label, input[type=submit] {
 
 /* nowe menu*/
 
-.ulmenu {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: black;
+/*.ulmenu {*/
+    /*list-style-type: none;*/
+    /*margin: 0;*/
+    /*padding: 0;*/
+    /*overflow: hidden;*/
+    /*background-color: black;*/
 
-    }
+    /*}*/
 
-li {
-    float: left;
-}
+/*li {*/
+    /*float: left;*/
+/*}*/
 
-li a, .dropbtn {
-    display: inline-block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
+/*li a, .dropbtn {*/
+    /*display: inline-block;*/
+    /*color: white;*/
+    /*text-align: center;*/
+    /*padding: 14px 16px;*/
+    /*text-decoration: none;*/
+/*}*/
 
-li a:hover, a:focus, .dropdown:hover .dropbtn {
-    background-color: #333333;
-    color: white;
-    text-decoration: none;
-}
+/*li a:hover, a:focus, .dropdown:hover .dropbtn {*/
+    /*background-color: #333333;*/
+    /*color: white;*/
+    /*text-decoration: none;*/
+/*}*/
 
-li.dropdown {
-    display: inline-block;
-    position: inherit;
-}
+/*li.dropdown {*/
+    /*display: inline-block;*/
+    /*position: inherit;*/
+/*}*/
 
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: black;
-    min-width: 160px;
-    /*box-shadow: 0px 8px 16px 0px ;*/
-    z-index: 1;
-}
+/*.dropdown-content {*/
+    /*display: none;*/
+    /*position: absolute;*/
+    /*background-color: black;*/
+    /*min-width: 160px;*/
+    /*!*box-shadow: 0px 8px 16px 0px ;*!*/
+    /*z-index: 1;*/
+/*}*/
 
-.dropdown-content a {
-    color: white;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-}
+/*.dropdown-content a {*/
+    /*color: white;*/
+    /*padding: 12px 16px;*/
+    /*text-decoration: none;*/
+    /*display: block;*/
+    /*text-align: left;*/
+/*}*/
 
-.dropdown-content a:hover {background-color: #333333;
-}
-.dropdown:hover .dropdown-content {
-    display: block;
-}
+/*.dropdown-content a:hover {background-color: #333333;*/
+/*}*/
+/*.dropdown:hover .dropdown-content {*/
+    /*display: block;*/
+/*}*/
 /*sekcje rozkładu jazdy*/
 .rozkladjazdy {
     background-color: #333333;
