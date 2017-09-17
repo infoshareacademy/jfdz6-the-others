@@ -5,123 +5,31 @@
 // Menu auto-hide & show on click
 
 function main() {
-    $('#Contact').hide();
-    $('#AboutUs').hide();
-    $('#Info').hide();
-    $('#Timetable').hide();
-    $('#Navigate').hide();
+    var allIds = []
 
-    $('.fa-connectdevelop').parent().on('click', function () {
-            document.title = 'Komunikacja Miejska w Gdańsku';
-            $('#AboutUs').hide();
-            $('#Mainpage').show();
-            $('#Contact').hide();
-            $('#Info').hide();
-            $('#Timetable').hide();
-            $('#Navigate').hide();
-        }
-    );
+    function hideAll() {
+        $(allIds.join(',')).hide()
+    }
 
-    $('.fa-users').parent().on('click', function () {
-            document.title = 'O nas';
-            $('#AboutUs').show();
-            $('#Mainpage').hide();
-            $('#Contact').hide();
-            $('#Info').hide();
-            $('#Timetable').hide();
-            $('#Navigate').hide();
-        }
-    );
+    $('.ulmenu > li > a').each(function () {
+        allIds.push($(this).attr('href'))
 
-    $('.fa-envelope-o').parent().on('click', function () {
-            document.title = 'Kontakt';
-            $('#AboutUs').hide();
-            $('#Mainpage').hide();
-            $('#Contact').show();
-            $('#Info').hide();
-            $('#Timetable').hide();
-            $('#Navigate').hide();
-        }
-    );
+    }).on('click', function() {
+        setTimeout(function () {
+            $('html, body').scrollTop(0)
+        }, 0)
+    })
 
-    $('.fa-info').parent().on('click', function () {
-            document.title = 'Informacje o komunikacji';
-            $('#AboutUs').hide();
-            $('#Mainpage').hide();
-            $('#Contact').hide();
-            $('#Info').show();
-            $('#Timetable').hide();
-            $('#Navigate').hide();
-        }
-    );
+    $('.ulmenu a').on('click', function () {
+        hideAll()
+        $($(this).attr('href').split('/')[0]).show()
+        document.title = $(this).attr('data-title');
+    })
 
-    $('.fa-street-view').parent().on('click', function () {
-            document.title = 'Wyznacz trasę';
-            $('#AboutUs').hide();
-            $('#Mainpage').hide();
-            $('#Contact').hide();
-            $('#Info').hide();
-            $('#Timetable').hide();
-            $('#Navigate').show();
-        }
-    );
+    hideAll()
+    $('#Mainpage').show()
 
-    $('.fa-book').parent().on('click', function () {
-            document.title = 'Rozkład jazdy';
-            $('#AboutUs').hide();
-            $('#Mainpage').hide();
-            $('#Contact').hide();
-            $('#Info').hide();
-            $('#Timetable').show();
-            $('#Navigate').hide();
-        }
-    );
-
-    $('.fa-bus').parent().on('click', function () {
-            document.title = 'Rozkład jazdy';
-            $('#AboutUs').hide();
-            $('#Mainpage').hide();
-            $('#Contact').hide();
-            $('#Info').hide();
-            $('#Timetable').show();
-            $('#Navigate').hide();
-        }
-    );
-
-    $('.fa-subway').parent().on('click', function () {
-            document.title = 'Rozkład jazdy';
-            $('#AboutUs').hide();
-            $('#Mainpage').hide();
-            $('#Contact').hide();
-            $('#Info').hide();
-            $('#Timetable').show();
-            $('#Navigate').hide();
-        }
-    );
-
-    $('.fa-train').parent().on('click', function () {
-            document.title = 'Rozkład jazdy';
-            $('#AboutUs').hide();
-            $('#Mainpage').hide();
-            $('#Contact').hide();
-            $('#Info').hide();
-            $('#Timetable').show();
-            $('#Navigate').hide();
-        }
-    );
-
-    $('.fa-calendar').parent().on('click', function () {
-            document.title = 'Rozkład jazdy';
-            $('#AboutUs').hide();
-            $('#Mainpage').hide();
-            $('#Contact').hide();
-            $('#Info').hide();
-            $('#Timetable').show();
-            $('#Navigate').hide();
-        }
-    );
-
-    // The End of Menu auto-hide & show on click
+// The End of Menu auto-hide & show on click
 
 //Hide Info sections & show on click
 
