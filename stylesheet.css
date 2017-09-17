@@ -260,7 +260,7 @@ a, label, input[type=submit] {
     margin: auto;
 }
 
-/*The end of preview*/
+/*The End of Preview*/
 
 /*Functionalities*/
 
@@ -289,6 +289,32 @@ a, label, input[type=submit] {
     padding-top: 1em;
     padding-bottom: 1em;
     color: black;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.image {
+    width: 90%;
+    height: 100%;
+}
+
+.image  {
+    -webkit-transition: all 1s ease; /* Safari and Chrome */
+    -moz-transition: all 1s ease; /* Firefox */
+    -o-transition: all 1s ease; /* IE 9 */
+    -ms-transition: all 1s ease; /* Opera */
+    transition: all 1s ease;
+}
+
+.image:hover {
+    -webkit-transform:scale(1.25); /* Safari and Chrome */
+    -moz-transform:scale(1.25); /* Firefox */
+    -ms-transform:scale(1.25); /* IE 9 */
+    -o-transform:scale(1.25); /* Opera */
+    transform:scale(1.25);
 }
 
 /*The End of Functionalities*/
