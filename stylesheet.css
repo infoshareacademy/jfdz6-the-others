@@ -2,13 +2,14 @@
 * {
     font-family: 'Montserrat', sans-serif;
 }
+
 section {
-   margin-top: 50px;
-   min-height: 100vh;
+    margin-top: 50px;
+    min-height: 100vh;
 }
 
 /*O nas*/
-#onas {
+#AboutUs {
     background: #E8E8E8;
 }
 
@@ -44,11 +45,11 @@ section {
     color: black;
     font-weight: bold
 }
+
 .key-personnel .person .title {
     color: black;
     font-weight: bold
 }
-
 
 .key-personnel .social {
     margin-top: 10px;
@@ -58,12 +59,15 @@ section {
 .key-personnel .social a .fa {
     margin: 10px;
 }
+
 .key-personnel .social a i.fa-twitter {
     color: #00aced;
 }
+
 .key-personnel .social a i.fa-instagram {
     color: orangered;
 }
+
 .key-personnel .social a i.fa-linkedin {
     color: #3B5998;
 }
@@ -87,13 +91,13 @@ figcaption {
     backface-visibility: hidden;
 }
 
-figure>figcaption {
+figure > figcaption {
     padding: 0;
     color: #fff;
     backface-visibility: hidden;
 }
 
-figcaption>p {
+figcaption > p {
     position: absolute;
     letter-spacing: 1px;
     font-size: 100%;
@@ -115,7 +119,7 @@ figcaption::before {
 }
 
 figcaption::before,
-figcaption>p {
+figcaption > p {
     opacity: 0;
     transition: opacity 0.35s, transform 0.35s;
     transform: scale(0);
@@ -128,11 +132,12 @@ figure.hover-effect-onas:hover p {
 }
 
 figure.hover-effect-onas:hover figcaption {
-    background: -webkit-linear-gradient(top, rgba(0,0,0, 0.7) 0%, rgba(105,105,105, 0.7), rgba(128,128,128, 0.7) 100%);
+    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.7) 0%, rgba(105, 105, 105, 0.7), rgba(128, 128, 128, 0.7) 100%);
 }
+
 /*koniec o nas*/
 /*cookies*/
-#cookieInfo{
+#cookieInfo {
     position: fixed;
     bottom: 0;
     left: 0;
@@ -141,12 +146,14 @@ figure.hover-effect-onas:hover figcaption {
     background-color: black;
     z-index: 1000;
 }
+
 #cookieInfo p {
     padding: 10px 60px 5px 60px;
     text-align: center;
     font-size: medium;
     color: white;
 }
+
 #cookieInfo span {
     position: relative;
     left: 97%;
@@ -156,34 +163,42 @@ figure.hover-effect-onas:hover figcaption {
     cursor: pointer;
     border: 1px solid white;
 }
+
 /*koniec cookies*/
 /*social media*/
 .fb {
-    background-color:#00aced;
+    background-color: #00aced;
 }
+
 .tw {
-    background-color:#3B5998;
+    background-color: #3B5998;
 }
+
 .gplus {
-    background-color:#d34836;
+    background-color: #d34836;
 }
+
 .btn:hover {
-    color:white;
-    background-color:#686f7a;
+    color: white;
+    background-color: #686f7a;
 }
+
 a:hover {
     text-decoration: none;
     color: white;
 }
+
 .socialmedia {
     position: absolute;
     right: 1%;
 }
+
 .icon {
-    width:50px;
-    height:50px;
-    color:white;
+    width: 50px;
+    height: 50px;
+    color: white;
 }
+
 /*koniec social media*/
 /*menu*/
 .menu-nav-bar {
@@ -196,8 +211,9 @@ a:hover {
     z-index: 1000;
 
 }
+
 .ulmenu {
-height: 50px;
+    height: 50px;
 }
 
 a, label, input[type=submit] {
@@ -212,23 +228,25 @@ a, label, input[type=submit] {
 /*tło*/
 .scroll-bg {
     height: 100vh;
-    width:100%;
+    width: 100%;
     background: url(Assets/Photos/girl-sitting-in-a-abus.jpg) no-repeat scroll top;
     background-size: cover;
     opacity: 0.8;
 }
+
 /*koniec tła*/
 /*zajawka*/
 .zajawka {
     position: absolute;
     top: 70%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     width: 50%;
-    height:70%;
+    height: 70%;
     display: flex;
     flex-direction: column;
 }
+
 .pzajawka, .divzajawka {
     color: white;
     text-align: center;
@@ -238,6 +256,7 @@ a, label, input[type=submit] {
     font-size: xx-large;
     flex: 1;
 }
+
 .divzajawka:after {
     display: inline-block;
     margin: 0 0 52px 8px;
@@ -247,6 +266,7 @@ a, label, input[type=submit] {
     background-color: white;
     width: 20%;
 }
+
 .divzajawka:before {
     display: inline-block;
     margin: 0 8px 52px 0;
@@ -256,6 +276,7 @@ a, label, input[type=submit] {
     background-color: white;
     width: 20%;
 }
+
 /*koniec zajawki*/
 /*spis funkcjonalności*/
 
@@ -265,17 +286,20 @@ a, label, input[type=submit] {
     margin-top: 1em;
     margin-bottom: 1em;
     min-height: 200px;
-    min-width:200px;
-    text-align:center;
+    min-width: 200px;
+    text-align: center;
     vertical-align: bottom;
 }
+
 .functionalities-description a i {
     padding: 0.5em;
     color: black;
 }
+
 .functionalities-description p {
     margin: 10px;
 }
+
 .white-thumbnail {
     background: #E8E8E8;
     padding-top: 1em;
@@ -294,7 +318,7 @@ a, label, input[type=submit] {
     overflow: hidden;
     background-color: black;
 
-    }
+}
 
 li {
     float: left;
@@ -336,13 +360,16 @@ li.dropdown {
     text-align: left;
 }
 
-.dropdown-content a:hover {background-color: #333333;
+.dropdown-content a:hover {
+    background-color: #333333;
 }
+
 .dropdown:hover .dropdown-content {
     display: block;
 }
+
 /*sekcje rozkładu jazdy*/
-.rozkladjazdy {
+.timetable {
     background-color: #333333;
     font-weight: bold;
     color: white;
@@ -350,12 +377,12 @@ li.dropdown {
 }
 
 /*contact form*/
-#Kontakt {
-    padding-top:100px;
+#Contact {
+    padding-top: 100px;
     background: black;
 }
-.form-area
-{
+
+.form-area {
     background-color: #333333;
     padding: 10px 40px 60px;
     margin: 10px 40px 60px;
@@ -384,34 +411,28 @@ li.dropdown {
     border-color: black;
     border: 2px;
 }
+
 /*koniec contact form*/
 
 /*ZTM*/
 
-.ztmhsjq{
-    display:none;
-
+.ztmhsjq {
+    display: none;
 
 }
 
 .ztmtbjq {
-    display:none;
+    display: none;
 
 }
 
-.center {
-    text-align:center;
+h1, h2, h3 {
+    text-align: center;
 }
 
-table, th ,td {
+table, th, td {
     border: 1px solid white;
-    border-collapse:collapse;
-}
-
-
-.info {
-    text-align:center;
-
+    border-collapse: collapse;
 }
 
 table {
@@ -419,17 +440,15 @@ table {
     margin: auto;
 }
 
-#info {
+#Info {
     background: black;
     color: white;
 }
 
-#info span:hover {
+#Info span:hover {
     text-decoration: underline;
     cursor: pointer;
 }
-
-
 
 /*ZTM*/
 
@@ -449,12 +468,13 @@ table {
     text-align: center;
     float: none;
 }
+
 /*wyznacz trase*/
 .trasa {
     background-color: black;
     text-align: center;
     color: white;
-    min-height:100vh;
+    min-height: 100vh;
     padding-top: 20px;
 }
 
@@ -477,11 +497,14 @@ table {
     cursor: pointer;
     font-weight: bold;
 }
+
 #top-button:focus {
     outline: none;
 }
+
 #top-button:hover {
     border: 2px solid #3B5998;;
     color: #3B5998;;
 }
+
 /*koniec przycisku*/
