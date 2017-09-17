@@ -2,6 +2,8 @@
  * Created by marcin on 21.08.17.
  */
 
+// Menu auto-hide & show on click
+
 function main() {
     $('#Contact').hide();
     $('#AboutUs').hide();
@@ -119,6 +121,10 @@ function main() {
         }
     );
 
+    // The End of Menu auto-hide & show on click
+
+//Hide Info sections & show on click
+
     $('.skm-hist').hide();
     $('.skm-tab').hide();
     $('.pkm-hist').hide();
@@ -143,9 +149,6 @@ function main() {
 
 $(document).ready(main);
 
-
-// ZTM
-
 $('.ztmhsjq').hide();
 
 $(document).ready(function () {
@@ -161,4 +164,5 @@ $(document).ready(function () {
     });
 });
 
-// ZTM
+//The End of Hide Info sections & show on click
+
