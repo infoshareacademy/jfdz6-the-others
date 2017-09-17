@@ -3,119 +3,119 @@
  */
 
 function main() {
-    $('#Kontakt').hide();
-    $('#onas').hide();
-    $('#info').hide();
-    $('#rozkladjazdy').hide();
-    $('#wyznacz-trase').hide();
+    $('#Contact').hide();
+    $('#AboutUs').hide();
+    $('#Info').hide();
+    $('#Timetable').hide();
+    $('#Navigate').hide();
 
     $('.fa-connectdevelop').parent().on('click', function () {
             document.title = 'Komunikacja Miejska w Gdańsku';
-            $('#onas').hide();
-            $('#mainpage').show();
-            $('#Kontakt').hide();
-            $('#info').hide();
-            $('#rozkladjazdy').hide();
-            $('#wyznacz-trase').hide();
+            $('#AboutUs').hide();
+            $('#Mainpage').show();
+            $('#Contact').hide();
+            $('#Info').hide();
+            $('#Timetable').hide();
+            $('#Navigate').hide();
         }
     );
 
     $('.fa-users').parent().on('click', function () {
             document.title = 'O nas';
-            $('#onas').show();
-            $('#mainpage').hide();
-            $('#Kontakt').hide();
-            $('#info').hide();
-            $('#rozkladjazdy').hide();
-            $('#wyznacz-trase').hide();
+            $('#AboutUs').show();
+            $('#Mainpage').hide();
+            $('#Contact').hide();
+            $('#Info').hide();
+            $('#Timetable').hide();
+            $('#Navigate').hide();
         }
     );
 
     $('.fa-envelope-o').parent().on('click', function () {
             document.title = 'Kontakt';
-            $('#onas').hide();
-            $('#mainpage').hide();
-            $('#Kontakt').show();
-            $('#info').hide();
-            $('#rozkladjazdy').hide();
-            $('#wyznacz-trase').hide();
+            $('#AboutUs').hide();
+            $('#Mainpage').hide();
+            $('#Contact').show();
+            $('#Info').hide();
+            $('#Timetable').hide();
+            $('#Navigate').hide();
         }
     );
 
     $('.fa-info').parent().on('click', function () {
             document.title = 'Informacje o komunikacji';
-            $('#onas').hide();
-            $('#mainpage').hide();
-            $('#Kontakt').hide();
-            $('#info').show();
-            $('#rozkladjazdy').hide();
-            $('#wyznacz-trase').hide();
+            $('#AboutUs').hide();
+            $('#Mainpage').hide();
+            $('#Contact').hide();
+            $('#Info').show();
+            $('#Timetable').hide();
+            $('#Navigate').hide();
         }
     );
 
     $('.fa-street-view').parent().on('click', function () {
             document.title = 'Wyznacz trasę';
-            $('#onas').hide();
-            $('#mainpage').hide();
-            $('#Kontakt').hide();
-            $('#info').hide();
-            $('#rozkladjazdy').hide();
-            $('#wyznacz-trase').show();
+            $('#AboutUs').hide();
+            $('#Mainpage').hide();
+            $('#Contact').hide();
+            $('#Info').hide();
+            $('#Timetable').hide();
+            $('#Navigate').show();
         }
     );
 
     $('.fa-book').parent().on('click', function () {
             document.title = 'Rozkład jazdy';
-            $('#onas').hide();
-            $('#mainpage').hide();
-            $('#Kontakt').hide();
-            $('#info').hide();
-            $('#rozkladjazdy').show();
-            $('#wyznacz-trase').hide();
+            $('#AboutUs').hide();
+            $('#Mainpage').hide();
+            $('#Contact').hide();
+            $('#Info').hide();
+            $('#Timetable').show();
+            $('#Navigate').hide();
         }
     );
 
     $('.fa-bus').parent().on('click', function () {
             document.title = 'Rozkład jazdy';
-            $('#onas').hide();
-            $('#mainpage').hide();
-            $('#Kontakt').hide();
-            $('#info').hide();
-            $('#rozkladjazdy').show();
-            $('#wyznacz-trase').hide();
+            $('#AboutUs').hide();
+            $('#Mainpage').hide();
+            $('#Contact').hide();
+            $('#Info').hide();
+            $('#Timetable').show();
+            $('#Navigate').hide();
         }
     );
 
     $('.fa-subway').parent().on('click', function () {
             document.title = 'Rozkład jazdy';
-            $('#onas').hide();
-            $('#mainpage').hide();
-            $('#Kontakt').hide();
-            $('#info').hide();
-            $('#rozkladjazdy').show();
-            $('#wyznacz-trase').hide();
+            $('#AboutUs').hide();
+            $('#Mainpage').hide();
+            $('#Contact').hide();
+            $('#Info').hide();
+            $('#Timetable').show();
+            $('#Navigate').hide();
         }
     );
 
     $('.fa-train').parent().on('click', function () {
             document.title = 'Rozkład jazdy';
-            $('#onas').hide();
-            $('#mainpage').hide();
-            $('#Kontakt').hide();
-            $('#info').hide();
-            $('#rozkladjazdy').show();
-            $('#wyznacz-trase').hide();
+            $('#AboutUs').hide();
+            $('#Mainpage').hide();
+            $('#Contact').hide();
+            $('#Info').hide();
+            $('#Timetable').show();
+            $('#Navigate').hide();
         }
     );
 
     $('.fa-calendar').parent().on('click', function () {
             document.title = 'Rozkład jazdy';
-            $('#onas').hide();
-            $('#mainpage').hide();
-            $('#Kontakt').hide();
-            $('#info').hide();
-            $('#rozkladjazdy').show();
-            $('#wyznacz-trase').hide();
+            $('#AboutUs').hide();
+            $('#Mainpage').hide();
+            $('#Contact').hide();
+            $('#Info').hide();
+            $('#Timetable').show();
+            $('#Navigate').hide();
         }
     );
 
