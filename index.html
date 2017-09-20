@@ -20,20 +20,28 @@
     <div class="menu-nav-bar">
         <ul class="ulmenu">
 
-            <li><a href="#Mainpage"><i class="fa fa-connectdevelop" aria-hidden="true"></i> Komunikacja Miejska
+            <li><a href="#Mainpage" data-title="Komunikacja Miejska Gdańsk"><i class="fa fa-connectdevelop"
+                                                                               aria-hidden="true"></i> Komunikacja
+                Miejska
                 Gdańsk</a></li>
             <li class="dropdown">
-                <a href="#Timetable" class="dropbtn" data-title="Rozkład Jazdy"><i class="fa fa-calendar" aria-hidden="true"></i> Rozkład Jazdy</a>
+                <a href="#Timetable" class="dropbtn" data-title="Rozkład Jazdy"><i class="fa fa-calendar"
+                                                                                   aria-hidden="true"></i> Rozkład Jazdy</a>
                 <div class="dropdown-content">
-                    <a href="#Timetable/Buses" data-title="Autobusy"><i class="fa fa-bus" aria-hidden="true"></i> Autobusy</a>
-                    <a href="#Timetable/Trams" data-title="Tramwaje"><i class="fa fa-subway" aria-hidden="true"></i> Tramwaje</a>
+                    <a href="#Timetable/Buses" data-title="Autobusy"><i class="fa fa-bus" aria-hidden="true"></i>
+                        Autobusy</a>
+                    <a href="#Timetable/Trams" data-title="Tramwaje"><i class="fa fa-subway" aria-hidden="true"></i>
+                        Tramwaje</a>
                     <a href="#Timetable/SKM" data-title="SKM"><i class="fa fa-train" aria-hidden="true"></i> SKM</a>
                     <a href="#Timetable/PKM" data-title="PKM"><i class="fa fa-train" aria-hidden="true"></i> PKM</a>
                 </div>
             </li>
-            <li><a href="#Navigate" data-title="Wyznacz trasę"><i class="fa fa-street-view" aria-hidden="true"></i> Wyznacz trasę</a></li>
-            <li><a href="#Info" data-title="Informacje o komunikacji"><i class="fa fa-info" aria-hidden="true"></i> Informacje o komunikacji</a></li>
-            <li><a href="#Contact" data-title="Kontakt"><i class="fa fa-envelope-o" aria-hidden="true"></i> Kontakt</a></li>
+            <li><a href="#Navigate" data-title="Wyznacz trasę"><i class="fa fa-street-view" aria-hidden="true"></i>
+                Wyznacz trasę</a></li>
+            <li><a href="#Info" data-title="Informacje o komunikacji"><i class="fa fa-info" aria-hidden="true"></i>
+                Informacje o komunikacji</a></li>
+            <li><a href="#Contact" data-title="Kontakt"><i class="fa fa-envelope-o" aria-hidden="true"></i> Kontakt</a>
+            </li>
             <li><a href="#AboutUs" data-title="O nas"><i class="fa fa-users" aria-hidden="true"></i> O nas</a></li>
 
 
@@ -70,32 +78,32 @@
     <div class="white-thumbnail">
         <div class="container-fluid functionalities">
             <div class="col-md-3">
-                    <div class="image">
-                <div class="functionalities-description"><a href="#Info"><i class="fa fa-info fa-3x"
-                                                                            aria-hidden="true"></i></a>
-                    <p>Dowiesz się tutaj o najnowszych planach rozwoju oraz sprawdzisz historię KMG.</p></div>
-            </div>
-            </div>
-            <div class="col-md-3">
-                    <div class="image">
-                <div class="functionalities-description"><a href="#Timetable"><i class="fa fa-calendar fa-3x"
-                                                                                 aria-hidden="true"></i></a>
-                    <p>Znajdziesz u nas wszystkie aktualne rozkłady jazdy!</p></div>
-            </div>
-            </div>
-            <div class="col-md-3">
                 <div class="image">
-                <div class="functionalities-description"><a href="#Navigate"><i class="fa fa-street-view fa-3x"
+                    <div class="functionalities-description"><a href="#Info"><i class="fa fa-info fa-3x"
                                                                                 aria-hidden="true"></i></a>
-                    <p>Sprawdzisz z nami najszybszą trasę dojazdu!</p></div>
-            </div>
+                        <p>Dowiesz się tutaj o najnowszych planach rozwoju oraz sprawdzisz historię KMG.</p></div>
+                </div>
             </div>
             <div class="col-md-3">
                 <div class="image">
-                <div class="functionalities-description"><a href="#Contact"><i class="fa fa-envelope-o fa-3x"
-                                                                               aria-hidden="true"></i></a>
-                    <p>Powiadom nas korkach, awariach i spóźnieniach. Zbieraj punkty i wymieniaj na nagrody!</p>
+                    <div class="functionalities-description"><a href="#Timetable"><i class="fa fa-calendar fa-3x"
+                                                                                     aria-hidden="true"></i></a>
+                        <p>Znajdziesz u nas wszystkie aktualne rozkłady jazdy!</p></div>
                 </div>
+            </div>
+            <div class="col-md-3">
+                <div class="image">
+                    <div class="functionalities-description"><a href="#Navigate"><i class="fa fa-street-view fa-3x"
+                                                                                    aria-hidden="true"></i></a>
+                        <p>Sprawdzisz z nami najszybszą trasę dojazdu!</p></div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="image">
+                    <div class="functionalities-description"><a href="#Contact"><i class="fa fa-envelope-o fa-3x"
+                                                                                   aria-hidden="true"></i></a>
+                        <p>Powiadom nas korkach, awariach i spóźnieniach. Zbieraj punkty i wymieniaj na nagrody!</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -241,10 +249,10 @@
 <!--The end of About Us-->
 
 <!--Info-->
-<section id="Info" >
+<section id="Info">
     <div class="info container animated fadeInDown">
-        <h1 class="skm-hist-button"><span>Historia SKM</span></h1>
-        <div class="skm-hist">
+        <h1 class="info-button"><span>Historia SKM</span></h1>
+        <div class="info-section">
             <div class="carousel-container">
                 <div id="myCarousel-skm-hist" class="carousel slide" data-ride="carousel">
                     <!-- Indicators -->
@@ -427,8 +435,8 @@
             <p class="content">11 grudnia 2016 uruchomione zostało połączenie Gdynia Główna – Gdańsk Wrzeszcz – Gdańsk
                 Port Lotniczy – Kościerzyna.</p>
         </div>
-        <h1 class="skm-tab-button"><span>Tabor SKM</span></h1>
-        <div class="skm-tab">
+        <h1 class="info-button"><span>Tabor SKM</span></h1>
+        <div class="info-section">
             <div class="carousel-container">
                 <div id="myCarousel-skm-tab" class="carousel slide" data-ride="carousel">
                     <!-- Indicators -->
@@ -479,8 +487,8 @@
                 marca 2016 r. Umowę na dostarczenie składów SKM zawarła z firmą Newag dnia 23 marca 2015. 13 stycznia
                 2016 PKP SKM ogłosiło zamiar zakupu jednego SZT do obsługi linii PKM, Kartuz i Kościerzyny.</p>
         </div>
-        <h1 class="pkm-hist-button"><span>Historia PKM</span></h1>
-        <div class="pkm-hist">
+        <h1 class="info-button"><span>Historia PKM</span></h1>
+        <div class="info-section">
             <div class="carousel-container">
                 <div id="myCarousel-pkm-hist" class="carousel slide" data-ride="carousel">
                     <!-- Indicators -->
@@ -545,8 +553,8 @@
                 terenie terminalu T2 Portu Lotniczego im. Lecha Wałęsy w Gdańsku, natomiast oddanie linii do użytku
                 miało miejsce dwa dni później, 1 września.</p>
         </div>
-        <h1 class="pkm-tab-button"><span>Tabor PKM</span></h1>
-        <div class="pkm-tab">
+        <h1 class="info-button"><span>Tabor PKM</span></h1>
+        <div class="info-section">
             <div class="carousel-container">
                 <div id="myCarousel-pkm-tab" class="carousel slide" data-ride="carousel">
                     <!-- Indicators -->
@@ -600,11 +608,8 @@
                 nastąpi zakup elektrycznych zespołów trakcyjnych, te spalinowe zostaną przeznaczone do obsługi połączeń
                 w innych częściach województwa.</p>
         </div>
-
-
-        <h1 class="ztm-hist-button center"><span>Historia ZTM</span></h1>
-
-        <div class="ztmhsjq">
+        <h1 class="info-button center"><span>Historia ZTM</span></h1>
+        <div class="info-section">
             <div class="carousel-container">
                 <div id="myCarousel-ztm-hist" class="carousel slide" data-ride="carousel">
                     <!-- Indicators -->
@@ -729,11 +734,8 @@
 
 
         </div>
-
-
-        <h1 class="ztm-tab-button"><span>Tabor ZTM</span></h1>
-
-        <div class="ztmtbjq">
+        <h1 class="info-button"><span>Tabor ZTM</span></h1>
+        <div class="info-section">
             <div class="carousel-container">
                 <div id="myCarousel-ztm-tab" class="carousel slide" data-ride="carousel">
                     <!-- Indicators -->
@@ -913,12 +915,11 @@
 
         </div>
     </div>
-
 </section>
 <!--The End of Info-->
 
 <!--Timetable-->
-<section id="Timetable" >
+<section id="Timetable">
     <div class="timetable">
         <div id="Timetable/Buses"><i class="fa fa-bus fa-5x" aria-hidden="true"></i>
             <h3><p>Tu powstanie rozkład jazdy i informacje o Gdańskich autobusach.</p></h3>
