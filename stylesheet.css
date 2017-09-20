@@ -243,45 +243,21 @@ a, label, input[type=submit] {
 /*The End of Background*/
 
 /*Preview*/
-.zajawka {
+.preview {
     position: absolute;
-    top: 70%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 50%;
-    height: 70%;
-    display: flex;
-    flex-direction: column;
+    top: 30%;
 }
 
-.pzajawka, .divzajawka {
-    color: white;
+.preview-h1 > h1 {
     text-align: center;
-    text-decoration: none;
     font-weight: bold;
-    overflow: hidden;
-    font-size: xx-large;
-    flex: 1;
+    color: white;
 }
 
-.divzajawka:after {
-    display: inline-block;
-    margin: 0 0 52px 8px;
-    height: 8px;
-    content: " ";
-    text-shadow: none;
-    background-color: white;
-    width: 20%;
-}
-
-.divzajawka:before {
-    display: inline-block;
-    margin: 0 8px 52px 0;
-    height: 8px;
-    content: " ";
-    text-shadow: none;
-    background-color: white;
-    width: 20%;
+.preview-img > .img-responsive {
+    max-width: 600px;
+    max-height: 300px;
+    margin: auto;
 }
 
 /*The End of Preview*/
