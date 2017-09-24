@@ -16,41 +16,45 @@
 <body>
 
 <!-- MENU-->
-<nav class="div-menu">
-    <div class="menu-nav-bar">
-        <ul class="ulmenu">
+<nav class="navbar navbar-default container-fluid">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse " id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li><a class="menufix" href="#mainpage"><i class="fa fa-connectdevelop" aria-hidden="true"></i> Komunikacja Miejska
+                    Gdańsk</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle menufix" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Rozkład Jazdy <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li> <a href="#Autobusy"><i class="fa fa-bus hov" aria-hidden="true"></i> Autobusy</a></li>
+                        <li><a href="#Tramwaje"><i class="fa fa-subway hov" aria-hidden="true"></i> Tramwaje</a></li>
+                        <li> <a href="#SKM"><i class="fa fa-train hov" aria-hidden="true"></i> SKM</a></li>
+                        <li> <a href="#PKM"><i class="fa fa-train hov" aria-hidden="true"></i> PKM</a></li>
+                    </ul>
+                </li>
+                <li><a class="menufix" href="#navigate"><i class="fa fa-street-view hov" aria-hidden="true"></i> Wyznacz trasę</a></li>
+                <li><a class="menufix" href="#info"><i class="fa fa-info hov" aria-hidden="true"></i> Informacje o komunikacji</a></li>
+                <li><a class="menufix" href="#Kontakt"><i class="fa fa-envelope-o hov" aria-hidden="true"></i> Kontakt</a></li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
 
-            <li><a href="#Mainpage"><i class="fa fa-connectdevelop" aria-hidden="true"></i> Komunikacja Miejska
-                Gdańsk</a></li>
-            <li class="dropdown">
-                <a href="#Timetable" class="dropbtn"><i class="fa fa-calendar" aria-hidden="true"></i> Rozkład Jazdy</a>
-                <div class="dropdown-content">
-                    <a href="#Buses"><i class="fa fa-bus" aria-hidden="true"></i> Autobusy</a>
-                    <a href="#Trams"><i class="fa fa-subway" aria-hidden="true"></i> Tramwaje</a>
-                    <a href="#SKM"><i class="fa fa-train" aria-hidden="true"></i> SKM</a>
-                    <a href="#PKM"><i class="fa fa-train" aria-hidden="true"></i> PKM</a>
-            <li><a href="#Navigate"><i class="fa fa-street-view" aria-hidden="true"></i> Wyznacz trasę</a></li>
-            <li><a href="#Info"><i class="fa fa-info" aria-hidden="true"></i> Informacje o komunikacji</a></li>
-            <li><a href="#Contact"><i class="fa fa-envelope-o" aria-hidden="true"></i> Kontakt</a></li>
-            <li><a href="#AboutUs"><i class="fa fa-users" aria-hidden="true"></i> O nas</a></li>
-
-
-            <!--social media-->
-            <div class="socialmedia">
-                <a href="http://facebook.com">
-                    <button type="button" class="icon fb btn btn-fb"><i class="fa fa-facebook fa-2x"></i></button>
-                </a>
-                <a href="http://twitter.com">
-                    <button type="button" class="margin icon tw btn btn-tw"><i class="fa fa-twitter fa-2x"></i></button>
-                </a>
-                <a href="https://plus.google.com/collections/featured?hl=pl">
-                    <button type="button" class="margin icon gplus btn btn-gplus"><i
-                            class="fa fa-google-plus fa-2x"></i></button>
-                </a>
-            </div>
-        </ul>
-    </div>
 </nav>
+
+
+
+
+
+
 <header id="Mainpage">
     <!--tło-->
     <div class="scroll-bg"></div>
@@ -91,7 +95,7 @@
 
 </header>
 <!--Kontakt-->
-<section id="Contact">
+<section id="Contact" class="marginfix">
     <div class="container">
         <div class="form-area">
             <form role="form">
@@ -126,7 +130,7 @@
 </section>
 
 <section id="Navigate">
-    <div class="trasa">
+    <div class="trasa marginfix">
         <h4><p>Tu powstanie informacja jak bez problemu dostaniesz się z punktu A do punktu B</p></h4>
         <img src="Assets/Photos/Gdansk.jpg" alt="mapa" class="img-responsive">
     </div>
@@ -227,7 +231,7 @@
 
 <!--poczatek sekcji info-->
 <section id="Info">
-    <div class="info container animated fadeInDown">
+    <div class="info container animated fadeInDown marginfix">
         <h1 class="skm-hist-button"><span>Historia SKM</span></h1>
         <div class="skm-hist">
             <div class="carousel-container">
@@ -907,7 +911,7 @@
 
 <!--sekcje rozkładu jazdy-->
 <section id="Timetable">
-    <div class="timetable">
+    <div class="timetable marginfix">
         <div id="Buses"><i class="fa fa-bus fa-5x" aria-hidden="true"></i>
             <h3><p>Tu powstanie rozkład jazdy i informacje o Gdańskich autobusach.</p></h3>
             <img src="Assets/Do_rozkladu/bus.jpg" alt="autobus">
