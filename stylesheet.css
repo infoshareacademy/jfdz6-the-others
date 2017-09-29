@@ -516,56 +516,37 @@ table {
 }
 
 /*The End of Top Button*/
-
-
-
 .stat {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
     height: 90vh;
 }
-
-
 .cov {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
     background-attachment: fixed;
     height: 80vh;
-
 }
 
-.zdj1 {
-    background-image: url("mainautobusy.jpg");
+.image1 {
+    background-image: url("Assets/mainautobusy.jpg");
 }
 
-.zdj2 {
-    background-image: url("mainpociagi.jpg");
-}
-
-
-
-
+.image2 {
+    background-image: url("Assets/mainpociagi.jpg");
 }
 /*edit main page*/
 
-
-
 /*social buttons footer*/
-
 .hello:hover{
     color:white
 }
-
-
 .footer {
     background:lightgrey;
     height:150px;
-
-
 }
-
 a {
     text-decoration: none;
     color: #fff;
@@ -583,12 +564,10 @@ ul {
     display: flex;
     align-items: center;
     justify-content: center
-
 }
 .social-icon {
     color: #fff;
 }
-
 .social-icons li {
     vertical-align: top;
     display: inline;
@@ -619,22 +598,8 @@ ul {
 .colortw{
     background-color: #322f30;
 }
-
-
-
 .fa-twitter:hover {
     background-color: #00aced;
-}
-.fa-rss {
-    padding:10px 14px;
-    -o-transition:.5s;
-    -moz-transition:.5s;
-    -webkit-transition:.5s;
-    transition: .5s;
-    background-color: #322f30;
-}
-.fa-rss:hover {
-    background-color: #eb8231;
 }
 .fa-youtube {
     padding:10px 14px;
@@ -647,8 +612,6 @@ ul {
 .fa-youtube:hover {
     background-color: #e64a41;
 }
-
-
 .fa-google-plus {
     padding:10px 9px;
     -o-transition:.5s;
@@ -662,8 +625,6 @@ ul {
 }
 
 /*social*/
-
-
 @media (max-width: 320px) {
     .med {
 

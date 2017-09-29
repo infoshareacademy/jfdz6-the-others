@@ -1,0 +1,67 @@
+[33mec4582a[m HEAD@{0}: pull: Fast-forward
+[33mf19f0e6[m HEAD@{1}: checkout: moving from master to norbercik
+[33m0ab80b6[m HEAD@{2}: pull: Fast-forward
+[33m3616061[m HEAD@{3}: checkout: moving from norbercik to master
+[33mf19f0e6[m HEAD@{4}: checkout: moving from branchnorbert to norbercik
+[33m9b6194d[m HEAD@{5}: checkout: moving from norbercik to branchnorbert
+[33mf19f0e6[m HEAD@{6}: checkout: moving from branchnorbert to norbercik
+[33m9b6194d[m HEAD@{7}: checkout: moving from norbercik to branchnorbert
+[33mf19f0e6[m HEAD@{8}: checkout: moving from Branch-Kaja to norbercik
+[33m47541ca[m HEAD@{9}: pull --progress --no-stat -v --progress origin master: Merge made by the 'recursive' strategy.
+[33m2c82a55[m HEAD@{10}: pull --progress --no-stat -v --progress origin Branch-Kaja: Fast-forward
+[33m3013d40[m HEAD@{11}: checkout: moving from norbercik to Branch-Kaja
+[33mf19f0e6[m HEAD@{12}: commit (merge): Merge remote-tracking branch 'origin/norbercik' into norbercik
+[33m8b02870[m HEAD@{13}: commit (amend): menu fix 1.2
+[33md4a285b[m HEAD@{14}: checkout: moving from master to norbercik
+[33m3616061[m HEAD@{15}: pull --progress --no-stat -v --progress origin master: Fast-forward
+[33me3d38b6[m HEAD@{16}: checkout: moving from branchnorbert to master
+[33m9b6194d[m HEAD@{17}: checkout: moving from master to branchnorbert
+[33me3d38b6[m HEAD@{18}: merge origin/master: Fast-forward
+[33m51d0bdc[m HEAD@{19}: commit: trasa bgc fix
+[33m914cd7f[m HEAD@{20}: commit: info bgc fix
+[33m2915402[m HEAD@{21}: merge origin/master: Fast-forward
+[33m0ce02fe[m HEAD@{22}: merge origin/master: Fast-forward
+[33md72a182[m HEAD@{23}: merge origin/master: Fast-forward
+[33m34d3330[m HEAD@{24}: checkout: moving from branchnorbert to master
+[33m9b6194d[m HEAD@{25}: checkout: moving from master to branchnorbert
+[33m34d3330[m HEAD@{26}: pull --progress --no-stat -v --progress origin master: Fast-forward
+[33med2c21c[m HEAD@{27}: checkout: moving from branchnorbert to master
+[33m9b6194d[m HEAD@{28}: checkout: moving from master to branchnorbert
+[33med2c21c[m HEAD@{29}: checkout: moving from branchnorbert to master
+[33m9b6194d[m HEAD@{30}: checkout: moving from 0a01307e68d1ef6b574725219759e93ff9067ea1 to branchnorbert
+[33m0a01307[m HEAD@{31}: checkout: moving from branchnorbert to 0a01307e68d1ef6b574725219759e93ff9067ea1
+[33m9b6194d[m HEAD@{32}: checkout: moving from c985514af0adf25515d99cbab31f8ae5e1522cfa to branchnorbert
+[33mc985514[m HEAD@{33}: checkout: moving from 0a01307e68d1ef6b574725219759e93ff9067ea1 to c985514af0adf25515d99cbab31f8ae5e1522cfa
+[33m0a01307[m HEAD@{34}: checkout: moving from newbranch to 0a01307e68d1ef6b574725219759e93ff9067ea1
+[33mc985514[m HEAD@{35}: commit: wspolny commit
+[33m0a01307[m HEAD@{36}: checkout: moving from 0a01307e68d1ef6b574725219759e93ff9067ea1 to newbranch
+[33m0a01307[m HEAD@{37}: reset: moving to 0a01307e68d1ef6b574725219759e93ff9067ea1
+[33m3dfdb00[m HEAD@{38}: commit: Revert "Revert "fontawesome""
+[33m0a01307[m HEAD@{39}: checkout: moving from master to 0a01307e68d1ef6b574725219759e93ff9067ea1
+[33med2c21c[m HEAD@{40}: merge origin/master: Fast-forward
+[33mde8c994[m HEAD@{41}: reset: moving to de8c99455e193463debe6ef12b74cd59d763c02f
+[33m2c3312e[m HEAD@{42}: reset: moving to 2c3312ea8af4e7f3e5f3bdd8eaa531828db427b4
+[33m07f5975[m HEAD@{43}: commit: Revert "Revert "fontawesome""
+[33m2c3312e[m HEAD@{44}: reset: moving to 2c3312ea8af4e7f3e5f3bdd8eaa531828db427b4
+[33m416c81f[m HEAD@{45}: commit: Revert "Revert "fontawesome""
+[33m2c3312e[m HEAD@{46}: commit: Revert "fontawesome"
+[33mde8c994[m HEAD@{47}: commit: fontawesome
+[33m51f45a6[m HEAD@{48}: merge origin/master: Fast-forward
+[33m5551723[m HEAD@{49}: checkout: moving from 8d7f49aa0779142698f158f9206cf0339e178d37 to master
+[33m8d7f49a[m HEAD@{50}: checkout: moving from master to 8d7f49aa0779142698f158f9206cf0339e178d37
+[33m5551723[m HEAD@{51}: checkout: moving from branchnorbert to master
+[33m9b6194d[m HEAD@{52}: checkout: moving from master to branchnorbert
+[33m5551723[m HEAD@{53}: checkout: moving from branchnorbert to master
+[33m9b6194d[m HEAD@{54}: checkout: moving from master to branchnorbert
+[33m5551723[m HEAD@{55}: checkout: moving from branchnorbert to master
+[33m9b6194d[m HEAD@{56}: checkout: moving from master to branchnorbert
+[33m5551723[m HEAD@{57}: checkout: moving from branchnorbert to master
+[33m9b6194d[m HEAD@{58}: checkout: moving from master to branchnorbert
+[33m5551723[m HEAD@{59}: checkout: moving from branchnorbert to master
+[33m9b6194d[m HEAD@{60}: checkout: moving from master to branchnorbert
+[33m5551723[m HEAD@{61}: checkout: moving from branchnorbert to master
+[33m9b6194d[m HEAD@{62}: checkout: moving from master to branchnorbert
+[33m5551723[m HEAD@{63}: checkout: moving from branchnorbert to master
+[33m9b6194d[m HEAD@{64}: checkout: moving from menu-fixed-zmiana-favicona-dodanie-social-media to branchnorbert
+[33m52e4cbc[m HEAD@{65}: checkout: moving from master to menu-fixed-zmiana-favicona-dodanie-social-media
+[33m5551723[m HEAD@{66}: clone: from https://github.com/infoshareacademy/jfdz6-the-others.git
