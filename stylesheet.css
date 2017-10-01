@@ -530,11 +530,11 @@ table {
     height: 80vh;
 }
 
-.image1 {
+.img1 {
     background-image: url("Assets/mainautobusy.jpg");
 }
 
-.image2 {
+.img2 {
     background-image: url("Assets/mainpociagi.jpg");
 }
 /*edit main page*/
