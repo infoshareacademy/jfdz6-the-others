@@ -1,19 +1,19 @@
-var game = {
-    createTable: function (width, height) {
-        var $table = $('<table>');
-        for (var j = 0; j < height; j += 1) {
-            $tr = $('<tr>');
-            for (var i = 0; i < width; i += 1) {
-                // Create new <td> element on every iteration.
-                // We need that because we cannot force one <td>
-                // to exist in multiple parts of DOM in the same
-                // time.
-                $td = $('<td>');
-
-                $tr.append($td);
-            }
-            $table.append($tr);
+function createTable(width, height) {
+    var $table = $('<table>');
+    for (var j = 0; j < height; j += 1) {
+        $tr = $('<tr>');
+        for (var i = 0; i < width; i += 1) {
+            $td = $('<td>');
+            $tr.append($td);
         }
-        return $table;
+        $table.append($tr);
     }
-};
+    return $table;
+}
+
+var $board = $('#board');
+var $table = createTable(30, 20);
+
+$('td', $table).addClass('point');
+
+$board.append($table);
