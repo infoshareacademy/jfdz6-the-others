@@ -17,3 +17,15 @@ $(document).ready(function(){
         }
     });
 });
+var form = document.querySelector('[role="form"]')
+var antyBotFunc = function(e){
+    e.preventDefault();
+    if( document.querySelector('#antybotfield').value.length > 0 ){
+        console.log('Pole uzupełnione!');
+        return false;
+    }else{
+        form.removeEventListener('submit', antyBotFunc);
+        form.submit();
+    }
+}
+form.addEventListener('submit', antyBotFunc );
