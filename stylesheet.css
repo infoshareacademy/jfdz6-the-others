@@ -527,13 +527,12 @@ table {
     background-attachment: fixed;
     height: 80vh;
 }
-
-.img1 {
-    background-image: url("Assets/mainautobusy.jpg");
+.image1 {
+    background-image: url("assets/mainbus.jpg");
+    margin-bottom: -50px;
 }
-
-.img2 {
-    background-image: url("Assets/mainpociagi.jpg");
+.image2 {
+    background-image: url("assets/maintrain.jpg");
 }
 /*edit main page*/
 
@@ -625,7 +624,6 @@ ul {
 /*social*/
 @media (max-width: 320px) {
     .med {
-
         font-size:1em;
     }
 }
