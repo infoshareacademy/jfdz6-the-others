@@ -1,40 +1,43 @@
 var mapTable = [
-    ["o", "-", "-", "-", "-", "@", "#", "#", "-", "-", "-", "#", "x", "#", "-", "#", "-", "!", "#", "x", "x", "#", "-", "x", "-", "#", "#", "-", "x", "x"],
+    ["-", "-", "-", "-", "-", "@", "#", "#", "-", "-", "-", "#", "x", "#", "-", "#", "-", "-", "#", "x", "x", "#", "-", "x", "-", "#", "#", "-", "x", "x"],
     ["#", "-", "x", "#", "-", "-", "#", "x", "#", "-", "-", "-", "-", "-", "-", "-", "-", "-", "-", "-", "-", "-", "*", "x", "#", "-", "x", "#", "-", "-"],
-    ["#", "-", "#", "x", "-", "-", "#", "x", "#", "-", "-", "#", "x", "-", "-", "-", "x", "-", "#", "-", "#", "-", "-", "#", "#", "-", "-", "#", "-", "#"],
-    ["#", "-", "-", "-", "-", "-", "#", "x", "#", "-", "-", "x", "#", "-", "#", "-", "-", "-", "#", "#", "#", "-", "-", "-", "-", "x", "-", "#", "-", "x"],
-    ["x", "x", "x", "-", "-", "-", "#", "x", "#", "-", "#", "-", "-", "-", "-", "-", "x", "-", "-", "-", "-", "-", "#", "#", "-", "-", "-", "-", "-", "-"],
-    ["-", "-", "-", "-", "-", "-", "#", "x", "#", "-", "-", "-", "-", "-", "-", "#", "#", "-", "-", "x", "-", "x", "-", "-", "-", "-", "#", "#", "#", "-"],
+    ["#", "-", "#", "x", "-", "-", "#", "x", "#", "-", "-", "#", "x", "-", "-", "-", "x", "x", "#", "-", "#", "-", "-", "#", "#", "-", "-", "#", "-", "#"],
+    ["#", "-", "-", "-", "-", "-", "#", "x", "#", "-", "-", "x", "#", "-", "#", "-", "-", "!", "#", "#", "#", "-", "-", "-", "-", "x", "-", "#", "-", "x"],
+    ["x", "x", "x", "-", "-", "-", "#", "x", "#", "-", "#", "-", "-", "-", "-", "-", "x", "-", "-", "-", "-", "-", "#", "#", "b", "-", "-", "-", "-", "-"],
+    ["-", "-", "-", "-", "-", "-", "#", "x", "#", "o", "-", "-", "-", "-", "-", "#", "#", "-", "-", "x", "-", "x", "-", "-", "x", "-", "#", "#", "#", "-"],
     ["-", "-", "-", "#", "#", "-", "#", "#", "#", "-", "-", "#", "-", "#", "-", "-", "-", "-", "-", "-", "x", "-", "#", "-", "-", "-", "#", "#", "-", "-"],
-    ["#", "#", "-", "x", "x", "-", "-", "-", "-", "-", "#", "-", "-", "#", "x", "x", "#", "-", "-", "#", "-", "-", "-", "-", "x", "x", "-", "#", "-", "-"],
+    ["#", "#", "-", "x", "x", "-", "-", "-", "-", "-", "#", "-", "-", "#", "x", "x", "#", "-", "-", "#", "-", "-", "-", "-", "x", "-", "-", "#", "-", "-"],
     ["#", "#", "-", "#", "#", "-", "-", "-", "#", "-", "-", "x", "-", "-", "-", "-", "-", "-", "-", "#", "x", "#", "-", "#", "-", "x", "-", "-", "-", "#"],
     ["-", "-", "-", "-", "-", "-", "x", "-", "-", "x", "x", "x", "x", "x", "-", "-", "#", "-", "#", "-", "-", "-", "#", "-", "#", "-", "-", "-", "-", "-"],
     ["x", "-", "#", "-", "-", "-", "-", "-", "-", "#", "#", "#", "#", "#", "-", "#", "#", "-", "-", "-", "-", "-", "#", "-", "#", "#", "#", "-", "-", "x"],
     ["x", "-", "#", "-", "-", "#", "#", "#", "-", "-", "-", "-", "#", "-", "-", "#", "-", "-", "-", "x", "-", "-", "#", "-", "-", "x", "#", "-", "#", "-"],
-    ["x", "-", "#", "-", "-", "#", "-", "-", "x", "-", "#", "-", "-", "-", "-", "-", "-", "#", "-", "-", "#", "x", "-", "-", "-", "#", "-", "-", "-", "#"],
+    ["x", "-", "#", "-", "-", "#", "-", "-", "x", "-", "#", "-", "-", "-", "-", "-", "-", "-", "-", "-", "#", "x", "-", "-", "-", "#", "-", "-", "-", "#"],
     ["x", "-", "#", "-", "-", "-", "-", "-", "-", "-", "-", "-", "-", "#", "-", "x", "-", "#", "-", "-", "#", "-", "x", "-", "-", "-", "-", "#", "-", "-"],
     ["-", "-", "-", "-", "#", "#", "#", "#", "-", "-", "#", "x", "#", "-", "x", "x", "-", "#", "-", "#", "-", "-", "-", "-", "#", "x", "#", "-", "-", "#"],
     ["-", "-", "-", "-", "#", "x", "x", "#", "-", "-", "-", "-", "#", "-", "x", "x", "-", "-", "-", "-", "-", "-", "x", "-", "-", "-", "-", "-", "-", "-"],
     ["-", "#", "x", "-", "#", "x", "x", "#", "-", "-", "x", "-", "-", "-", "x", "-", "-", "-", "x", "#", "-", "-", "#", "-", "-", "#", "-", "#", "-", "x"],
-    ["-", "#", "x", "-", "#", "#", "#", "#", "-", "-", "#", "-", "-", "_", "x", "-", "-", "#", "x", "-", "-", "-", "x", "#", "x", "#", "-", "#", "-", "#"],
+    ["-", "#", "x", "-", "#", "#", "#", "#", "-", "a", "#", "-", "-", "_", "x", "-", "-", "#", "x", "-", "-", "-", "x", "#", "x", "#", "-", "#", "-", "#"],
     ["-", "#", "x", "-", "-", "-", "-", "-", "-", "#", "#", "#", "#", "-", "-", "-", "-", "#", "-", "-", "-", "#", "x", "#", "-", "#", "x", "#", "%", "-"],
-    ["-", "-", "-", "&", "-", "x", "x", "-", "-", "x", "x", "x", "x", "-", "#", "-", "-", "-", "-", "x", "-", "-", "-", "-", "-", "-", "-", "-", "x", "m"]
+    ["-", "-", "-", "&", "-", "x", "x", "-", "-", "x", "x", "x", "x", "-", "#", "-", "g", "-", "-", "x", "h", "-", "-", "-", "-", "-", "-", "-", "x", "m"]
 ];
 
 function createTable(width, height) {
     var $table = $('<table>');
     for (var j = 0; j < height; j += 1) {
         $tr = $('<tr>');
-        // var row = [];
         var objects = {
-            "%": {img: "obj0", bg: "blue"},
-            "!": {img: "obj1", bg: "orange"},
-            "*": {img: "obj2", bg: "yellow"},
-            "@": {img: "obj3", bg: "pink"},
-            "&": {img: "obj4", bg: "grey"},
-            "#": {img: "zielonyplot", bg: "green", class: 'wall'},
-            "x": {img: "cegla", bg: "brown", class: 'wall'},
-            "o": {img: "buss", bg: "red"},
+            "%": {img: "obj0"},
+            "!": {img: "obj1"},
+            "*": {img: "obj2"},
+            "@": {img: "obj3"},
+            "&": {img: "obj4"},
+            "o": {img: "obj5"},
+            "g": {img: "obj6"},
+            "h": {img: "obj7"},
+            "a": {img: "obj8"},
+            "b": {img: "obj9"},
+            "#": {img: "zielonyplot", class: 'wall'},
+            "x": {img: "cegla",  class: 'wall'},
             "m": {img: "meta", bg: "black"}
         };
         for (var i = 0; i < width; i += 1) {
@@ -42,15 +45,15 @@ function createTable(width, height) {
             $td = $('<td>');
 
             var type = mapTable[j][i];
-            if (objects[type]) {
-                $td.html('<img src="Assets/Photos/' + objects[type].img + '.png" style="width: 30px; height: 30px; background: ' + objects[type].bg + '" />')
+           if (objects[type]) {
+               $td.html('<img src="Assets/Photos/' + objects[type].img + '.jpg" style="width: 30px; height: 30px; background: ' + objects[type].bg + '" />')
                     .addClass(objects[type].class).addClass(objects[type].img)
             }
 
             $tr.append($td);
-            // row.push(col);
+
         }
-        // mapTable.push(row);
+
         $table.append($tr);
     }
     return $table;
@@ -140,4 +143,121 @@ var interval = setInterval(function() {
 
   getNextPosition(monster, monsterMoves[monsterMoveId]).append($img).addClass('obj0');
   monsterMoveId = (monsterMoveId + 1) % monsterMoves.length
-}, 1000);
+}, 100);
+
+
+var monsterMoves1 = [DOWN, DOWN, DOWN, DOWN, DOWN, DOWN, DOWN, DOWN, DOWN, DOWN, DOWN,UP, UP, UP, UP, UP, UP, UP, UP, UP, UP, UP];
+var monsterMoveId1 = 0;
+
+var interval = setInterval(function() {
+    var monster1 = $('.obj1');
+
+    var $img = monster1.removeClass('obj1').find('img');
+
+    getNextPosition(monster1, monsterMoves1[monsterMoveId1]).append($img).addClass('obj1');
+    monsterMoveId1 = (monsterMoveId1 + 1) % monsterMoves1.length
+}, 100);
+
+
+var monsterMoves2 = [LEFT, LEFT, LEFT, LEFT, LEFT, LEFT, LEFT, LEFT, LEFT, LEFT, LEFT, LEFT, LEFT, RIGHT, RIGHT, RIGHT, RIGHT, RIGHT, RIGHT, RIGHT, RIGHT, RIGHT, RIGHT,RIGHT, RIGHT, RIGHT];
+var monsterMoveId2 = 0;
+
+var interval = setInterval(function() {
+    var monster2 = $('.obj2');
+
+    var $img = monster2.removeClass('obj2').find('img');
+
+    getNextPosition(monster2, monsterMoves2[monsterMoveId2]).append($img).addClass('obj2');
+    monsterMoveId2 = (monsterMoveId2 + 1) % monsterMoves2.length
+}, 100);
+
+
+var monsterMoves3 = [DOWN, DOWN, DOWN, DOWN, DOWN, DOWN, DOWN, DOWN, DOWN, DOWN, UP, UP, UP, UP, UP, UP, UP, UP, UP, UP];
+var monsterMoveId3 = 0;
+
+var interval = setInterval(function() {
+    var monster3 = $('.obj3');
+
+    var $img = monster3.removeClass('obj3').find('img');
+
+    getNextPosition(monster3, monsterMoves3[monsterMoveId3]).append($img).addClass('obj3');
+    monsterMoveId3 = (monsterMoveId3 + 1) % monsterMoves3.length
+}, 100);
+
+
+var monsterMoves4 = [UP, UP, UP, UP, UP, UP, UP, UP, UP, UP, DOWN, DOWN, DOWN, DOWN, DOWN, DOWN, DOWN, DOWN, DOWN, DOWN,];
+var monsterMoveId4 = 0;
+
+var interval = setInterval(function() {
+    var monster4 = $('.obj4');
+
+    var $img = monster4.removeClass('obj4').find('img');
+
+    getNextPosition(monster4, monsterMoves4[monsterMoveId4]).append($img).addClass('obj4');
+    monsterMoveId4 = (monsterMoveId4 + 1) % monsterMoves4.length
+}, 100);
+
+
+var monsterMoves5 = [RIGHT, RIGHT, RIGHT, RIGHT, RIGHT, LEFT, LEFT, LEFT, LEFT, LEFT,];
+var monsterMoveId5 = 0;
+
+var interval = setInterval(function() {
+    var monster5 = $('.obj5');
+
+    var $img = monster5.removeClass('obj5').find('img');
+
+    getNextPosition(monster5, monsterMoves5[monsterMoveId5]).append($img).addClass('obj5');
+    monsterMoveId5 = (monsterMoveId5 + 1) % monsterMoves5.length
+}, 100);
+
+
+var monsterMoves6 = [UP, UP, UP, UP, UP, UP, UP, UP, DOWN, DOWN, DOWN, DOWN, DOWN, DOWN, DOWN, DOWN,];
+var monsterMoveId6 = 0;
+
+var interval = setInterval(function() {
+    var monster6 = $('.obj6');
+
+    var $img = monster6.removeClass('obj6').find('img');
+
+    getNextPosition(monster6, monsterMoves6[monsterMoveId6]).append($img).addClass('obj6');
+    monsterMoveId6 = (monsterMoveId6 + 1) % monsterMoves6.length
+}, 100);
+
+
+var monsterMoves7 = [UP, UP, UP, UP, UP, DOWN, DOWN, DOWN, DOWN, DOWN,];
+var monsterMoveId7 = 0;
+
+var interval = setInterval(function() {
+    var monster7 = $('.obj7');
+
+    var $img = monster7.removeClass('obj7').find('img');
+
+    getNextPosition(monster7, monsterMoves7[monsterMoveId7]).append($img).addClass('obj7');
+    monsterMoveId7 = (monsterMoveId7 + 1) % monsterMoves7.length
+}, 100);
+
+
+var monsterMoves8 = [UP, UP, UP, UP, UP, UP, DOWN, DOWN, DOWN, DOWN, DOWN, DOWN];
+var monsterMoveId8 = 0;
+
+var interval = setInterval(function() {
+    var monster8 = $('.obj8');
+
+    var $img = monster8.removeClass('obj8').find('img');
+
+    getNextPosition(monster8, monsterMoves8[monsterMoveId8]).append($img).addClass('obj8');
+    monsterMoveId8 = (monsterMoveId8 + 1) % monsterMoves8.length
+}, 100);
+
+
+var monsterMoves9 = [LEFT, LEFT, LEFT, LEFT, LEFT, RIGHT, RIGHT, RIGHT, RIGHT, RIGHT,];
+var monsterMoveId9 = 0;
+
+var interval = setInterval(function() {
+    var monster9 = $('.obj9');
+
+    var $img = monster9.removeClass('obj9').find('img');
+
+    getNextPosition(monster9, monsterMoves9[monsterMoveId9]).append($img).addClass('obj9');
+    monsterMoveId9 = (monsterMoveId9 + 1) % monsterMoves9.length
+}, 100);
