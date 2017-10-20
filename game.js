@@ -133,131 +133,36 @@ $(document).keydown(function (e) {
     }
 });
 
-var monsterMoves = [UP, UP, UP, UP, UP, UP, DOWN, DOWN, DOWN, DOWN, DOWN, DOWN];
-var monsterMoveId = 0;
+var monstersConfig = {
+    moves: [
+        [UP, UP, UP, UP, UP, UP, DOWN, DOWN, DOWN, DOWN, DOWN, DOWN],
+        [DOWN, DOWN, DOWN, DOWN, DOWN, DOWN, DOWN, DOWN, DOWN, DOWN, DOWN,UP, UP, UP, UP, UP, UP, UP, UP, UP, UP, UP],
+        [LEFT, LEFT, LEFT, LEFT, LEFT, LEFT, LEFT, LEFT, LEFT, LEFT, LEFT, LEFT, LEFT, RIGHT, RIGHT, RIGHT, RIGHT, RIGHT, RIGHT, RIGHT, RIGHT, RIGHT, RIGHT,RIGHT, RIGHT, RIGHT],
+        [DOWN, DOWN, DOWN, DOWN, DOWN, DOWN, DOWN, DOWN, DOWN, DOWN, UP, UP, UP, UP, UP, UP, UP, UP, UP, UP],
+        [UP, UP, UP, UP, UP, UP, UP, UP, UP, UP, DOWN, DOWN, DOWN, DOWN, DOWN, DOWN, DOWN, DOWN, DOWN, DOWN],
+        [RIGHT, RIGHT, RIGHT, RIGHT, RIGHT, LEFT, LEFT, LEFT, LEFT, LEFT],
+        [UP, UP, UP, UP, UP, UP, UP, UP, DOWN, DOWN, DOWN, DOWN, DOWN, DOWN, DOWN, DOWN],
+        [UP, UP, UP, UP, UP, DOWN, DOWN, DOWN, DOWN, DOWN],
+        [UP, UP, UP, UP, UP, UP, DOWN, DOWN, DOWN, DOWN, DOWN, DOWN],
+        [LEFT, LEFT, LEFT, LEFT, LEFT, RIGHT, RIGHT, RIGHT, RIGHT, RIGHT]
+    ],
+    movesCounters: [0,0,0,0,0,0,0,0,0,0],
+    moveTime: 100
+}
 
-var interval = setInterval(function() {
-    var monster = $('.obj0');
+function createMonster(moves, i) {
+    return function() {
+        var monster = $('.obj' + i);
+        var $img = monster.removeClass('obj' + i).find('img');
 
-    var $img = monster.removeClass('obj0').find('img');
+        getNextPosition(monster, moves[monstersConfig.movesCounters[i]]).append($img).addClass('obj' + i);
+        monstersConfig.movesCounters[i] = (monstersConfig.movesCounters[i] + 1) % moves.length;
+    }
+}
 
-  getNextPosition(monster, monsterMoves[monsterMoveId]).append($img).addClass('obj0');
-  monsterMoveId = (monsterMoveId + 1) % monsterMoves.length
-}, 100);
-
-
-var monsterMoves1 = [DOWN, DOWN, DOWN, DOWN, DOWN, DOWN, DOWN, DOWN, DOWN, DOWN, DOWN,UP, UP, UP, UP, UP, UP, UP, UP, UP, UP, UP];
-var monsterMoveId1 = 0;
-
-var interval = setInterval(function() {
-    var monster1 = $('.obj1');
-
-    var $img = monster1.removeClass('obj1').find('img');
-
-    getNextPosition(monster1, monsterMoves1[monsterMoveId1]).append($img).addClass('obj1');
-    monsterMoveId1 = (monsterMoveId1 + 1) % monsterMoves1.length
-}, 100);
-
-
-var monsterMoves2 = [LEFT, LEFT, LEFT, LEFT, LEFT, LEFT, LEFT, LEFT, LEFT, LEFT, LEFT, LEFT, LEFT, RIGHT, RIGHT, RIGHT, RIGHT, RIGHT, RIGHT, RIGHT, RIGHT, RIGHT, RIGHT,RIGHT, RIGHT, RIGHT];
-var monsterMoveId2 = 0;
-
-var interval = setInterval(function() {
-    var monster2 = $('.obj2');
-
-    var $img = monster2.removeClass('obj2').find('img');
-
-    getNextPosition(monster2, monsterMoves2[monsterMoveId2]).append($img).addClass('obj2');
-    monsterMoveId2 = (monsterMoveId2 + 1) % monsterMoves2.length
-}, 100);
-
-
-var monsterMoves3 = [DOWN, DOWN, DOWN, DOWN, DOWN, DOWN, DOWN, DOWN, DOWN, DOWN, UP, UP, UP, UP, UP, UP, UP, UP, UP, UP];
-var monsterMoveId3 = 0;
-
-var interval = setInterval(function() {
-    var monster3 = $('.obj3');
-
-    var $img = monster3.removeClass('obj3').find('img');
-
-    getNextPosition(monster3, monsterMoves3[monsterMoveId3]).append($img).addClass('obj3');
-    monsterMoveId3 = (monsterMoveId3 + 1) % monsterMoves3.length
-}, 100);
-
-
-var monsterMoves4 = [UP, UP, UP, UP, UP, UP, UP, UP, UP, UP, DOWN, DOWN, DOWN, DOWN, DOWN, DOWN, DOWN, DOWN, DOWN, DOWN,];
-var monsterMoveId4 = 0;
-
-var interval = setInterval(function() {
-    var monster4 = $('.obj4');
-
-    var $img = monster4.removeClass('obj4').find('img');
-
-    getNextPosition(monster4, monsterMoves4[monsterMoveId4]).append($img).addClass('obj4');
-    monsterMoveId4 = (monsterMoveId4 + 1) % monsterMoves4.length
-}, 100);
-
-
-var monsterMoves5 = [RIGHT, RIGHT, RIGHT, RIGHT, RIGHT, LEFT, LEFT, LEFT, LEFT, LEFT,];
-var monsterMoveId5 = 0;
-
-var interval = setInterval(function() {
-    var monster5 = $('.obj5');
-
-    var $img = monster5.removeClass('obj5').find('img');
-
-    getNextPosition(monster5, monsterMoves5[monsterMoveId5]).append($img).addClass('obj5');
-    monsterMoveId5 = (monsterMoveId5 + 1) % monsterMoves5.length
-}, 100);
-
-
-var monsterMoves6 = [UP, UP, UP, UP, UP, UP, UP, UP, DOWN, DOWN, DOWN, DOWN, DOWN, DOWN, DOWN, DOWN,];
-var monsterMoveId6 = 0;
-
-var interval = setInterval(function() {
-    var monster6 = $('.obj6');
-
-    var $img = monster6.removeClass('obj6').find('img');
-
-    getNextPosition(monster6, monsterMoves6[monsterMoveId6]).append($img).addClass('obj6');
-    monsterMoveId6 = (monsterMoveId6 + 1) % monsterMoves6.length
-}, 100);
-
-
-var monsterMoves7 = [UP, UP, UP, UP, UP, DOWN, DOWN, DOWN, DOWN, DOWN,];
-var monsterMoveId7 = 0;
-
-var interval = setInterval(function() {
-    var monster7 = $('.obj7');
-
-    var $img = monster7.removeClass('obj7').find('img');
-
-    getNextPosition(monster7, monsterMoves7[monsterMoveId7]).append($img).addClass('obj7');
-    monsterMoveId7 = (monsterMoveId7 + 1) % monsterMoves7.length
-}, 100);
-
-
-var monsterMoves8 = [UP, UP, UP, UP, UP, UP, DOWN, DOWN, DOWN, DOWN, DOWN, DOWN];
-var monsterMoveId8 = 0;
-
-var interval = setInterval(function() {
-    var monster8 = $('.obj8');
-
-    var $img = monster8.removeClass('obj8').find('img');
-
-    getNextPosition(monster8, monsterMoves8[monsterMoveId8]).append($img).addClass('obj8');
-    monsterMoveId8 = (monsterMoveId8 + 1) % monsterMoves8.length
-}, 100);
-
-
-var monsterMoves9 = [LEFT, LEFT, LEFT, LEFT, LEFT, RIGHT, RIGHT, RIGHT, RIGHT, RIGHT,];
-var monsterMoveId9 = 0;
-
-var interval = setInterval(function() {
-    var monster9 = $('.obj9');
-
-    var $img = monster9.removeClass('obj9').find('img');
-
-    getNextPosition(monster9, monsterMoves9[monsterMoveId9]).append($img).addClass('obj9');
-    monsterMoveId9 = (monsterMoveId9 + 1) % monsterMoves9.length
-}, 100);
+function setMonsters() {
+    monstersConfig.moves.forEach(function(moves, i ) {
+        setInterval(createMonster(moves, i), monstersConfig.moveTime)
+    });
+}
+setMonsters()
