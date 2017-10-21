@@ -529,6 +529,7 @@ table {
 }
 .image1 {
     background-image: url("assets/mainbus.jpg");
+    margin-bottom: -50px;
 }
 .image2 {
     background-image: url("assets/maintrain.jpg");
