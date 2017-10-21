@@ -514,3 +514,118 @@ table {
 }
 
 /*The End of Top Button*/
+.stat {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 90vh;
+}
+.cov {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 80vh;
+}
+.image1 {
+    background-image: url("assets/mainbus.jpg");
+    margin-bottom: -50px;
+}
+.image2 {
+    background-image: url("assets/maintrain.jpg");
+}
+/*edit main page*/
+
+/*social buttons footer*/
+.hello:hover{
+    color:white
+}
+.footer {
+    background:lightgrey;
+    height:150px;
+}
+a {
+    text-decoration: none;
+    color: #fff;
+}
+p > a:hover{
+    color: #d9d9d9;
+    text-decoration:  underline;
+}
+ul {
+    padding:0;
+    list-style: none;
+}
+.footer-social-icons {
+    padding-top:30px;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+.social-icon {
+    color: #fff;
+}
+.social-icons li {
+    vertical-align: top;
+    display: inline;
+    height: 100px;
+}
+.social-icons a {
+    color: #fff;
+    text-decoration: none;
+}
+.fa-facebook {
+    padding:10px 14px;
+    -o-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: #322f30;
+}
+.fa-facebook:hover {
+    background-color: #3d5b99;
+}
+.fa-twitter {
+    padding:10px 12px;
+    -o-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+}
+.colortw{
+    background-color: #322f30;
+}
+.fa-twitter:hover {
+    background-color: #00aced;
+}
+.fa-youtube {
+    padding:10px 14px;
+    -o-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: #322f30;
+}
+.fa-youtube:hover {
+    background-color: #e64a41;
+}
+.fa-google-plus {
+    padding:10px 9px;
+    -o-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: #322f30;
+}
+.fa-google-plus:hover {
+    background-color: #e25714;
+}
+
+/*social*/
+@media (max-width: 320px) {
+    .med {
+        font-size:1em;
+    }
+}
+
+
