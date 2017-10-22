@@ -108,21 +108,25 @@ function getNextPosition (element, way) {
 }
 
 function move(element, way, elClass) {
-    var target = null;
+    var $target = null;
     if (way === 37) {
-        target = moveLeft(element);
+        $target = moveLeft(element);
     } else if (way === 38) {
-        target = moveUp(element);
+        $target = moveUp(element);
     } else if (way === 39) {
-        target = moveRight(element);
+        $target = moveRight(element);
     } else {
-        target = moveDown(element);
+        $target = moveDown(element);
+    }
+    if ($target.length > 0 && !$target.is('.wall')) {
+        element.removeClass(elClass);
+        $target.addClass(elClass);
+
+        if ($target.hasClass('bus')&&$target.hasClass('monster')) {
+            console.error("Game over!");
+        }
     }
 
-    if (!target.is('.wall')) {
-        element.removeClass(elClass);
-        target.addClass(elClass);
-    }
 }
 
 $(document).keydown(function (e) {
@@ -153,9 +157,14 @@ var monstersConfig = {
 function createMonster(moves, i) {
     return function() {
         var monster = $('.obj' + i);
-        var $img = monster.removeClass('obj' + i).find('img');
+        var $img = monster.removeClass('monster obj' + i).find('img');
 
-        getNextPosition(monster, moves[monstersConfig.movesCounters[i]]).append($img).addClass('obj' + i);
+        var $currentPosition = getNextPosition(monster, moves[monstersConfig.movesCounters[i]])
+            .append($img)
+            .addClass('monster obj' + i);
+        if ($currentPosition.hasClass('bus')&&$currentPosition.hasClass('monster')) {
+            console.error("Game over!");
+        }
         monstersConfig.movesCounters[i] = (monstersConfig.movesCounters[i] + 1) % moves.length;
     }
 }
