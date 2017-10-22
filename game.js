@@ -1,24 +1,24 @@
 var mapTable = [
-    ["-", "-", "-", "-", "-", "@", "#", "#", "-", "-", "-", "#", "x", "#", "-", "#", "-", "-", "#", "x", "x", "#", "-", "x", "-", "#", "#", "-", "x", "x"],
-    ["#", "-", "x", "#", "-", "-", "#", "x", "#", "-", "-", "-", "-", "-", "-", "-", "-", "-", "-", "-", "-", "-", "*", "x", "#", "-", "x", "#", "-", "-"],
+    ["-", "-", "-", "-", "-", "@", "#", "#", "C", "-", "-", "#", "x", "#", "-", "#", "-", "-", "#", "x", "x", "#", "-", "x", "-", "#", "#", "-", "x", "x"],
+    ["#", "-", "x", "#", "-", "-", "#", "x", "#", "-", "-", "-", "-", "-", "-", "-", "-", "-", "-", "-", "-", "-", "*", "x", "#", "-", "x", "#", "-", "C"],
     ["#", "-", "#", "x", "-", "-", "#", "x", "#", "-", "-", "#", "x", "-", "-", "-", "x", "x", "#", "-", "#", "-", "-", "#", "#", "-", "-", "#", "-", "#"],
     ["#", "-", "-", "-", "-", "-", "#", "x", "#", "-", "-", "x", "#", "-", "#", "-", "-", "!", "#", "#", "#", "-", "-", "-", "-", "x", "-", "#", "-", "x"],
     ["x", "x", "x", "-", "-", "-", "#", "x", "#", "-", "#", "-", "-", "-", "-", "-", "x", "-", "-", "-", "-", "-", "#", "#", "b", "-", "-", "-", "-", "-"],
     ["-", "-", "-", "-", "-", "-", "#", "x", "#", "o", "-", "-", "-", "-", "-", "#", "#", "-", "-", "x", "-", "x", "-", "-", "x", "-", "#", "#", "#", "-"],
     ["-", "-", "-", "#", "#", "-", "#", "#", "#", "-", "-", "#", "-", "#", "-", "-", "-", "-", "-", "-", "x", "-", "#", "-", "-", "-", "#", "#", "-", "-"],
-    ["#", "#", "-", "x", "x", "-", "-", "-", "-", "-", "#", "-", "-", "#", "x", "x", "#", "-", "-", "#", "-", "-", "-", "-", "x", "-", "-", "#", "-", "-"],
-    ["#", "#", "-", "#", "#", "-", "-", "-", "#", "-", "-", "x", "-", "-", "-", "-", "-", "-", "-", "#", "x", "#", "-", "#", "-", "x", "-", "-", "-", "#"],
-    ["-", "-", "-", "-", "-", "-", "x", "-", "-", "x", "x", "x", "x", "x", "-", "-", "#", "-", "#", "-", "-", "-", "#", "-", "#", "-", "-", "-", "-", "-"],
+    ["#", "#", "-", "x", "x", "-", "-", "-", "-", "-", "#", "-", "-", "#", "x", "x", "#", "-", "-", "#", "C", "-", "-", "-", "x", "-", "-", "#", "-", "-"],
+    ["#", "#", "-", "#", "#", "-", "-", "-", "#", "-", "C", "x", "-", "-", "-", "-", "-", "-", "-", "#", "x", "#", "-", "#", "-", "x", "-", "-", "-", "#"],
+    ["-", "-", "-", "-", "-", "-", "x", "-", "-", "x", "x", "x", "x", "x", "-", "-", "#", "-", "#", "-", "-", "-", "#", "-", "#", "-", "-", "-", "-", "C"],
     ["x", "-", "#", "-", "-", "-", "-", "-", "-", "#", "#", "#", "#", "#", "-", "#", "#", "-", "-", "-", "-", "-", "#", "-", "#", "#", "#", "-", "e", "x"],
     ["x", "-", "#", "-", "-", "#", "#", "#", "-", "-", "-", "-", "#", "-", "-", "#", "-", "-", "-", "x", "-", "-", "#", "-", "-", "x", "#", "-", "#", "-"],
     ["x", "-", "#", "-", "-", "#", "-", "-", "x", "-", "#", "-", "-", "-", "-", "-", "-", "-", "-", "-", "#", "x", "-", "-", "-", "#", "-", "-", "-", "#"],
-    ["x", "-", "#", "-", "-", "-", "-", "-", "-", "-", "-", "-", "-", "#", "-", "x", "-", "#", "-", "-", "#", "-", "x", "-", "-", "-", "-", "#", "-", "-"],
+    ["x", "-", "#", "-", "-", "-", "-", "-", "-", "-", "-", "-", "-", "#", "-", "x", "-", "#", "-", "-", "#", "C", "x", "-", "-", "-", "-", "#", "-", "-"],
     ["-", "-", "-", "-", "#", "#", "#", "#", "-", "-", "#", "x", "#", "-", "x", "x", "-", "#", "-", "#", "-", "-", "-", "-", "#", "x", "#", "-", "-", "#"],
     ["-", "k", "-", "-", "#", "x", "x", "#", "-", "-", "-", "-", "#", "-", "x", "x", "-", "-", "-", "-", "-", "-", "x", "-", "-", "-", "-", "-", "-", "-"],
     ["-", "#", "x", "-", "#", "x", "x", "#", "-", "-", "x", "-", "-", "-", "x", "-", "-", "-", "x", "#", "-", "-", "#", "d", "-", "#", "-", "#", "-", "x"],
     ["-", "#", "x", "-", "#", "#", "#", "#", "-", "a", "#", "-", "-", "-", "x", "-", "-", "#", "x", "-", "-", "-", "x", "#", "x", "#", "-", "#", "-", "#"],
-    ["-", "#", "x", "-", "-", "-", "-", "-", "-", "#", "#", "#", "#", "-", "-", "-", "-", "#", "-", "-", "-", "#", "x", "#", "-", "#", "x", "#", "%", "-"],
-    ["-", "-", "-", "&", "-", "x", "x", "-", "-", "x", "x", "x", "x", "f", "#", "-", "g", "-", "-", "x", "h", "-", "-", "-", "-", "-", "-", "-", "x", "m"]
+    ["-", "#", "x", "-", "-", "-", "-", "-", "-", "#", "#", "#", "#", "f", "-", "-", "-", "#", "-", "-", "-", "#", "x", "#", "C", "#", "x", "#", "%", "-"],
+    ["-", "-", "-", "&", "-", "x", "x", "C", "-", "x", "x", "x", "x", "C", "#", "-", "g", "-", "-", "x", "h", "-", "-", "-", "-", "-", "-", "-", "x", "m"]
 ];
 
 function createTable(width, height) {
@@ -41,8 +41,9 @@ function createTable(width, height) {
             "e": {img: "obj12"},
             "f": {img: "obj13"},
             "#": {img: "zielonyplot", class: 'wall'},
-            "x": {img: "cegla",  class: 'wall'},
-            "m": {img: "meta", bg: "black"}
+            "x": {img: "cegla", class: 'wall'},
+            "m": {img: "meta", bg: "black", class: "meta"},
+            "C": {img: "coin"}
         };
         for (var i = 0; i < width; i += 1) {
             var col = '-';
@@ -74,6 +75,8 @@ $('tr:first td:first', $table).addClass('bus');
 
 var $bus = $('.bus');
 
+var coinCounter = 0;
+
 function moveLeft(element) {
     return element.prev();
 }
@@ -92,7 +95,7 @@ function moveDown(element) {
 
 var UP = 38, DOWN = 40, LEFT = 37, RIGHT = 39;
 
-function getNextPosition (element, way) {
+function getNextPosition(element, way) {
     var target = null;
     if (way === 37) {
         target = moveLeft(element);
@@ -112,21 +115,33 @@ function getNextPosition (element, way) {
 }
 
 function move(element, way, elClass) {
-    var target = null;
+    var $target = null;
     if (way === 37) {
-        target = moveLeft(element);
+        $target = moveLeft(element);
     } else if (way === 38) {
-        target = moveUp(element);
+        $target = moveUp(element);
     } else if (way === 39) {
-        target = moveRight(element);
+        $target = moveRight(element);
     } else {
-        target = moveDown(element);
+        $target = moveDown(element);
+    }
+    if ($target.length > 0 && !$target.is('.wall')) {
+        element.removeClass(elClass);
+        $target.addClass(elClass);
+
+        if ($target.hasClass('bus') && $target.hasClass('coin')) {
+            $target.removeClass('coin');
+            coinCounter++;
+            $target.html("-");
+        }
+        if ($target.hasClass('bus') && $target.hasClass('monster')) {
+            console.error("Game over!");
+        }
+        if ($target.hasClass('bus') && $target.hasClass('meta') && coinCounter === 7) {
+            console.error("Congratulations! You won!");
+        }
     }
 
-    if (!target.is('.wall')) {
-        element.removeClass(elClass);
-        target.addClass(elClass);
-    }
 }
 
 $(document).keydown(function (e) {
@@ -140,8 +155,8 @@ $(document).keydown(function (e) {
 var monstersConfig = {
     moves: [
         [UP, UP, UP, UP, UP, UP, DOWN, DOWN, DOWN, DOWN, DOWN, DOWN],
-        [DOWN, DOWN, DOWN, DOWN, DOWN, DOWN, DOWN, DOWN, DOWN, DOWN, DOWN,UP, UP, UP, UP, UP, UP, UP, UP, UP, UP, UP],
-        [LEFT, LEFT, LEFT, LEFT, LEFT, LEFT, LEFT, LEFT, LEFT, LEFT, LEFT, LEFT, LEFT, RIGHT, RIGHT, RIGHT, RIGHT, RIGHT, RIGHT, RIGHT, RIGHT, RIGHT, RIGHT,RIGHT, RIGHT, RIGHT],
+        [DOWN, DOWN, DOWN, DOWN, DOWN, DOWN, DOWN, DOWN, DOWN, DOWN, DOWN, UP, UP, UP, UP, UP, UP, UP, UP, UP, UP, UP],
+        [LEFT, LEFT, LEFT, LEFT, LEFT, LEFT, LEFT, LEFT, LEFT, LEFT, LEFT, LEFT, LEFT, RIGHT, RIGHT, RIGHT, RIGHT, RIGHT, RIGHT, RIGHT, RIGHT, RIGHT, RIGHT, RIGHT, RIGHT, RIGHT],
         [DOWN, DOWN, DOWN, DOWN, DOWN, DOWN, DOWN, DOWN, DOWN, DOWN, UP, UP, UP, UP, UP, UP, UP, UP, UP, UP],
         [UP, UP, UP, UP, UP, UP, UP, UP, UP, UP, DOWN, DOWN, DOWN, DOWN, DOWN, DOWN, DOWN, DOWN, DOWN, DOWN],
         [RIGHT, RIGHT, RIGHT, RIGHT, RIGHT, LEFT, LEFT, LEFT, LEFT, LEFT],
@@ -159,18 +174,24 @@ var monstersConfig = {
 }
 
 function createMonster(moves, i) {
-    return function() {
+    return function () {
         var monster = $('.obj' + i);
-        var $img = monster.removeClass('obj' + i).find('img');
+        var $img = monster.removeClass('monster obj' + i).find('img');
 
-        getNextPosition(monster, moves[monstersConfig.movesCounters[i]]).append($img).addClass('obj' + i);
+        var $currentPosition = getNextPosition(monster, moves[monstersConfig.movesCounters[i]])
+            .append($img)
+            .addClass('monster obj' + i);
+        if ($currentPosition.hasClass('bus') && $currentPosition.hasClass('monster')) {
+            console.error("Game over!");
+        }
         monstersConfig.movesCounters[i] = (monstersConfig.movesCounters[i] + 1) % moves.length;
     }
 }
 
 function setMonsters() {
-    monstersConfig.moves.forEach(function(moves, i ) {
+    monstersConfig.moves.forEach(function (moves, i) {
         setInterval(createMonster(moves, i), monstersConfig.moveTime)
     });
 }
-setMonsters()
+
+setMonsters();
