@@ -1,24 +1,24 @@
 var mapTable = [
-    ["-", "-", "-", "-", "-", "@", "#", "#", "-", "-", "-", "#", "x", "#", "-", "#", "-", "-", "#", "x", "x", "#", "-", "x", "-", "#", "#", "-", "x", "x"],
-    ["#", "-", "x", "#", "-", "-", "#", "x", "#", "-", "-", "-", "-", "-", "-", "-", "-", "-", "-", "-", "-", "-", "*", "x", "#", "-", "x", "#", "-", "-"],
+    ["-", "-", "-", "-", "-", "@", "#", "#", "C", "-", "-", "#", "x", "#", "-", "#", "-", "-", "#", "x", "x", "#", "-", "x", "-", "#", "#", "-", "x", "x"],
+    ["#", "-", "x", "#", "-", "-", "#", "x", "#", "-", "-", "-", "-", "-", "-", "-", "-", "-", "-", "-", "-", "-", "*", "x", "#", "-", "x", "#", "-", "C"],
     ["#", "-", "#", "x", "-", "-", "#", "x", "#", "-", "-", "#", "x", "-", "-", "-", "x", "x", "#", "-", "#", "-", "-", "#", "#", "-", "-", "#", "-", "#"],
     ["#", "-", "-", "-", "-", "-", "#", "x", "#", "-", "-", "x", "#", "-", "#", "-", "-", "!", "#", "#", "#", "-", "-", "-", "-", "x", "-", "#", "-", "x"],
     ["x", "x", "x", "-", "-", "-", "#", "x", "#", "-", "#", "-", "-", "-", "-", "-", "x", "-", "-", "-", "-", "-", "#", "#", "b", "-", "-", "-", "-", "-"],
     ["-", "-", "-", "-", "-", "-", "#", "x", "#", "o", "-", "-", "-", "-", "-", "#", "#", "-", "-", "x", "-", "x", "-", "-", "x", "-", "#", "#", "#", "-"],
     ["-", "-", "-", "#", "#", "-", "#", "#", "#", "-", "-", "#", "-", "#", "-", "-", "-", "-", "-", "-", "x", "-", "#", "-", "-", "-", "#", "#", "-", "-"],
-    ["#", "#", "-", "x", "x", "-", "-", "-", "-", "-", "#", "-", "-", "#", "x", "x", "#", "-", "-", "#", "-", "-", "-", "-", "x", "-", "-", "#", "-", "-"],
-    ["#", "#", "-", "#", "#", "-", "-", "-", "#", "-", "-", "x", "-", "-", "-", "-", "-", "-", "-", "#", "x", "#", "-", "#", "-", "x", "-", "-", "-", "#"],
-    ["-", "-", "-", "-", "-", "-", "x", "-", "-", "x", "x", "x", "x", "x", "-", "-", "#", "-", "#", "-", "-", "-", "#", "-", "#", "-", "-", "-", "-", "-"],
+    ["#", "#", "-", "x", "x", "-", "-", "-", "-", "-", "#", "-", "-", "#", "x", "x", "#", "-", "-", "#", "C", "-", "-", "-", "x", "-", "-", "#", "-", "-"],
+    ["#", "#", "-", "#", "#", "-", "-", "-", "#", "-", "C", "x", "-", "-", "-", "-", "-", "-", "-", "#", "x", "#", "-", "#", "-", "x", "-", "-", "-", "#"],
+    ["-", "-", "-", "-", "-", "-", "x", "-", "-", "x", "x", "x", "x", "x", "-", "-", "#", "-", "#", "-", "-", "-", "#", "-", "#", "-", "-", "-", "-", "C"],
     ["x", "-", "#", "-", "-", "-", "-", "-", "-", "#", "#", "#", "#", "#", "-", "#", "#", "-", "-", "-", "-", "-", "#", "-", "#", "#", "#", "-", "-", "x"],
     ["x", "-", "#", "-", "-", "#", "#", "#", "-", "-", "-", "-", "#", "-", "-", "#", "-", "-", "-", "x", "-", "-", "#", "-", "-", "x", "#", "-", "#", "-"],
     ["x", "-", "#", "-", "-", "#", "-", "-", "x", "-", "#", "-", "-", "-", "-", "-", "-", "-", "-", "-", "#", "x", "-", "-", "-", "#", "-", "-", "-", "#"],
-    ["x", "-", "#", "-", "-", "-", "-", "-", "-", "-", "-", "-", "-", "#", "-", "x", "-", "#", "-", "-", "#", "-", "x", "-", "-", "-", "-", "#", "-", "-"],
+    ["x", "-", "#", "-", "-", "-", "-", "-", "-", "-", "-", "-", "-", "#", "-", "x", "-", "#", "-", "-", "#", "C", "x", "-", "-", "-", "-", "#", "-", "-"],
     ["-", "-", "-", "-", "#", "#", "#", "#", "-", "-", "#", "x", "#", "-", "x", "x", "-", "#", "-", "#", "-", "-", "-", "-", "#", "x", "#", "-", "-", "#"],
     ["-", "-", "-", "-", "#", "x", "x", "#", "-", "-", "-", "-", "#", "-", "x", "x", "-", "-", "-", "-", "-", "-", "x", "-", "-", "-", "-", "-", "-", "-"],
     ["-", "#", "x", "-", "#", "x", "x", "#", "-", "-", "x", "-", "-", "-", "x", "-", "-", "-", "x", "#", "-", "-", "#", "-", "-", "#", "-", "#", "-", "x"],
-    ["-", "#", "x", "-", "#", "#", "#", "#", "-", "a", "#", "-", "-", "_", "x", "-", "-", "#", "x", "-", "-", "-", "x", "#", "x", "#", "-", "#", "-", "#"],
-    ["-", "#", "x", "-", "-", "-", "-", "-", "-", "#", "#", "#", "#", "-", "-", "-", "-", "#", "-", "-", "-", "#", "x", "#", "-", "#", "x", "#", "%", "-"],
-    ["-", "-", "-", "&", "-", "x", "x", "-", "-", "x", "x", "x", "x", "-", "#", "-", "g", "-", "-", "x", "h", "-", "-", "-", "-", "-", "-", "-", "x", "m"]
+    ["-", "#", "x", "-", "#", "#", "#", "#", "-", "a", "#", "-", "-", "-", "x", "-", "-", "#", "x", "-", "-", "-", "x", "#", "x", "#", "-", "#", "-", "#"],
+    ["-", "#", "x", "-", "-", "-", "-", "-", "-", "#", "#", "#", "#", "-", "-", "-", "-", "#", "-", "-", "-", "#", "x", "#", "C", "#", "x", "#", "%", "-"],
+    ["-", "-", "-", "&", "-", "x", "x", "C", "-", "x", "x", "x", "x", "C", "#", "-", "g", "-", "-", "x", "h", "-", "-", "-", "-", "-", "-", "-", "x", "m"]
 ];
 
 function createTable(width, height) {
@@ -37,16 +37,17 @@ function createTable(width, height) {
             "a": {img: "obj8"},
             "b": {img: "obj9"},
             "#": {img: "zielonyplot", class: 'wall'},
-            "x": {img: "cegla",  class: 'wall'},
-            "m": {img: "meta", bg: "black"}
+            "x": {img: "cegla", class: 'wall'},
+            "m": {img: "meta", bg: "black", class: "meta"},
+            "C": {img: "coin"}
         };
         for (var i = 0; i < width; i += 1) {
             var col = '-';
             $td = $('<td>');
 
             var type = mapTable[j][i];
-           if (objects[type]) {
-               $td.html('<img src="Assets/Photos/' + objects[type].img + '.jpg" style="width: 30px; height: 30px; background: ' + objects[type].bg + '" />')
+            if (objects[type]) {
+                $td.html('<img src="Assets/Photos/' + objects[type].img + '.jpg" style="width: 30px; height: 30px; background: ' + objects[type].bg + '" />')
                     .addClass(objects[type].class).addClass(objects[type].img)
             }
 
@@ -70,6 +71,8 @@ $('tr:first td:first', $table).addClass('bus');
 
 var $bus = $('.bus');
 
+var coinCounter = 0;
+
 function moveLeft(element) {
     return element.prev();
 }
@@ -88,7 +91,7 @@ function moveDown(element) {
 
 var UP = 38, DOWN = 40, LEFT = 37, RIGHT = 39;
 
-function getNextPosition (element, way) {
+function getNextPosition(element, way) {
     var target = null;
     if (way === 37) {
         target = moveLeft(element);
@@ -122,8 +125,16 @@ function move(element, way, elClass) {
         element.removeClass(elClass);
         $target.addClass(elClass);
 
-        if ($target.hasClass('bus')&&$target.hasClass('monster')) {
+        if ($target.hasClass('bus') && $target.hasClass('coin')) {
+            $target.removeClass('coin');
+            coinCounter++;
+            $target.html("-");
+        }
+        if ($target.hasClass('bus') && $target.hasClass('monster')) {
             console.error("Game over!");
+        }
+        if ($target.hasClass('bus') && $target.hasClass('meta') && coinCounter === 7) {
+            console.error("Congratulations! You won!");
         }
     }
 
@@ -140,8 +151,8 @@ $(document).keydown(function (e) {
 var monstersConfig = {
     moves: [
         [UP, UP, UP, UP, UP, UP, DOWN, DOWN, DOWN, DOWN, DOWN, DOWN],
-        [DOWN, DOWN, DOWN, DOWN, DOWN, DOWN, DOWN, DOWN, DOWN, DOWN, DOWN,UP, UP, UP, UP, UP, UP, UP, UP, UP, UP, UP],
-        [LEFT, LEFT, LEFT, LEFT, LEFT, LEFT, LEFT, LEFT, LEFT, LEFT, LEFT, LEFT, LEFT, RIGHT, RIGHT, RIGHT, RIGHT, RIGHT, RIGHT, RIGHT, RIGHT, RIGHT, RIGHT,RIGHT, RIGHT, RIGHT],
+        [DOWN, DOWN, DOWN, DOWN, DOWN, DOWN, DOWN, DOWN, DOWN, DOWN, DOWN, UP, UP, UP, UP, UP, UP, UP, UP, UP, UP, UP],
+        [LEFT, LEFT, LEFT, LEFT, LEFT, LEFT, LEFT, LEFT, LEFT, LEFT, LEFT, LEFT, LEFT, RIGHT, RIGHT, RIGHT, RIGHT, RIGHT, RIGHT, RIGHT, RIGHT, RIGHT, RIGHT, RIGHT, RIGHT, RIGHT],
         [DOWN, DOWN, DOWN, DOWN, DOWN, DOWN, DOWN, DOWN, DOWN, DOWN, UP, UP, UP, UP, UP, UP, UP, UP, UP, UP],
         [UP, UP, UP, UP, UP, UP, UP, UP, UP, UP, DOWN, DOWN, DOWN, DOWN, DOWN, DOWN, DOWN, DOWN, DOWN, DOWN],
         [RIGHT, RIGHT, RIGHT, RIGHT, RIGHT, LEFT, LEFT, LEFT, LEFT, LEFT],
@@ -150,19 +161,19 @@ var monstersConfig = {
         [UP, UP, UP, UP, UP, UP, DOWN, DOWN, DOWN, DOWN, DOWN, DOWN],
         [LEFT, LEFT, LEFT, LEFT, LEFT, RIGHT, RIGHT, RIGHT, RIGHT, RIGHT]
     ],
-    movesCounters: [0,0,0,0,0,0,0,0,0,0],
+    movesCounters: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
     moveTime: 100
 }
 
 function createMonster(moves, i) {
-    return function() {
+    return function () {
         var monster = $('.obj' + i);
         var $img = monster.removeClass('monster obj' + i).find('img');
 
         var $currentPosition = getNextPosition(monster, moves[monstersConfig.movesCounters[i]])
             .append($img)
             .addClass('monster obj' + i);
-        if ($currentPosition.hasClass('bus')&&$currentPosition.hasClass('monster')) {
+        if ($currentPosition.hasClass('bus') && $currentPosition.hasClass('monster')) {
             console.error("Game over!");
         }
         monstersConfig.movesCounters[i] = (monstersConfig.movesCounters[i] + 1) % moves.length;
@@ -170,8 +181,9 @@ function createMonster(moves, i) {
 }
 
 function setMonsters() {
-    monstersConfig.moves.forEach(function(moves, i ) {
+    monstersConfig.moves.forEach(function (moves, i) {
         setInterval(createMonster(moves, i), monstersConfig.moveTime)
     });
 }
-setMonsters()
+
+setMonsters();
