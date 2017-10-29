@@ -137,6 +137,11 @@ figure.hover-effect-onas:hover figcaption {
     background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.7) 0%, rgba(105, 105, 105, 0.7), rgba(128, 128, 128, 0.7) 100%);
 }
 
+figure > img {
+    margin-left: auto;
+    margin-right: auto;
+}
+
 /*The End of About Us*/
 
 /*Cookies*/
@@ -246,6 +251,7 @@ a, label, input[type=submit] {
 .preview {
     position: absolute;
     top: 30%;
+    width: 100%;
 }
 
 .preview-h1 > h1 {
@@ -255,6 +261,7 @@ a, label, input[type=submit] {
 }
 
 .preview-img > .img-responsive {
+    width: 100%;
     max-width: 600px;
     max-height: 300px;
     margin: auto;
@@ -301,7 +308,7 @@ img {
     height: 100%;
 }
 
-.image  {
+.image {
     -webkit-transition: all 1s ease; /* Safari and Chrome */
     -moz-transition: all 1s ease; /* Firefox */
     -o-transition: all 1s ease; /* IE 9 */
@@ -310,11 +317,11 @@ img {
 }
 
 .image:hover {
-    -webkit-transform:scale(1.25); /* Safari and Chrome */
-    -moz-transform:scale(1.25); /* Firefox */
-    -ms-transform:scale(1.25); /* IE 9 */
-    -o-transform:scale(1.25); /* Opera */
-    transform:scale(1.25);
+    -webkit-transform: scale(1.25); /* Safari and Chrome */
+    -moz-transform: scale(1.25); /* Firefox */
+    -ms-transform: scale(1.25); /* IE 9 */
+    -o-transform: scale(1.25); /* Opera */
+    transform: scale(1.25);
 }
 
 /*The End of Functionalities*/
@@ -390,6 +397,12 @@ li.dropdown {
 #Contact {
     padding-top: 100px;
     background: black;
+}
+
+#Contact > .container {
+    width: 100%;
+    margin: auto;
+    max-width: 600px;
 }
 
 .form-area {
@@ -520,6 +533,7 @@ table {
     background-size: cover;
     height: 90vh;
 }
+
 .cov {
     background-repeat: no-repeat;
     background-position: center center;
@@ -527,96 +541,116 @@ table {
     background-attachment: fixed;
     height: 80vh;
 }
+
 .image1 {
     background-image: url("assets/mainbus.jpg");
     margin-bottom: -50px;
 }
+
 .image2 {
     background-image: url("assets/maintrain.jpg");
 }
+
 /*edit main page*/
 
 /*social buttons footer*/
-.hello:hover{
-    color:white
+.hello:hover {
+    color: white
 }
+
 .footer {
-    background:lightgrey;
-    height:150px;
+    background: lightgrey;
+    height: 150px;
 }
+
 a {
     text-decoration: none;
     color: #fff;
 }
-p > a:hover{
+
+p > a:hover {
     color: #d9d9d9;
-    text-decoration:  underline;
+    text-decoration: underline;
 }
+
 ul {
-    padding:0;
+    padding: 0;
     list-style: none;
 }
+
 .footer-social-icons {
-    padding-top:30px;
+    padding-top: 30px;
     display: flex;
     align-items: center;
     justify-content: center
 }
+
 .social-icon {
     color: #fff;
 }
+
 .social-icons li {
     vertical-align: top;
     display: inline;
     height: 100px;
 }
+
 .social-icons a {
     color: #fff;
     text-decoration: none;
 }
+
 .fa-facebook {
-    padding:10px 14px;
-    -o-transition:.5s;
-    -moz-transition:.5s;
-    -webkit-transition:.5s;
+    padding: 10px 14px;
+    -o-transition: .5s;
+    -moz-transition: .5s;
+    -webkit-transition: .5s;
     transition: .5s;
     background-color: #322f30;
 }
+
 .fa-facebook:hover {
     background-color: #3d5b99;
 }
+
 .fa-twitter {
-    padding:10px 12px;
-    -o-transition:.5s;
-    -moz-transition:.5s;
-    -webkit-transition:.5s;
+    padding: 10px 12px;
+    -o-transition: .5s;
+    -moz-transition: .5s;
+    -webkit-transition: .5s;
     transition: .5s;
 }
-.colortw{
+
+.colortw {
     background-color: #322f30;
 }
+
 .fa-twitter:hover {
     background-color: #00aced;
 }
+
 .fa-youtube {
-    padding:10px 14px;
-    -o-transition:.5s;
-    -moz-transition:.5s;
-    -webkit-transition:.5s;
+    padding: 10px 14px;
+    -o-transition: .5s;
+    -moz-transition: .5s;
+    -webkit-transition: .5s;
     transition: .5s;
     background-color: #322f30;
 }
+
 .fa-youtube:hover {
     background-color: #e64a41;
 }
+
 .fa-google-plus {
-    padding:10px 9px;
-    -o-transition:.5s;
-    -moz-transition:.5s;
-    -webkit-transition:.5s;
+    padding: 10px 9px;
+    -o-transition: .5s;
+    -moz-transition: .5s;
+    -webkit-transition: .5s;
     transition: .5s;
     background-color: #322f30;
 }
+
 .fa-google-plus:hover {
     background-color: #e25714;
 }
@@ -624,8 +658,12 @@ ul {
 /*social*/
 @media (max-width: 320px) {
     .med {
-        font-size:1em;
+        font-size: 1em;
     }
 }
 
+/*Game*/
 
+#Game {
+    background-color: black;
+}
