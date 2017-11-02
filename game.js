@@ -71,11 +71,32 @@ $('td', $table).addClass('point');
 
 $board.append($table);
 
+var sec = 0;
+
+function pad ( val ) { return val > 9 ? val : "0" + val; }
+
+var timerOn = false;
+
+var timer;
+
+$(document).keydown(function (e) {
+    
+    	if (e.keyCode == 39 && !timerOn) {
+	timer =	setInterval( function(){
+        	$("#seconds").html(pad(++sec%60));
+        	$("#minutes").html(pad(parseInt(sec/60,10)));
+    	}, 1000);
+	timerOn = true;
+    }
+});
+
 $('tr:first td:first', $table).addClass('bus');
 
 var $bus = $('.bus');
 
 var coinCounter = 0;
+
+$('.coins').html(coinCounter);
 
 function moveLeft(element) {
     return element.prev();
@@ -132,13 +153,16 @@ function move(element, way, elClass) {
         if ($target.hasClass('bus') && $target.hasClass('coin')) {
             $target.removeClass('coin');
             coinCounter++;
-            $target.html("-");
+	    $('.coins').html(coinCounter);
+            $target.html(" ");
         }
         if ($target.hasClass('bus') && $target.hasClass('monster')) {
-            console.error("Game over!");
+	    alert("Game over!");
+	    document.location.reload();
         }
         if ($target.hasClass('bus') && $target.hasClass('meta') && coinCounter === 10) {
-            console.error("Congratulations! You won!");
+            alert("Congratulations! You won!");
+	    document.location.reload();
         }
     }
 
@@ -182,7 +206,8 @@ function createMonster(moves, i) {
             .append($img)
             .addClass('monster obj' + i);
         if ($currentPosition.hasClass('bus') && $currentPosition.hasClass('monster')) {
-            console.error("Game over!");
+	    alert("Game over!");
+	    document.location.reload();
         }
         monstersConfig.movesCounters[i] = (monstersConfig.movesCounters[i] + 1) % moves.length;
     }
