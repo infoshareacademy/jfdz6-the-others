@@ -15,50 +15,63 @@
 </head>
 <body>
 <!-- MENU-->
-<nav class="div-menu">
-    <div class="menu-nav-bar">
-        <ul class="ulmenu">
-            <li><a href="#Mainpage" data-title="Komunikacja Miejska Gdańsk"><i class="fa fa-connectdevelop"
-                                                                               aria-hidden="true"></i> Komunikacja
-                Miejska
-                Gdańsk</a></li>
-            <li class="dropdown">
-                <a href="#Timetable" class="dropbtn" data-title="Rozkład Jazdy"><i class="fa fa-calendar"
-                                                                                   aria-hidden="true"></i> Rozkład Jazdy</a>
-                <div class="dropdown-content">
-                    <a href="#Timetable/Buses" data-title="Autobusy"><i class="fa fa-bus" aria-hidden="true"></i>
-                        Autobusy</a>
-                    <a href="#Timetable/Trams" data-title="Tramwaje"><i class="fa fa-subway" aria-hidden="true"></i>
-                        Tramwaje</a>
-                    <a href="#Timetable/SKM" data-title="SKM"><i class="fa fa-train" aria-hidden="true"></i> SKM</a>
-                    <a href="#Timetable/PKM" data-title="PKM"><i class="fa fa-train" aria-hidden="true"></i> PKM</a>
-                </div>
-            </li>
-            <li><a href="#Navigate" data-title="Wyznacz trasę"><i class="fa fa-street-view" aria-hidden="true"></i>
-                Wyznacz trasę</a></li>
-            <li><a href="#Info" data-title="Informacje o komunikacji"><i class="fa fa-info" aria-hidden="true"></i>
-                Informacje o komunikacji</a></li>
-            <li><a href="#Game" data-title="Bus trip"><i class="fa fa-gamepad" aria-hidden="true"></i> Zagraj</a></li>
-            <li><a href="#Contact" data-title="Kontakt"><i class="fa fa-envelope-o" aria-hidden="true"></i> Kontakt</a>
-            </li>
-            <!--social media-->
-        </ul>
+<nav class=" navbar navbar-default">
+    <div class=" container-fluid menubg">
+        <div class=" navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+            <ul class="ulmenu nav navbar-nav">
+                <li><a href="#Mainpage" data-title="Komunikacja Miejska Gdańsk"><i class=" imagepad fa fa-connectdevelop" aria-hidden="true"></i> KomunikacjaMiejskaGdańsk</a></li>
+                <li class="dropdown">
+                    <a href="#Timetable" class="" data-title="Rozkład Jazdy"><i class="fa fa-calendar"
+                                                                                       aria-hidden="true"></i> Rozkład Jazdy</a>
+                    <div class="dropdown-content btncollapse">
+                        <a href="#Timetable/Buses" data-title="Autobusy"><i class="fa fa-bus" aria-hidden="true"></i>
+                            Autobusy</a>
+                        <a href="#Timetable/Trams" data-title="Tramwaje"><i class="fa fa-subway" aria-hidden="true"></i>
+                            Tramwaje</a>
+                        <a href="#Timetable/SKM" data-title="SKM"><i class="fa fa-train" aria-hidden="true"></i> SKM</a>
+                        <a href="#Timetable/PKM" data-title="PKM"><i class="  fa fa-train" aria-hidden="true"></i> PKM</a>
+                    </div>
+                </li>
+                <li><a href="#Navigate" data-title="Wyznacz trasę"><i class="imagepad fa fa-street-view" aria-hidden="true"></i>Wyznacz trasę</a></li>
+                <li><a href="#Info" data-title="Informacje o komunikacji"><i class="imagepad fa fa-info" aria-hidden="true"></i>Informacje o komunikacji</a></li>
+                <li><a href="#Game" data-title="Bus trip"><i class="imagepad fa fa-gamepad" aria-hidden="true"></i> Zagraj</a></li>
+                <li><a href="#Contact" data-title="Kontakt"><i class="imagepad fa fa-envelope-o" aria-hidden="true"></i> Kontakt</a></li>
+                <!--social media-->
+            </ul>
+        </div>
     </div>
 </nav>
 <header id="Mainpage">
     <!--Background-->
-    <div class="scroll-bg"></div>
+    <div class="scroll-bg">
+
+
+        <div class="preview-h1 col-xs-8 col-xs-offset-2">
+
+            <h1 class="Title">Twój przewodnik po komunikacji miejskiej w Gdańsku</h1>
+            <div class="preview animated rotateInDownLeft">
+                <div class="col-xs-8 col-xs-offset-2 preview-img">
+                    <img src="Assets/Photos/font-awesome-zajawka.png"
+                         alt="Connect-develop img" class="img-responsive">
+                </div>
+
+            </div>
+        </div>
+
+    </div>
     <!--The End of Background-->
     <!--Preview-->
-    <div class="preview animated rotateInDownLeft">
-        <div class="col-xs-8 col-xs-offset-2 preview-img">
-            <img src="Assets/Photos/font-awesome-zajawka.png"
-                 alt="Connect-develop img" class="img-responsive">
-        </div>
-        <div class="preview-h1 col-xs-8 col-xs-offset-2">
-            <h1>Twój przewodnik po komunikacji miejskiej w Gdańsku</h1>
-        </div>
-    </div>
+
     <!--The end of preview-->
     <!--Functionalities-->
     <div class="white-thumbnail">
@@ -210,8 +223,8 @@
     </div>
 </header>
 <!--Contact-->
-<section id="Contact">
-    <div class="container">
+<section id="Contact" class="marginmenu">
+    <div class="container ">
         <div class="form-area">
             <form role="form">
                 <br style="clear:both">
@@ -247,7 +260,7 @@
 <!--The End of Contact-->
 <!--Navigate-->
 <section id="Navigate">
-    <div class="track">
+    <div class="track marginfix">
         <h4><p>Tu powstanie informacja jak bez problemu dostaniesz się z punktu A do punktu B</p></h4>
         <img src="Assets/Photos/Gdansk.jpg" alt="mapa" class="img-responsive">
     </div>
@@ -256,7 +269,7 @@
 
 
 <!--Info-->
-<section id="Info">
+<section id="Info" class="marginmenu" >
     <div class="info container animated fadeInDown">
         <h1 class="info-button"><span>Historia SKM</span></h1>
         <div class="info-section">
@@ -928,23 +941,23 @@
 
 <!--Timetable-->
 <section id="Timetable">
-    <div class="timetable">
-        <div id="Timetable/Buses"><i class="fa fa-bus fa-5x" aria-hidden="true"></i>
+    <div class="timetable marginfix">
+        <div id="Timetable/Buses"><i class="  fa fa-bus fa-5x" aria-hidden="true"></i>
             <h3><p>Tu powstanie rozkład jazdy i informacje o Gdańskich autobusach.</p></h3>
             <img src="Assets/Do_rozkladu/bus.jpg" alt="autobus">
         </div>
 
-        <div id="Timetable/Trams"><i class="fa fa-subway fa-5x" aria-hidden="true"></i>
+        <div id="Timetable/Trams"><i class="  fa fa-subway fa-5x" aria-hidden="true"></i>
             <h3><p>Tu powstanie rozkład jazdy i informacje o Gdańskich tramwajach.</p></h3>
             <img src="Assets/Do_rozkladu/tramwaj.jpg" alt="tramwaj">
         </div>
 
-        <div id="Timetable/SKM"><i class="fa fa-train fa-5x" aria-hidden="true"></i>
+        <div id="Timetable/SKM"><i class="   fa fa-train fa-5x" aria-hidden="true"></i>
             <h3><p>Tu powstanie rozkład jazdy i informacje o Trójmiejskich SKM.</p></h3>
             <img src="Assets/Do_rozkladu/skm1.jpg" alt="skm">
         </div>
 
-        <div id="Timetable/PKM"><i class="fa fa-train fa-5x" aria-hidden="true"></i>
+        <div id="Timetable/PKM"><i class="  fa fa-train fa-5x" aria-hidden="true"></i>
             <h3><p>Tu powstanie rozkład jazdy i informacje o Trójmiejskich PKM.</p></h3>
             <img src="Assets/Do_rozkladu/pkm1.jpg" alt="pkm">
         </div>
