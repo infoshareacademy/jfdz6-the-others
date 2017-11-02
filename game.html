@@ -7,12 +7,28 @@
 <body>
 <style>
     .point {
-        border: 1px solid black;
+        border: none;
         width: 30px;
         height: 30px;
+        max-height: 30px;
+        padding: 0;
+        margin: 0;
+        outline: 1px solid black;
+        border-collapse: collapse;
+        position: relative;
     }
     .bus {
         background-color: red;
+    }
+    #board table {
+        margin: 0;
+        padding: 0;
+        border-collapse: collapse;
+    }
+    #board table td img {
+        position: absolute;
+        left: 0;
+        top:0;
     }
 </style>
 

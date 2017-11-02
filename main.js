@@ -5,10 +5,10 @@
 // Menu sections hiding
 
 function main() {
-    var allIds = []
+    var allIds = [];
 
     function hideAll() {
-        $(allIds.join(',')).hide()
+        $(allIds.join(',')).hide();
     }
 
     $('.ulmenu > li > a').each(function () {
@@ -21,13 +21,19 @@ function main() {
     })
 
     $('.ulmenu a').on('click', function () {
-        hideAll()
-        $($(this).attr('href').split('/')[0]).show()
+        hideAll();
+        $($(this).attr('href').split('/')[0]).show();
         document.title = $(this).attr('data-title');
     })
 
-    hideAll()
-    $('#Mainpage').show()
+    $('.functionalities-description').on('click', function () {
+        hideAll();
+        $($(this).children('a').attr('href')).show();
+        document.title = $(this).attr('data-title');
+    })
+
+    hideAll();
+    $('#Mainpage').show();
 
 // The End of Menu sections hiding
 

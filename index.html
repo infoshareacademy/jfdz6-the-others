@@ -18,7 +18,8 @@
 <nav class="div-menu">
     <div class="menu-nav-bar">
         <ul class="ulmenu">
-            <li><a href="#Mainpage" data-title="Komunikacja Miejska Gdańsk"><i class="fa fa-connectdevelop" aria-hidden="true"></i> Komunikacja
+            <li><a href="#Mainpage" data-title="Komunikacja Miejska Gdańsk"><i class="fa fa-connectdevelop"
+                                                                               aria-hidden="true"></i> Komunikacja
                 Miejska
                 Gdańsk</a></li>
             <li class="dropdown">
@@ -37,6 +38,7 @@
                 Wyznacz trasę</a></li>
             <li><a href="#Info" data-title="Informacje o komunikacji"><i class="fa fa-info" aria-hidden="true"></i>
                 Informacje o komunikacji</a></li>
+            <li><a href="#Game" data-title="Bus trip"><i class="fa fa-gamepad" aria-hidden="true"></i> Zagraj</a></li>
             <li><a href="#Contact" data-title="Kontakt"><i class="fa fa-envelope-o" aria-hidden="true"></i> Kontakt</a>
             </li>
             <!--social media-->
@@ -63,29 +65,33 @@
         <div class="container-fluid functionalities">
             <div class="col-md-3">
                 <div class="image">
-                    <div class="functionalities-description"><a href="#Info"><i class="fa fa-info fa-3x"
-                                                                                aria-hidden="true"></i></a>
+                    <div class="functionalities-description" data-title="Informacje o komunikacji"><a href="#Info"><i
+                            class="fa fa-info fa-3x"
+                            aria-hidden="true"></i></a>
                         <p>Dowiesz się tutaj o najnowszych planach rozwoju oraz sprawdzisz historię KMG.</p></div>
                 </div>
             </div>
             <div class="col-md-3">
                 <div class="image">
-                    <div class="functionalities-description"><a href="#Timetable"><i class="fa fa-calendar fa-3x"
-                                                                                     aria-hidden="true"></i></a>
+                    <div class="functionalities-description" data-title="Rozkład jazdy"><a href="#Timetable"><i
+                            class="fa fa-calendar fa-3x"
+                            aria-hidden="true"></i></a>
                         <p>Znajdziesz u nas wszystkie aktualne rozkłady jazdy!</p></div>
                 </div>
             </div>
             <div class="col-md-3">
                 <div class="image">
-                    <div class="functionalities-description"><a href="#Navigate"><i class="fa fa-street-view fa-3x"
-                                                                                    aria-hidden="true"></i></a>
+                    <div class="functionalities-description" data-title="Wyznacz trasę"><a href="#Navigate"><i
+                            class="fa fa-street-view fa-3x"
+                            aria-hidden="true"></i></a>
                         <p>Sprawdzisz z nami najszybszą trasę dojazdu!</p></div>
                 </div>
             </div>
             <div class="col-md-3">
                 <div class="image">
-                    <div class="functionalities-description"><a href="#Contact"><i class="fa fa-envelope-o fa-3x"
-                                                                                   aria-hidden="true"></i></a>
+                    <div class="functionalities-description" data-title="Kontakt"><a href="#Contact"><i
+                            class="fa fa-envelope-o fa-3x"
+                            aria-hidden="true"></i></a>
                         <p>Powiadom nas korkach, awariach i spóźnieniach. Zbieraj punkty i wymieniaj na nagrody!</p>
                     </div>
                 </div>
@@ -100,15 +106,17 @@
             <div class="container">
                 <h1>Poznaj nasz zespół</h1>
                 <div class="row persons-list">
-                    <div class="col-md-3 col-xs-6 person">
+                    <div class="col-md-3 col-sm-6 col-xs-12 person">
                         <figure class="hover-effect-onas">
                             <img class="img-responsive img-hover-onas"
                                  src="Assets/About%20Us/Kaja_Onas.jpg"
                                  alt="Kaja">
                             <figcaption>
-                                <p>Zajmuję się tworzeniem stron i aplikacji internetowych. Kiedyś tylko fascynacja i zabawa,
+                                <p>Zajmuję się tworzeniem stron i aplikacji internetowych. Kiedyś tylko fascynacja i
+                                    zabawa,
                                     potem
-                                    przedmiot siedmioletniej edukacji i liczne eksperymenty, aż wreszcie ulubiona praca.</p>
+                                    przedmiot siedmioletniej edukacji i liczne eksperymenty, aż wreszcie ulubiona
+                                    praca.</p>
                             </figcaption>
                         </figure>
                         <div class="name">Kaja</div>
@@ -120,7 +128,7 @@
                             <a target="_blank" href="https://pl.linkedin.com/"><i class="fa fa-linkedin fa-3x"></i></a>
                         </div>
                     </div>
-                    <div class="col-md-3 col-xs-6 person">
+                    <div class="col-md-3 col-sm-6 col-xs-12 person">
                         <figure class="hover-effect-onas">
                             <img class="img-responsive img-hover-onas"
                                  src="Assets/About%20Us/Marcin_Onas.jpg"
@@ -139,7 +147,7 @@
                             <a target="_blank" href="https://pl.linkedin.com/"><i class="fa fa-linkedin fa-3x"></i></a>
                         </div>
                     </div>
-                    <div class="col-md-3 col-xs-6 person">
+                    <div class="col-md-3 col-sm-6 col-xs-12 person">
                         <figure class="hover-effect-onas">
                             <img class="img-responsive img-hover-onas"
                                  src="Assets/About%20Us/Norbert_Onas.jpg"
@@ -159,7 +167,7 @@
                             <a target="_blank" href="https://pl.linkedin.com/"><i class="fa fa-linkedin fa-3x"></i></a>
                         </div>
                     </div>
-                    <div class="col-md-3 col-xs-6 person">
+                    <div class="col-md-3 col-sm-6 col-xs-12 person">
                         <figure class="hover-effect-onas">
                             <img class="img-responsive img-hover-onas"
                                  src="Assets/About%20Us/Piotr_Onas.jpg"
@@ -189,10 +197,14 @@
         <div class="footer-social-icons ">
 
             <ul class="social-icons ">
-                <li><a href="https://www.facebook.com" class="social-icon hello"> <i class="fa med fa-facebook fa-3x"></i></a></li>
-                <li><a href="https://www.twitter.com" class="social-icon hello"> <i class="fa med fa-twitter fa-3x colortw"></i></a></li>
-                <li><a href="https://www.youtube.com" class="social-icon hello"> <i class="fa med fa-youtube fa-3x"></i></a></li>
-                <li><a href="https://plus.google.com/?hl=pl" class="social-icon hello"> <i class="fa med fa-google-plus fa-3x"></i></a></li>
+                <li><a href="https://www.facebook.com" class="social-icon hello"> <i
+                        class="fa med fa-facebook fa-3x"></i></a></li>
+                <li><a href="https://www.twitter.com" class="social-icon hello"> <i
+                        class="fa med fa-twitter fa-3x colortw"></i></a></li>
+                <li><a href="https://www.youtube.com" class="social-icon hello"> <i class="fa med fa-youtube fa-3x"></i></a>
+                </li>
+                <li><a href="https://plus.google.com/?hl=pl" class="social-icon hello"> <i
+                        class="fa med fa-google-plus fa-3x"></i></a></li>
             </ul>
         </div>
     </div>
@@ -939,9 +951,14 @@
     </div>
 
 
-
 </section>
 <!--The end of Timetable-->
+
+<!--Bus trip-->
+<section id="Game">
+
+</section>
+<!--The end of Bus trip>
 
 <!--Top Button-->
 <button onclick="topFunction()" id="top-button" title="Powrót na górę strony"><i class="fa fa-arrow-circle-up fa-3x"
