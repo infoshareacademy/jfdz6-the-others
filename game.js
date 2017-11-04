@@ -157,15 +157,26 @@ function move(element, way, elClass) {
             $target.html(" ");
         }
         if ($target.hasClass('bus') && $target.hasClass('monster')) {
+            finishGame();
 	    alert("Game over!");
-	    document.location.reload();
         }
         if ($target.hasClass('bus') && $target.hasClass('meta') && coinCounter === 10) {
+            finishGame(true);
             alert("Congratulations! You won!");
-	    document.location.reload();
         }
     }
 
+}
+
+function finishGame(hasWon){
+   // if(hasWon){
+        console.log('Zapisuje: ', sec);
+        var gbt = JSON.parse(localStorage.getItem("game-best-time")) || [];
+        gbt.push({user:'ala ma kota', time: sec});
+        gbt.sort( function(a,b){ return a.time < b.time; });
+        localStorage.setItem("game-best-time", JSON.stringify(gbt));
+  //  }
+    // document.location.reload();
 }
 
 $(document).keydown(function (e) {
@@ -206,8 +217,8 @@ function createMonster(moves, i) {
             .append($img)
             .addClass('monster obj' + i);
         if ($currentPosition.hasClass('bus') && $currentPosition.hasClass('monster')) {
-	    alert("Game over!");
-	    document.location.reload();
+	        alert("Game over!");
+	        finishGame();
         }
         monstersConfig.movesCounters[i] = (monstersConfig.movesCounters[i] + 1) % moves.length;
     }
