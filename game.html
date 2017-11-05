@@ -17,71 +17,88 @@
         border-collapse: collapse;
         position: relative;
     }
+
     .bus {
-	background-image: url(Assets/Photos/bus.jpg);
-	background-size: 30px 30px;    
+        background-image: url(Assets/Photos/bus.jpg);
+        background-size: 30px 30px;
     }
 
     #game {
-	margin-left: auto;
-	margin-right: auto;	
+        margin-left: auto;
+        margin-right: auto;
     }
+
     #board table {
         margin: 0;
         padding: 0;
         border-collapse: collapse;
     }
+
     #board table td {
-	background-color: white;   // necessary since we use a black background in the main page
+        background-color: white;
+    / / necessary since we use a black background in the main page
     }
+
     #board table td img {
         position: absolute;
         left: 0;
-        top:0;
+        top: 0;
     }
+
     #board {
-    	float: left;
+        float: left;
     }
+
     #game_info {
-	background-color: lightgrey;
-	margin-left: 0;
-	float: left;
-	border: 1px solid black;
-	width: 200px;
-	height: 600px;
+        background-color: lightgrey;
+        margin-left: 0;
+        float: left;
+        border: 1px solid black;
+        width: 200px;
+        height: 600px;
     }
 
     .game_info_div {
-	text-align: center;
-	text-decoration: underline;
-	font-family: FreeMono;
-    }	
+        text-align: center;
+        font-family: FreeMono;
+    }
+
+    .level {
+        text-decoration: none;
+    }
 </style>
 <div id="game">
-<div id="board"></div>
-<div id="game_info">
-<div class="game_info_div">Welcome to<p style="font-family: Arial Black; font-weight: bold; font-size: 16;">THE BUS TRIP</p></div>
-<div class="game_info_div">
-	<p>Time:</p>
-	<p class="timer"><span id="minutes"></span>:<span id="seconds"></span></p>
-</div>
-<div class="game_info_div">
-	<p>Coins:</p>
-	<p class="coins"></p>
-</div>
+    <div id="board"></div>
+    <div id="game_info">
+        <div class="game_info_div">Welcome to<p style="font-family: Arial Black; font-weight: bold; font-size: 16;">THE
+            BUS TRIP</p></div>
+        <div class="game_info_div">
+            <p>Time:</p>
+            <p class="timer"><span id="minutes"></span>:<span id="seconds"></span></p>
+        </div>
+        <form class="game_info_div">
+            <input type="radio" name="level" value="easy"> <span> Easy</span><br>
+            <input type="radio" name="level" value="medium" checked="checked"> <span> Medium</span><br>
+            <input type="radio" name="level" value="hard"> <span> Hard</span><br>
+            <input type="radio" name="level" value="impossible"> <span> Impossible</span>
+        </form>
+        <div class="game_info_div">
+            <p>Coins:</p>
+            <p class="coins"></p>
+        </div>
 
-<div class="game_info_div">
-	<p>Top 3 Leaderboard</p>
-	<ol class="leaderboard">
-		<li></li>
-		<li></li>
-		<li></li>
-	</ol>
-</div>
-<div class="game_info_div">
-<p style="padding-top: 20px;">Collect all coins and head for the finishing post!</p>
-</div>
-</div>
+        <div class="game_info_div">
+            <p>Top 3 Leaderboard</p>
+            <ol class="leaderboard">
+                <li></li>
+                <li></li>
+                <li></li>
+            </ol>
+        </div>
+        <div class="game_info_div">
+            <p style="padding-top: 20px;">Collect all coins and head for the finishing post!</p>
+        </div>
+    </div>
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="game.js"></script>
