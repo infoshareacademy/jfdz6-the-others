@@ -48,6 +48,7 @@ section {
     font-weight: bold
 }
 
+
 .key-personnel .person .title {
     color: black;
     font-weight: bold
@@ -211,6 +212,16 @@ a:hover {
 /*The End of Social Media*/
 
 /*Menu*/
+
+.marginfix {
+    margin-top: -50px;
+}
+
+.marginmenu {
+    margin-top: -20px;
+}
+
+
 .menu-nav-bar {
     list-style-type: none;
     margin: 0;
@@ -219,11 +230,13 @@ a:hover {
     top: 0;
     width: 100%;
     z-index: 1000;
-
 }
 
-.ulmenu {
-    height: 50px;
+.navbar {
+    position: relative;
+    min-height: 50px;
+    margin-bottom: 20px;
+    border: 0px solid transparent;
 }
 
 a, label, input[type=submit] {
@@ -232,6 +245,40 @@ a, label, input[type=submit] {
     text-decoration: none;
     font-weight: bold;
 
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: white;
+    font-size: 1.1vw;
+}
+
+.btncollapse{
+    font-size: 1.2vw;
+}
+
+.something-else-semantic {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border-color: #e7e7e7;
+    background: black;
+}
+.container-fluid {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+
+}
+.menubg {
+    background:black;
+}
+
+
+.imagepad {
+    margin-right: 5px;
 }
 
 /*The End of Menu*/
@@ -243,6 +290,7 @@ a, label, input[type=submit] {
     background: url(Assets/Photos/girl-sitting-in-a-abus.jpg) no-repeat scroll top;
     background-size: cover;
     opacity: 0.8;
+    margin-top: -20px;
 }
 
 /*The End of Background*/
@@ -258,15 +306,15 @@ a, label, input[type=submit] {
     text-align: center;
     font-weight: bold;
     color: white;
+    font-size: 3vw;
 }
-
 .preview-img > .img-responsive {
     width: 100%;
     max-width: 600px;
     max-height: 300px;
     margin: auto;
+    margin-top:100px;
 }
-
 /*The End of Preview*/
 
 /*Functionalities*/
@@ -321,25 +369,26 @@ img {
     -moz-transform: scale(1.25); /* Firefox */
     -ms-transform: scale(1.25); /* IE 9 */
     -o-transform: scale(1.25); /* Opera */
-    transform: scale(1.25);
+    transform: scale(1.25);    border-top-width: 0px;
 }
 
 /*The End of Functionalities*/
 
 /* nowe menu*/
 
+.nav>li>a {
+    display:inline-block;
+}
+
+
 .ulmenu {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
     overflow: hidden;
     background-color: black;
+    /*height: 50px;*/
 
 }
 
-li {
-    float: left;
-}
 
 li a, .dropbtn {
     display: inline-block;
@@ -350,13 +399,12 @@ li a, .dropbtn {
 }
 
 li a:hover, a:focus, .dropdown:hover .dropbtn {
-    background-color: #333333;
     color: white;
     text-decoration: none;
 }
 
 li.dropdown {
-    display: inline-block;
+    display: inline;
     position: inherit;
 }
 
@@ -666,4 +714,5 @@ ul {
 
 #Game {
     background-color: black;
+    margin-top: -20px;
 }
