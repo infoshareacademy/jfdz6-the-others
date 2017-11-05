@@ -157,8 +157,9 @@ function move(element, way, elClass) {
             $target.html(" ");
         }
         if ($target.hasClass('bus') && $target.hasClass('monster')) {
+            youDied();
             finishGame();
-	    alert("Game over!");
+	    // alert("Game over!");
         }
         if ($target.hasClass('bus') && $target.hasClass('meta') && coinCounter === 10) {
             finishGame(true);
@@ -168,6 +169,10 @@ function move(element, way, elClass) {
 
 }
 
+function youDied(){
+    $('body').append('<div style="background-image:url(https://res.cloudinary.com/teepublic/image/private/s--_AuUiZ2n--/t_Preview/b_rgb:191919,c_lpad,f_jpg,h_630,q_90,w_1200/v1480428599/production/designs/877345_1.jpg); background-repeat; no-repeat; background-size: cover; width: 100%; height: 100%; position: fixed;"></div>')
+}
+
 function finishGame(hasWon){
    // if(hasWon){
         console.log('Zapisuje: ', sec);
@@ -175,6 +180,8 @@ function finishGame(hasWon){
         gbt.push({user:'ala ma kota', time: sec});
         gbt.sort( function(a,b){ return a.time < b.time; });
         localStorage.setItem("game-best-time", JSON.stringify(gbt));
+        clearInterval(timer);
+        clearInterval(intervalMonsters);
   //  }
     // document.location.reload();
 }
@@ -217,16 +224,17 @@ function createMonster(moves, i) {
             .append($img)
             .addClass('monster obj' + i);
         if ($currentPosition.hasClass('bus') && $currentPosition.hasClass('monster')) {
-	        alert("Game over!");
+	        youDied();
 	        finishGame();
+	        // alert("Game over!");
         }
         monstersConfig.movesCounters[i] = (monstersConfig.movesCounters[i] + 1) % moves.length;
     }
 }
-
+var intervalMonsters;
 function setMonsters() {
     monstersConfig.moves.forEach(function (moves, i) {
-        setInterval(createMonster(moves, i), monstersConfig.moveTime)
+        intervalMonsters = setInterval(createMonster(moves, i), monstersConfig.moveTime)
     });
 }
 
