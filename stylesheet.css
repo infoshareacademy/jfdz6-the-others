@@ -21,7 +21,7 @@ section {
 
 .key-personnel h1 {
     text-transform: uppercase;
-    color: black=;
+    color: black;
     font-weight: bold
 }
 
@@ -44,7 +44,7 @@ section {
 .key-personnel .person .title a {
     line-height: 22px;
     font-size: 1.4rem;
-    color: white;
+    color: black
     font-weight: bold
 }
 
