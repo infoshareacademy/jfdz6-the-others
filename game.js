@@ -181,7 +181,6 @@ function finishGame(hasWon){
         gbt.sort( function(a,b){ return a.time < b.time; });
         localStorage.setItem("game-best-time", JSON.stringify(gbt));
         clearInterval(timer);
-        clearInterval(intervalMonsters);
   //  }
     // document.location.reload();
 }
@@ -215,26 +214,48 @@ var monstersConfig = {
     moveTime: 100
 }
 
-function createMonster(moves, i) {
-    return function () {
-        var monster = $('.obj' + i);
-        var $img = monster.removeClass('monster obj' + i).find('img');
+$('.game_info_div input').on('change', function() {
 
-        var $currentPosition = getNextPosition(monster, moves[monstersConfig.movesCounters[i]])
-            .append($img)
-            .addClass('monster obj' + i);
-        if ($currentPosition.hasClass('bus') && $currentPosition.hasClass('monster')) {
-	        youDied();
-	        finishGame();
-	        // alert("Game over!");
-        }
-        monstersConfig.movesCounters[i] = (monstersConfig.movesCounters[i] + 1) % moves.length;
+    if ($('input[name=level]:checked', '.game_info_div').val() === "easy") {
+        monstersConfig.moveTime = 300;
     }
+    if ($('input[name=level]:checked', '.game_info_div').val() === "hard") {
+        monstersConfig.moveTime = 75;
+    }
+    if ($('input[name=level]:checked', '.game_info_div').val() === "impossible") {
+        monstersConfig.moveTime = 10;
+    }
+    if ($('input[name=level]:checked', '.game_info_div').val() === "medium") {
+        monstersConfig.moveTime = 120;    }
+    });
+
+function createMonster(moves, i) {
+
+    var animate = function () {
+        setTimeout(function () {
+            var monster = $('.obj' + i);
+            var $img = monster.removeClass('monster obj' + i).find('img');
+
+            var $currentPosition = getNextPosition(monster, moves[monstersConfig.movesCounters[i]])
+                .append($img)
+                .addClass('monster obj' + i);
+            if ($currentPosition.hasClass('bus') && $currentPosition.hasClass('monster')) {
+                youDied();
+                finishGame();
+                // alert("Game over!");
+
+            }
+            monstersConfig.movesCounters[i] = (monstersConfig.movesCounters[i] + 1) % moves.length;
+            animate()
+        }, monstersConfig.moveTime)
+    };
+
+    return animate()
 }
-var intervalMonsters;
+
 function setMonsters() {
     monstersConfig.moves.forEach(function (moves, i) {
-        intervalMonsters = setInterval(createMonster(moves, i), monstersConfig.moveTime)
+       createMonster(moves, i)
     });
 }
 
