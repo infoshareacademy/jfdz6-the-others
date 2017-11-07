@@ -157,8 +157,9 @@ function move(element, way, elClass) {
             $target.html(" ");
         }
         if ($target.hasClass('bus') && $target.hasClass('monster')) {
+            youDied();
             finishGame();
-	    alert("Game over!");
+	    // alert("Game over!");
         }
         if ($target.hasClass('bus') && $target.hasClass('meta') && coinCounter === 10) {
             finishGame(true);
@@ -168,6 +169,10 @@ function move(element, way, elClass) {
 
 }
 
+function youDied(){
+    $('body').append('<div style="background-image:url(https://res.cloudinary.com/teepublic/image/private/s--_AuUiZ2n--/t_Preview/b_rgb:191919,c_lpad,f_jpg,h_630,q_90,w_1200/v1480428599/production/designs/877345_1.jpg); background-repeat; no-repeat; background-size: cover; width: 100%; height: 100%; position: fixed;"></div>')
+}
+
 function finishGame(hasWon){
    // if(hasWon){
         console.log('Zapisuje: ', sec);
@@ -175,6 +180,7 @@ function finishGame(hasWon){
         gbt.push({user:'ala ma kota', time: sec});
         gbt.sort( function(a,b){ return a.time < b.time; });
         localStorage.setItem("game-best-time", JSON.stringify(gbt));
+        clearInterval(timer);
   //  }
     // document.location.reload();
 }
@@ -220,8 +226,7 @@ $('.game_info_div input').on('change', function() {
         monstersConfig.moveTime = 10;
     }
     if ($('input[name=level]:checked', '.game_info_div').val() === "medium") {
-        monstersConfig.moveTime = 120;
-    }
+        monstersConfig.moveTime = 120;    }
     });
 
 function createMonster(moves, i) {
@@ -235,8 +240,10 @@ function createMonster(moves, i) {
                 .append($img)
                 .addClass('monster obj' + i);
             if ($currentPosition.hasClass('bus') && $currentPosition.hasClass('monster')) {
-                alert("Game over!");
+                youDied();
                 finishGame();
+                // alert("Game over!");
+
             }
             monstersConfig.movesCounters[i] = (monstersConfig.movesCounters[i] + 1) % moves.length;
             animate()
@@ -248,7 +255,7 @@ function createMonster(moves, i) {
 
 function setMonsters() {
     monstersConfig.moves.forEach(function (moves, i) {
-        createMonster(moves, i)
+       createMonster(moves, i)
     });
 }
 

@@ -307,13 +307,14 @@ a, label, input[type=submit] {
     font-weight: bold;
     color: white;
     font-size: 3vw;
+    padding-top: 150px;
 }
 .preview-img > .img-responsive {
     width: 100%;
     max-width: 600px;
     max-height: 300px;
     margin: auto;
-    margin-top:100px;
+    margin-top:250px;
 }
 /*The End of Preview*/
 
