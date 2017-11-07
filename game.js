@@ -216,18 +216,9 @@ var monstersConfig = {
 
 $('.game_info_div input').on('change', function() {
 
-    if ($('input[name=level]:checked', '.game_info_div').val() === "easy") {
-        monstersConfig.moveTime = 300;
-    }
-    if ($('input[name=level]:checked', '.game_info_div').val() === "hard") {
-        monstersConfig.moveTime = 75;
-    }
-    if ($('input[name=level]:checked', '.game_info_div').val() === "impossible") {
-        monstersConfig.moveTime = 10;
-    }
-    if ($('input[name=level]:checked', '.game_info_div').val() === "medium") {
-        monstersConfig.moveTime = 120;    }
-    });
+    monstersConfig.moveTime = $('input[name=level]:checked', '.game_info_div').val();
+
+});
 
 function createMonster(moves, i) {
 
