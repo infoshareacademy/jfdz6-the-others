@@ -80,7 +80,7 @@ var timerOn = false;
 var timer;
 
 $(document).keydown(function (e) {
-    
+
     	if (e.keyCode == 39 && !timerOn) {
 	timer =	setInterval( function(){
         	$("#seconds").html(pad(++sec%60));
@@ -177,13 +177,28 @@ function finishGame(hasWon){
    // if(hasWon){
         console.log('Zapisuje: ', sec);
         var gbt = JSON.parse(localStorage.getItem("game-best-time")) || [];
-        gbt.push({user:'ala ma kota', time: sec});
+        gbt.push({user:'player', time: sec});
         gbt.sort( function(a,b){ return a.time < b.time; });
         localStorage.setItem("game-best-time", JSON.stringify(gbt));
         clearInterval(timer);
   //  }
     // document.location.reload();
 }
+
+//It displays local storage content in div
+var name = window.localStorage['game-best-time'];
+
+document.getElementById('scores').innerText = name;
+
+
+//Prevents displaying more than 3 lines
+var myDiv = $('#scores');
+myDiv.text(myDiv.text().substring(0,82));
+
+
+
+
+
 
 $(document).keydown(function (e) {
     $bus = $('.bus');
