@@ -195,26 +195,11 @@ if (JSON.parse(localStorage.getItem("game-best-time"))[1] != undefined) {
 if (JSON.parse(localStorage.getItem("game-best-time"))[2] != undefined) {
     $(".leaderboard li:nth-child(3)").text((JSON.parse(localStorage.getItem("game-best-time"))[2].user)+": "+(JSON.parse(localStorage.getItem("game-best-time"))[2].time));
 }
- for (z = 0; z < 3; z++) {
+/* for (z = 0; z < 3; z++) {
  if (JSON.parse(localStorage.getItem("game-best-time"))[z] != undefined) {
  $(".leaderboard li:nth-child(" + z+1 + ")").text((JSON.parse(localStorage.getItem("game-best-time"))[z].user)+": "+(JSON.parse(localStorage.getItem("game-best-time"))[z].time));
  }
- }
-
-//It displays local storage content in div
-var name = window.localStorage['game-best-time'];
-
-document.getElementById('scores').innerText = name;
-
-
-//Prevents displaying more than 3 lines
-var myDiv = $('#scores');
-myDiv.text(myDiv.text().substring(0,82));
-
-
-
-
-
+ }  */
 
 $(document).keydown(function (e) {
     $bus = $('.bus');
