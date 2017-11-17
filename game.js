@@ -80,7 +80,7 @@ var timerOn = false;
 var timer;
 
 $(document).keydown(function (e) {
-    
+
     	if (e.keyCode == 39 && !timerOn) {
 	timer =	setInterval( function(){
         	$("#seconds").html(pad(++sec%60));
@@ -174,16 +174,32 @@ function youDied(){
 }
 
 function finishGame(hasWon){
-   // if(hasWon){
+    if(hasWon){
         console.log('Zapisuje: ', sec);
         var gbt = JSON.parse(localStorage.getItem("game-best-time")) || [];
-        gbt.push({user:'ala ma kota', time: sec});
-        gbt.sort( function(a,b){ return a.time < b.time; });
+        gbt.push({user: prompt("Name: "), time: sec});
+        gbt.sort( function(a,b){ return a.time > b.time; });
         localStorage.setItem("game-best-time", JSON.stringify(gbt));
         clearInterval(timer);
-  //  }
+    }
     // document.location.reload();
 }
+if (JSON.parse(localStorage.getItem("game-best-time"))[0] != undefined) {
+    $(".leaderboard li:nth-child(1)").text((JSON.parse(localStorage.getItem("game-best-time"))[0].user)+": "+(JSON.parse(localStorage.getItem("game-best-time"))[0].time));
+}
+
+if (JSON.parse(localStorage.getItem("game-best-time"))[1] != undefined) {
+    $(".leaderboard li:nth-child(2)").text((JSON.parse(localStorage.getItem("game-best-time"))[1].user)+": "+(JSON.parse(localStorage.getItem("game-best-time"))[1].time));
+}
+
+if (JSON.parse(localStorage.getItem("game-best-time"))[2] != undefined) {
+    $(".leaderboard li:nth-child(3)").text((JSON.parse(localStorage.getItem("game-best-time"))[2].user)+": "+(JSON.parse(localStorage.getItem("game-best-time"))[2].time));
+}
+/* for (z = 0; z < 3; z++) {
+ if (JSON.parse(localStorage.getItem("game-best-time"))[z] != undefined) {
+ $(".leaderboard li:nth-child(" + z+1 + ")").text((JSON.parse(localStorage.getItem("game-best-time"))[z].user)+": "+(JSON.parse(localStorage.getItem("game-best-time"))[z].time));
+ }
+ }  */
 
 $(document).keydown(function (e) {
     $bus = $('.bus');
