@@ -189,22 +189,11 @@ function finishGame(hasWon){
 
 function createLeaderboard() {
 	if (localStorage.getItem("game-best-time") !== null) {
-		if (JSON.parse(localStorage.getItem("game-best-time"))[0] != undefined) {
-			$(".leaderboard li:nth-child(1)").text((JSON.parse(localStorage.getItem("game-best-time"))[0].user)+": "+(JSON.parse(localStorage.getItem("game-best-time"))[0].time));
-		}
-
-		if (JSON.parse(localStorage.getItem("game-best-time"))[1] != undefined) {
-			$(".leaderboard li:nth-child(2)").text((JSON.parse(localStorage.getItem("game-best-time"))[1].user)+": "+(JSON.parse(localStorage.getItem("game-best-time"))[1].time));
-		}
-
-		if (JSON.parse(localStorage.getItem("game-best-time"))[2] != undefined) {
-			$(".leaderboard li:nth-child(3)").text((JSON.parse(localStorage.getItem("game-best-time"))[2].user)+": "+(JSON.parse(localStorage.getItem("game-best-time"))[2].time));
-		}
-		/* for (z = 0; z < 3; z++) {
-		 if (JSON.parse(localStorage.getItem("game-best-time"))[z] != undefined) {
-		 $(".leaderboard li:nth-child(" + z+1 + ")").text((JSON.parse(localStorage.getItem("game-best-time"))[z].user)+": "+(JSON.parse(localStorage.getItem("game-best-time"))[z].time));
-		 }
-		 }  //I have no idea why this loop displays only one result */
+	    for(var i = 0; i < 5; i++){
+        	if (JSON.parse(localStorage.getItem("game-best-time"))[i] != undefined) {
+        		$(".leaderboard li:nth-child(" + (i+1) + ")").text((JSON.parse(localStorage.getItem("game-best-time"))[i].user)+": "+(JSON.parse(localStorage.getItem("game-best-time"))[i].time));
+        	}
+        }
 	}
 }
 
