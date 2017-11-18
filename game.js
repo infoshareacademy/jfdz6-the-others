@@ -50,8 +50,8 @@ function createTable(width, height) {
             $td = $('<td>');
 
             var type = mapTable[j][i];
-           if (objects[type]) {
-               $td.html('<img src="Assets/Photos/' + objects[type].img + '.jpg" style="width: 30px; height: 30px;" />')
+            if (objects[type]) {
+                $td.html('<img src="Assets/Photos/' + objects[type].img + '.jpg" style="width: 30px; height: 30px;" />')
                     .addClass(objects[type].class).addClass(objects[type].img)
             }
 
@@ -73,7 +73,9 @@ $board.append($table);
 
 var sec = 0;
 
-function pad ( val ) { return val > 9 ? val : "0" + val; }
+function pad(val) {
+    return val > 9 ? val : "0" + val;
+}
 
 var timerOn = false;
 
@@ -81,12 +83,12 @@ var timer;
 
 $(document).keydown(function (e) {
 
-    	if (e.keyCode == 39 && !timerOn) {
-	timer =	setInterval( function(){
-        	$("#seconds").html(pad(++sec%60));
-        	$("#minutes").html(pad(parseInt(sec/60,10)));
-    	}, 1000);
-	timerOn = true;
+    if (e.keyCode == 39 && !timerOn) {
+        timer = setInterval(function () {
+            $("#seconds").html(pad(++sec % 60));
+            $("#minutes").html(pad(parseInt(sec / 60, 10)));
+        }, 1000);
+        timerOn = true;
     }
 });
 
@@ -153,63 +155,54 @@ function move(element, way, elClass) {
         if ($target.hasClass('bus') && $target.hasClass('coin')) {
             $target.removeClass('coin');
             coinCounter++;
-	    $('.coins').html(coinCounter);
+            $('.coins').html(coinCounter);
             $target.html(" ");
         }
         if ($target.hasClass('bus') && $target.hasClass('monster')) {
             youDied();
-			finishGame();
-		}
-        
-		if ($target.hasClass('bus') && $target.hasClass('meta') && coinCounter === 10) {
+            finishGame();
+        }
+
+        if ($target.hasClass('bus') && $target.hasClass('meta') && coinCounter === 10) {
             finishGame(true);
         }
     }
 
 }
 
-function youDied(){
-	$('#Game').hide();
+function youDied() {
+    $('#Game').hide();
     $('body').append('<div id="youdied" style="background-image:url(https://res.cloudinary.com/teepublic/image/private/s--_AuUiZ2n--/t_Preview/b_rgb:191919,c_lpad,f_jpg,h_630,q_90,w_1200/v1480428599/production/designs/877345_1.jpg); background-repeat; no-repeat; background-size: cover; width: 100%; height: 100%; position: fixed;"></div>')
 }
 
-function finishGame(hasWon){
-    if(hasWon){
+function finishGame(hasWon) {
+    if (hasWon) {
         var gbt = JSON.parse(localStorage.getItem("game-best-time")) || [];
         gbt.push({user: prompt("Congratulations! You won! Name: "), time: sec});
-        gbt.sort( function(a,b){ return a.time > b.time; });
+        gbt.sort(function (a, b) {
+            return a.time > b.time;
+        });
         localStorage.setItem("game-best-time", JSON.stringify(gbt));
-		createLeaderboard();
+        createLeaderboard();
     }
-	clearInterval(timer);
-    setTimeout(function() {
-		document.location.reload();
-	}, 5000);
+    clearInterval(timer);
+    setTimeout(function () {
+        document.location.reload();
+    }, 5000);
 }
 
 function createLeaderboard() {
-	if (localStorage.getItem("game-best-time") !== null) {
-		if (JSON.parse(localStorage.getItem("game-best-time"))[0] != undefined) {
-			$(".leaderboard li:nth-child(1)").text((JSON.parse(localStorage.getItem("game-best-time"))[0].user)+": "+(JSON.parse(localStorage.getItem("game-best-time"))[0].time));
-		}
-
-		if (JSON.parse(localStorage.getItem("game-best-time"))[1] != undefined) {
-			$(".leaderboard li:nth-child(2)").text((JSON.parse(localStorage.getItem("game-best-time"))[1].user)+": "+(JSON.parse(localStorage.getItem("game-best-time"))[1].time));
-		}
-
-		if (JSON.parse(localStorage.getItem("game-best-time"))[2] != undefined) {
-			$(".leaderboard li:nth-child(3)").text((JSON.parse(localStorage.getItem("game-best-time"))[2].user)+": "+(JSON.parse(localStorage.getItem("game-best-time"))[2].time));
-		}
-		/* for (z = 0; z < 3; z++) {
-		 if (JSON.parse(localStorage.getItem("game-best-time"))[z] != undefined) {
-		 $(".leaderboard li:nth-child(" + z+1 + ")").text((JSON.parse(localStorage.getItem("game-best-time"))[z].user)+": "+(JSON.parse(localStorage.getItem("game-best-time"))[z].time));
-		 }
-		 }  //I have no idea why this loop displays only one result */
-	}
+    if (localStorage.getItem("game-best-time") !== null) {
+        for (var i = 0; i < 5; i++) {
+            if (JSON.parse(localStorage.getItem("game-best-time"))[i] != undefined) {
+                $(".leaderboard li:nth-child(" + (i + 1) + ")").text((JSON.parse(localStorage.getItem("game-best-time"))[i].user) + ": " + (JSON.parse(localStorage.getItem("game-best-time"))[i].time));
+            }
+        }
+    }
 }
 
 createLeaderboard();
- 
+
 $(document).keydown(function (e) {
     $bus = $('.bus');
     if (e.keyCode > 36 && e.keyCode < 41) {
@@ -235,11 +228,11 @@ var monstersConfig = {
         [UP, UP, UP, UP, UP, UP, UP, UP, UP, UP, UP, UP, DOWN, DOWN, DOWN, DOWN, DOWN, DOWN, DOWN, DOWN, DOWN, DOWN, DOWN, DOWN],
         [UP, UP, UP, UP, UP, UP, UP, UP, DOWN, DOWN, DOWN, DOWN, DOWN, DOWN, DOWN, DOWN]
     ],
-    movesCounters: [0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+    movesCounters: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
     moveTime: 100
 }
 
-$('.game_info_div input').on('change', function() {
+$('.game_info_div input').on('change', function () {
 
     monstersConfig.moveTime = $('input[name=level]:checked', '.game_info_div').val();
 
@@ -269,7 +262,7 @@ function createMonster(moves, i) {
 
 function setMonsters() {
     monstersConfig.moves.forEach(function (moves, i) {
-       createMonster(moves, i)
+        createMonster(moves, i)
     });
 }
 
