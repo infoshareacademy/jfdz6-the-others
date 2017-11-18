@@ -771,8 +771,11 @@ ul {
 
 .game_info_div {
 	text-align: center;
-	font-family: FreeMono;
 	padding-top: 20px;
+}
+
+.game_info_div, .game_info_div p, .game_info_div span {
+    font-family: FreeMono;
 }
 
 .level {
