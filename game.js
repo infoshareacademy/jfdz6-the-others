@@ -158,49 +158,58 @@ function move(element, way, elClass) {
         }
         if ($target.hasClass('bus') && $target.hasClass('monster')) {
             youDied();
-            finishGame();
-	    // alert("Game over!");
-        }
-        if ($target.hasClass('bus') && $target.hasClass('meta') && coinCounter === 10) {
+			finishGame();
+		}
+        
+		if ($target.hasClass('bus') && $target.hasClass('meta') && coinCounter === 10) {
             finishGame(true);
-            alert("Congratulations! You won!");
         }
     }
 
 }
 
 function youDied(){
-    $('body').append('<div style="background-image:url(https://res.cloudinary.com/teepublic/image/private/s--_AuUiZ2n--/t_Preview/b_rgb:191919,c_lpad,f_jpg,h_630,q_90,w_1200/v1480428599/production/designs/877345_1.jpg); background-repeat; no-repeat; background-size: cover; width: 100%; height: 100%; position: fixed;"></div>')
+	$('#Game').hide();
+    $('body').append('<div id="youdied" style="background-image:url(https://res.cloudinary.com/teepublic/image/private/s--_AuUiZ2n--/t_Preview/b_rgb:191919,c_lpad,f_jpg,h_630,q_90,w_1200/v1480428599/production/designs/877345_1.jpg); background-repeat; no-repeat; background-size: cover; width: 100%; height: 100%; position: fixed;"></div>')
 }
 
 function finishGame(hasWon){
     if(hasWon){
-        console.log('Zapisuje: ', sec);
         var gbt = JSON.parse(localStorage.getItem("game-best-time")) || [];
-        gbt.push({user: prompt("Name: "), time: sec});
+        gbt.push({user: prompt("Congratulations! You won! Name: "), time: sec});
         gbt.sort( function(a,b){ return a.time > b.time; });
         localStorage.setItem("game-best-time", JSON.stringify(gbt));
-        clearInterval(timer);
+		createLeaderboard();
     }
-    // document.location.reload();
-}
-if (JSON.parse(localStorage.getItem("game-best-time"))[0] != undefined) {
-    $(".leaderboard li:nth-child(1)").text((JSON.parse(localStorage.getItem("game-best-time"))[0].user)+": "+(JSON.parse(localStorage.getItem("game-best-time"))[0].time));
-}
-
-if (JSON.parse(localStorage.getItem("game-best-time"))[1] != undefined) {
-    $(".leaderboard li:nth-child(2)").text((JSON.parse(localStorage.getItem("game-best-time"))[1].user)+": "+(JSON.parse(localStorage.getItem("game-best-time"))[1].time));
+	clearInterval(timer);
+    setTimeout(function() {
+		document.location.reload();
+	}, 5000);
 }
 
-if (JSON.parse(localStorage.getItem("game-best-time"))[2] != undefined) {
-    $(".leaderboard li:nth-child(3)").text((JSON.parse(localStorage.getItem("game-best-time"))[2].user)+": "+(JSON.parse(localStorage.getItem("game-best-time"))[2].time));
-}
-/* for (z = 0; z < 3; z++) {
- if (JSON.parse(localStorage.getItem("game-best-time"))[z] != undefined) {
- $(".leaderboard li:nth-child(" + z+1 + ")").text((JSON.parse(localStorage.getItem("game-best-time"))[z].user)+": "+(JSON.parse(localStorage.getItem("game-best-time"))[z].time));
- }
- }  */
+function createLeaderboard() {
+	if (localStorage.getItem("game-best-time") !== null) {
+		if (JSON.parse(localStorage.getItem("game-best-time"))[0] != undefined) {
+			$(".leaderboard li:nth-child(1)").text((JSON.parse(localStorage.getItem("game-best-time"))[0].user)+": "+(JSON.parse(localStorage.getItem("game-best-time"))[0].time));
+		}
 
+		if (JSON.parse(localStorage.getItem("game-best-time"))[1] != undefined) {
+			$(".leaderboard li:nth-child(2)").text((JSON.parse(localStorage.getItem("game-best-time"))[1].user)+": "+(JSON.parse(localStorage.getItem("game-best-time"))[1].time));
+		}
+
+		if (JSON.parse(localStorage.getItem("game-best-time"))[2] != undefined) {
+			$(".leaderboard li:nth-child(3)").text((JSON.parse(localStorage.getItem("game-best-time"))[2].user)+": "+(JSON.parse(localStorage.getItem("game-best-time"))[2].time));
+		}
+		/* for (z = 0; z < 3; z++) {
+		 if (JSON.parse(localStorage.getItem("game-best-time"))[z] != undefined) {
+		 $(".leaderboard li:nth-child(" + z+1 + ")").text((JSON.parse(localStorage.getItem("game-best-time"))[z].user)+": "+(JSON.parse(localStorage.getItem("game-best-time"))[z].time));
+		 }
+		 }  //I have no idea why this loop displays only one result */
+	}
+}
+
+createLeaderboard();
+ 
 $(document).keydown(function (e) {
     $bus = $('.bus');
     if (e.keyCode > 36 && e.keyCode < 41) {
@@ -249,8 +258,6 @@ function createMonster(moves, i) {
             if ($currentPosition.hasClass('bus') && $currentPosition.hasClass('monster')) {
                 youDied();
                 finishGame();
-                // alert("Game over!");
-
             }
             monstersConfig.movesCounters[i] = (monstersConfig.movesCounters[i] + 1) % moves.length;
             animate()
