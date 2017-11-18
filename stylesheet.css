@@ -1,4 +1,4 @@
-/*style do całości*/
+/*Styles for the whole website*/
 * {
     font-family: 'Montserrat', sans-serif;
 }
@@ -8,7 +8,9 @@ section {
     min-height: 100vh;
 }
 
-/*O nas*/
+/*The End of Styles for the whole website*/
+
+/*About Us*/
 #AboutUs {
     background: #E8E8E8;
 }
@@ -45,6 +47,7 @@ section {
     color: black;
     font-weight: bold
 }
+
 
 .key-personnel .person .title {
     color: black;
@@ -135,8 +138,14 @@ figure.hover-effect-onas:hover figcaption {
     background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.7) 0%, rgba(105, 105, 105, 0.7), rgba(128, 128, 128, 0.7) 100%);
 }
 
-/*koniec o nas*/
-/*cookies*/
+figure > img {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*The End of About Us*/
+
+/*Cookies*/
 #cookieInfo {
     position: fixed;
     bottom: 0;
@@ -164,8 +173,9 @@ figure.hover-effect-onas:hover figcaption {
     border: 1px solid white;
 }
 
-/*koniec cookies*/
-/*social media*/
+/*The End of Cookies*/
+
+/*Social Media*/
 .fb {
     background-color: #00aced;
 }
@@ -199,8 +209,19 @@ a:hover {
     color: white;
 }
 
-/*koniec social media*/
-/*menu*/
+/*The End of Social Media*/
+
+/*Menu*/
+
+.marginfix {
+    margin-top: -50px;
+}
+
+.marginmenu {
+    margin-top: -20px;
+}
+
+
 .menu-nav-bar {
     list-style-type: none;
     margin: 0;
@@ -209,11 +230,13 @@ a:hover {
     top: 0;
     width: 100%;
     z-index: 1000;
-
 }
 
-.ulmenu {
-    height: 50px;
+.navbar {
+    position: relative;
+    min-height: 50px;
+    margin-bottom: 20px;
+    border: 0px solid transparent;
 }
 
 a, label, input[type=submit] {
@@ -224,61 +247,78 @@ a, label, input[type=submit] {
 
 }
 
-/*koniec menu*/
-/*tło*/
+.navbar-default .navbar-nav>li>a {
+    color: white;
+    font-size: 1.1vw;
+}
+
+.btncollapse{
+    font-size: 1.2vw;
+}
+
+.something-else-semantic {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border-color: #e7e7e7;
+    background: black;
+}
+.container-fluid {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+
+}
+.menubg {
+    background:black;
+}
+
+
+.imagepad {
+    margin-right: 5px;
+}
+
+/*The End of Menu*/
+
+/*Background*/
 .scroll-bg {
     height: 100vh;
     width: 100%;
     background: url(Assets/Photos/girl-sitting-in-a-abus.jpg) no-repeat scroll top;
     background-size: cover;
     opacity: 0.8;
+    margin-top: -20px;
 }
 
-/*koniec tła*/
-/*zajawka*/
-.zajawka {
+/*The End of Background*/
+
+/*Preview*/
+.preview {
     position: absolute;
-    top: 70%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 50%;
-    height: 70%;
-    display: flex;
-    flex-direction: column;
+    top: 30%;
+    width: 100%;
 }
 
-.pzajawka, .divzajawka {
-    color: white;
+.preview-h1 > h1 {
     text-align: center;
-    text-decoration: none;
     font-weight: bold;
-    overflow: hidden;
-    font-size: xx-large;
-    flex: 1;
+    color: white;
+    font-size: 3vw;
+    padding-top: 150px;
 }
-
-.divzajawka:after {
-    display: inline-block;
-    margin: 0 0 52px 8px;
-    height: 8px;
-    content: " ";
-    text-shadow: none;
-    background-color: white;
-    width: 20%;
+.preview-img > .img-responsive {
+    width: 100%;
+    max-width: 600px;
+    max-height: 300px;
+    margin: auto;
+    margin-top:250px;
 }
+/*The End of Preview*/
 
-.divzajawka:before {
-    display: inline-block;
-    margin: 0 8px 52px 0;
-    height: 8px;
-    content: " ";
-    text-shadow: none;
-    background-color: white;
-    width: 20%;
-}
-
-/*koniec zajawki*/
-/*spis funkcjonalności*/
+/*Functionalities*/
 
 .functionalities-description {
     border: 2px solid black;
@@ -307,22 +347,49 @@ a, label, input[type=submit] {
     color: black;
 }
 
-/*koniec spisu funkcjonalności*/
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.image {
+    width: 90%;
+    height: 100%;
+}
+
+.image {
+    -webkit-transition: all 1s ease; /* Safari and Chrome */
+    -moz-transition: all 1s ease; /* Firefox */
+    -o-transition: all 1s ease; /* IE 9 */
+    -ms-transition: all 1s ease; /* Opera */
+    transition: all 1s ease;
+}
+
+.image:hover {
+    -webkit-transform: scale(1.25); /* Safari and Chrome */
+    -moz-transform: scale(1.25); /* Firefox */
+    -ms-transform: scale(1.25); /* IE 9 */
+    -o-transform: scale(1.25); /* Opera */
+    transform: scale(1.25);    border-top-width: 0px;
+}
+
+/*The End of Functionalities*/
 
 /* nowe menu*/
 
+.nav>li>a {
+    display:inline-block;
+}
+
+
 .ulmenu {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
     overflow: hidden;
     background-color: black;
+    /*height: 50px;*/
 
 }
 
-li {
-    float: left;
-}
 
 li a, .dropbtn {
     display: inline-block;
@@ -333,13 +400,12 @@ li a, .dropbtn {
 }
 
 li a:hover, a:focus, .dropdown:hover .dropbtn {
-    background-color: #333333;
     color: white;
     text-decoration: none;
 }
 
 li.dropdown {
-    display: inline-block;
+    display: inline;
     position: inherit;
 }
 
@@ -376,10 +442,16 @@ li.dropdown {
 
 }
 
-/*contact form*/
+/*Contact Form*/
 #Contact {
     padding-top: 100px;
     background: black;
+}
+
+#Contact > .container {
+    width: 100%;
+    margin: auto;
+    max-width: 600px;
 }
 
 .form-area {
@@ -412,19 +484,13 @@ li.dropdown {
     border: 2px;
 }
 
-/*koniec contact form*/
-
-/*ZTM*/
-
-.ztmhsjq {
+#antybotfield {
     display: none;
-
 }
 
-.ztmtbjq {
-    display: none;
+/*The End of Contact Form*/
 
-}
+/*Info*/
 
 h1, h2, h3 {
     text-align: center;
@@ -450,9 +516,9 @@ table {
     cursor: pointer;
 }
 
-/*ZTM*/
+/*The End of Info*/
 
-/*Karuzele*/
+/*Carousels*/
 .carousel-container {
     margin: auto;
     width: 50%;
@@ -469,8 +535,8 @@ table {
     float: none;
 }
 
-/*wyznacz trase*/
-.trasa {
+/*Navigate*/
+.track {
     background-color: black;
     text-align: center;
     color: white;
@@ -478,11 +544,13 @@ table {
     padding-top: 20px;
 }
 
-.trasa img {
+.track img {
     margin: auto;
 }
 
-/*przycisk powrotu na górę strony*/
+/*The End of Navigate*/
+
+/*Top Button*/
 #top-button {
     display: none;
     position: fixed;
@@ -507,4 +575,209 @@ table {
     color: #3B5998;;
 }
 
-/*koniec przycisku*/
+/*The End of Top Button*/
+.stat {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 90vh;
+}
+
+.cov {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 80vh;
+}
+
+.image1 {
+    background-image: url("assets/mainbus.jpg");
+    margin-bottom: -50px;
+}
+
+.image2 {
+    background-image: url("assets/maintrain.jpg");
+}
+
+/*edit main page*/
+
+/*social buttons footer*/
+.hello:hover {
+    color: white
+}
+
+.footer {
+    background: lightgrey;
+    height: 150px;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+p > a:hover {
+    color: #d9d9d9;
+    text-decoration: underline;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+.footer-social-icons {
+    padding-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.social-icon {
+    color: #fff;
+}
+
+.social-icons li {
+    vertical-align: top;
+    display: inline;
+    height: 100px;
+}
+
+.social-icons a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.fa-facebook {
+    padding: 10px 14px;
+    -o-transition: .5s;
+    -moz-transition: .5s;
+    -webkit-transition: .5s;
+    transition: .5s;
+    background-color: #322f30;
+}
+
+.fa-facebook:hover {
+    background-color: #3d5b99;
+}
+
+.fa-twitter {
+    padding: 10px 12px;
+    -o-transition: .5s;
+    -moz-transition: .5s;
+    -webkit-transition: .5s;
+    transition: .5s;
+}
+
+.colortw {
+    background-color: #322f30;
+}
+
+.fa-twitter:hover {
+    background-color: #00aced;
+}
+
+.fa-youtube {
+    padding: 10px 14px;
+    -o-transition: .5s;
+    -moz-transition: .5s;
+    -webkit-transition: .5s;
+    transition: .5s;
+    background-color: #322f30;
+}
+
+.fa-youtube:hover {
+    background-color: #e64a41;
+}
+
+.fa-google-plus {
+    padding: 10px 9px;
+    -o-transition: .5s;
+    -moz-transition: .5s;
+    -webkit-transition: .5s;
+    transition: .5s;
+    background-color: #322f30;
+}
+
+.fa-google-plus:hover {
+    background-color: #e25714;
+}
+
+/*social*/
+@media (max-width: 320px) {
+    .med {
+        font-size: 1em;
+    }
+}
+
+/*Game*/
+
+#Game {
+    background-color: black;
+    margin-top: -20px;
+}
+
+.point {
+	border: none;
+	width: 30px;
+	height: 30px;
+	max-height: 30px;
+	padding: 0;
+	margin: 0;
+	outline: 1px solid black;
+	border-collapse: collapse;
+	position: relative;
+}
+
+.bus {
+	background-image: url(Assets/Photos/bus.jpg);
+	background-size: 30px 30px;
+}
+
+#game {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#board table {
+	margin: 0;
+	padding: 0;
+	border-collapse: collapse;
+}
+
+#board table td {
+	background-color: white; /* necessary since we use a black background in the main page */
+}
+
+#board table td img {
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+#board {
+	float: left;
+}
+
+#game_info {
+	background-color: lightgrey;
+	margin-left: 0;
+	float: left;
+	border: 1px solid black;
+	width: 200px;
+	height: 600px;
+}
+
+.game_info_div {
+	text-align: center;
+	padding-top: 20px;
+}
+
+.game_info_div, .game_info_div p, .game_info_div span {
+    font-family: FreeMono;
+}
+
+.level {
+	text-decoration: none;
+}

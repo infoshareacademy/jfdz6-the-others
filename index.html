@@ -12,89 +12,223 @@
     <link rel="stylesheet" href="stylesheet.css">
     <link rel="icon" type="image/png" sizes="32x32" href="Assets/Favicon/favicon-connectdevelop.ico">
     <meta name="theme-color" content="#ffffff">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-
 <!-- MENU-->
-<nav class="div-menu">
-    <div class="menu-nav-bar">
-        <ul class="ulmenu">
+<nav class=" navbar navbar-default">
+    <div class=" container-fluid menubg">
+        <div class=" navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
 
-            <li><a href="#Mainpage"><i class="fa fa-connectdevelop" aria-hidden="true"></i> Komunikacja Miejska
-                Gdańsk</a></li>
-            <li class="dropdown">
-                <a href="#Timetable" class="dropbtn"><i class="fa fa-calendar" aria-hidden="true"></i> Rozkład Jazdy</a>
-                <div class="dropdown-content">
-                    <a href="#Buses"><i class="fa fa-bus" aria-hidden="true"></i> Autobusy</a>
-                    <a href="#Trams"><i class="fa fa-subway" aria-hidden="true"></i> Tramwaje</a>
-                    <a href="#SKM"><i class="fa fa-train" aria-hidden="true"></i> SKM</a>
-                    <a href="#PKM"><i class="fa fa-train" aria-hidden="true"></i> PKM</a>
-            <li><a href="#Navigate"><i class="fa fa-street-view" aria-hidden="true"></i> Wyznacz trasę</a></li>
-            <li><a href="#Info"><i class="fa fa-info" aria-hidden="true"></i> Informacje o komunikacji</a></li>
-            <li><a href="#Contact"><i class="fa fa-envelope-o" aria-hidden="true"></i> Kontakt</a></li>
-            <li><a href="#AboutUs"><i class="fa fa-users" aria-hidden="true"></i> O nas</a></li>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
-
-            <!--social media-->
-            <div class="socialmedia">
-                <a href="http://facebook.com">
-                    <button type="button" class="icon fb btn btn-fb"><i class="fa fa-facebook fa-2x"></i></button>
-                </a>
-                <a href="http://twitter.com">
-                    <button type="button" class="margin icon tw btn btn-tw"><i class="fa fa-twitter fa-2x"></i></button>
-                </a>
-                <a href="https://plus.google.com/collections/featured?hl=pl">
-                    <button type="button" class="margin icon gplus btn btn-gplus"><i
-                            class="fa fa-google-plus fa-2x"></i></button>
-                </a>
-            </div>
-        </ul>
+            <ul class="ulmenu nav navbar-nav">
+                <li><a href="#Mainpage" data-title="Komunikacja Miejska Gdańsk"><i class=" imagepad fa fa-connectdevelop" aria-hidden="true"></i> KomunikacjaMiejskaGdańsk</a></li>
+                <li class="dropdown">
+                    <a href="#Timetable" class="" data-title="Rozkład Jazdy"><i class="fa fa-calendar"
+                                                                                       aria-hidden="true"></i> Rozkład Jazdy</a>
+                    <div class="dropdown-content btncollapse">
+                        <a href="#Timetable/Buses" data-title="Autobusy"><i class="fa fa-bus" aria-hidden="true"></i>
+                            Autobusy</a>
+                        <a href="#Timetable/Trams" data-title="Tramwaje"><i class="fa fa-subway" aria-hidden="true"></i>
+                            Tramwaje</a>
+                        <a href="#Timetable/SKM" data-title="SKM"><i class="fa fa-train" aria-hidden="true"></i> SKM</a>
+                        <a href="#Timetable/PKM" data-title="PKM"><i class="  fa fa-train" aria-hidden="true"></i> PKM</a>
+                    </div>
+                </li>
+                <li><a href="#Navigate" data-title="Wyznacz trasę"><i class="imagepad fa fa-street-view" aria-hidden="true"></i>Wyznacz trasę</a></li>
+                <li><a href="#Info" data-title="Informacje o komunikacji"><i class="imagepad fa fa-info" aria-hidden="true"></i>Informacje o komunikacji</a></li>
+                <li><a href="#Game" data-title="Bus trip"><i class="imagepad fa fa-gamepad" aria-hidden="true"></i> Zagraj</a></li>
+                <li><a href="#Contact" data-title="Kontakt"><i class="imagepad fa fa-envelope-o" aria-hidden="true"></i> Kontakt</a></li>
+                <!--social media-->
+            </ul>
+        </div>
     </div>
 </nav>
 <header id="Mainpage">
-    <!--tło-->
-    <div class="scroll-bg"></div>
-    <!--koniec tła-->
-    <!--zajawka-->
+    <!--Background-->
+    <div class="scroll-bg">
 
-    <div class="zajawka">
-        <div class="divzajawka animated rotateInDownLeft"><i class="fa fa-connectdevelop fa-5x"></i></div>
-        <p class="pzajawka animated rotateInDownLeft">Twój przewodnik po komunikacji miejskiej w Gdańsku</p>
+
+        <div class="preview-h1 col-xs-8 col-xs-offset-2">
+<div class="preview-h1">
+            <h1 class="Title">Twój przewodnik po komunikacji miejskiej w Gdańsku</h1>
+</div>
+            <div class="preview animated rotateInDownLeft">
+                <div class="col-xs-8 col-xs-offset-2 preview-img">
+                    <img src="Assets/Photos/font-awesome-zajawka.png"
+                         alt="Connect-develop img" class="img-responsive">
+                </div>
+
+            </div>
+        </div>
+
     </div>
-    <!--koniec zajawki-->
-    <!--spis funkcjonalności-->
+    <!--The End of Background-->
+    <!--Preview-->
+
+    <!--The end of preview-->
+    <!--Functionalities-->
     <div class="white-thumbnail">
         <div class="container-fluid functionalities">
             <div class="col-md-3">
-                <div class="functionalities-description"><a href="#Info"><i class="fa fa-info fa-3x"
-                                                                            aria-hidden="true"></i></a>
-                    <p>Dowiesz się tutaj o najnowszych planach rozwoju oraz sprawdzisz historię KMG.</p></div>
+                <div class="image">
+                    <div class="functionalities-description" data-title="Informacje o komunikacji"><a href="#Info"><i
+                            class="fa fa-info fa-3x"
+                            aria-hidden="true"></i></a>
+                        <p>Dowiesz się tutaj o najnowszych planach rozwoju oraz sprawdzisz historię KMG.</p></div>
+                </div>
             </div>
             <div class="col-md-3">
-                <div class="functionalities-description"><a href="#Timetable"><i class="fa fa-calendar fa-3x"
-                                                                                 aria-hidden="true"></i></a>
-                    <p>Znajdziesz u nas wszystkie aktualne rozkłady jazdy!</p></div>
+                <div class="image">
+                    <div class="functionalities-description" data-title="Rozkład jazdy"><a href="#Timetable"><i
+                            class="fa fa-calendar fa-3x"
+                            aria-hidden="true"></i></a>
+                        <p>Znajdziesz u nas wszystkie aktualne rozkłady jazdy!</p></div>
+                </div>
             </div>
             <div class="col-md-3">
-                <div class="functionalities-description"><a href="#Navigate"><i class="fa fa-street-view fa-3x"
-                                                                                aria-hidden="true"></i></a>
-                    <p>Sprawdzisz z nami najszybszą trasę dojazdu!</p></div>
+                <div class="image">
+                    <div class="functionalities-description" data-title="Wyznacz trasę"><a href="#Navigate"><i
+                            class="fa fa-street-view fa-3x"
+                            aria-hidden="true"></i></a>
+                        <p>Sprawdzisz z nami najszybszą trasę dojazdu!</p></div>
+                </div>
             </div>
             <div class="col-md-3">
-                <div class="functionalities-description"><a href="#Contact"><i class="fa fa-envelope-o fa-3x"
-                                                                               aria-hidden="true"></i></a>
-                    <p>Powiadom nas korkach, awariach i spóźnieniach. Zbieraj punkty i wymieniaj na nagrody!</p>
+                <div class="image">
+                    <div class="functionalities-description" data-title="Kontakt"><a href="#Contact"><i
+                            class="fa fa-envelope-o fa-3x"
+                            aria-hidden="true"></i></a>
+                        <p>Powiadom nas korkach, awariach i spóźnieniach. Zbieraj punkty i wymieniaj na nagrody!</p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+    <!--The End of Functionalities-->
+    <div class="cov image1"></div>
+    <!--About us-->
+    <section id="AboutUs">
+        <div class="key-personnel">
+            <div class="container">
+                <h1>Poznaj nasz zespół</h1>
+                <div class="row persons-list">
+                    <div class="col-md-3 col-sm-6 col-xs-12 person">
+                        <figure class="hover-effect-onas">
+                            <img class="img-responsive img-hover-onas"
+                                 src="Assets/About%20Us/Kaja_Onas.jpg"
+                                 alt="Kaja">
+                            <figcaption>
+                                <p>Zajmuję się tworzeniem stron i aplikacji internetowych. Kiedyś tylko fascynacja i
+                                    zabawa,
+                                    potem
+                                    przedmiot siedmioletniej edukacji i liczne eksperymenty, aż wreszcie ulubiona
+                                    praca.</p>
+                            </figcaption>
+                        </figure>
+                        <div class="name">Kaja</div>
+                        <div class="title">Design-team Leader</div>
+                        <div class="title"><a href="#onas">designers@theothers.com</a></div>
+                        <div class="social">
+                            <a target="_blank" href="https://twitter.com"><i class="fa fa-twitter fa-3x"></i></a>
+                            <a target="_blank" href="http://instagram.com"><i class="fa fa-instagram fa-3x"></i></a>
+                            <a target="_blank" href="https://pl.linkedin.com/"><i class="fa fa-linkedin fa-3x"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12 person">
+                        <figure class="hover-effect-onas">
+                            <img class="img-responsive img-hover-onas"
+                                 src="Assets/About%20Us/Marcin_Onas.jpg"
+                                 alt="Marcin">
+                            <figcaption>
+                                <p>Tworzymy zespół doświadczonych testerów o umiejętnościach mentorskich. Pracujemy z
+                                    najlepszymi specjalistami w branży testowania w Polsce i nie tylko :)</p>
+                            </figcaption>
+                        </figure>
+                        <div class="name">Marcin</div>
+                        <div class="title">Testers-team Leader</div>
+                        <div class="title"><a href="#onas">testers@theothers.com</a></div>
+                        <div class="social">
+                            <a target="_blank" href="https://twitter.com"><i class="fa fa-twitter fa-3x"></i></a>
+                            <a target="_blank" href="http://instagram.com"><i class="fa fa-instagram fa-3x"></i></a>
+                            <a target="_blank" href="https://pl.linkedin.com/"><i class="fa fa-linkedin fa-3x"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12 person">
+                        <figure class="hover-effect-onas">
+                            <img class="img-responsive img-hover-onas"
+                                 src="Assets/About%20Us/Norbert_Onas.jpg"
+                                 alt="">
+                            <figcaption>
+                                <p>"Dobrze jest znać swoje granice, swoją strefę komfortu, ale nie po to, żeby traktować
+                                    ją
+                                    jako wymówkę, tylko po to, żeby ją poszerzać."</p>
+                            </figcaption>
+                        </figure>
+                        <div class="name">Norbert</div>
+                        <div class="title">Developers-team Leader</div>
+                        <div class="title"><a href="#onas">developers@theothers.com</a></div>
+                        <div class="social">
+                            <a target="_blank" href="https://twitter.com"><i class="fa fa-twitter fa-3x"></i></a>
+                            <a target="_blank" href="http://instagram.com"><i class="fa fa-instagram fa-3x"></i></a>
+                            <a target="_blank" href="https://pl.linkedin.com/"><i class="fa fa-linkedin fa-3x"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12 person">
+                        <figure class="hover-effect-onas">
+                            <img class="img-responsive img-hover-onas"
+                                 src="Assets/About%20Us/Piotr_Onas.jpg"
+                                 alt="">
+                            <figcaption>
+                                <p>Bierzemy czynny udział w R&D, mającym na celu tworzenie nowych rozwiązań dla firmy
+                                    oraz w
+                                    wielu inicjatywach mających na celu usprawnienie procesów już funkcjonujących.</p>
+                            </figcaption>
+                        </figure>
+                        <div class="name">Piotr</div>
+                        <div class="title">Delivery Manager</div>
+                        <div class="title"><a href="#onas">delivery@theothers.com</a></div>
+                        <div class="social">
+                            <a target="_blank" href="https://twitter.com"><i class="fa fa-twitter fa-3x"></i></a>
+                            <a target="_blank" href="http://instagram.com"><i class="fa fa-instagram fa-3x"></i></a>
+                            <a target="_blank" href="https://pl.linkedin.com/"><i class="fa fa-linkedin fa-3x"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--The end of About Us-->
+    <div class="cov image2"></div>
+    <div class="footer">
+        <div class="footer-social-icons ">
 
+            <ul class="social-icons ">
+                <li><a href="https://www.facebook.com" class="social-icon hello"> <i
+                        class="fa med fa-facebook fa-3x"></i></a></li>
+                <li><a href="https://www.twitter.com" class="social-icon hello"> <i
+                        class="fa med fa-twitter fa-3x colortw"></i></a></li>
+                <li><a href="https://www.youtube.com" class="social-icon hello"> <i class="fa med fa-youtube fa-3x"></i></a>
+                </li>
+                <li><a href="https://plus.google.com/?hl=pl" class="social-icon hello"> <i
+                        class="fa med fa-google-plus fa-3x"></i></a></li>
+            </ul>
+        </div>
+    </div>
 </header>
-<!--Kontakt-->
-<section id="Contact">
-    <div class="container">
+<!--Contact-->
+<section id="Contact" class="marginmenu">
+    <div class="container ">
         <div class="form-area">
-            <form role="form">
+            <form role="form" method="POST" action="http://formspree.io/theothersisa@gmail.com">
                 <br style="clear:both">
                 <h3 style="margin-bottom: 25px; text-align: center;">Kontakt</h3>
                 <div class="form-group">
@@ -110,6 +244,7 @@
                     <input type="text" class="form-control" id="mobile" name="mobile"
                            placeholder="Telefon kontaktowy" required>
                 </div>
+                <input type="text" name="url" id="antybotfield" value="" placeholder="Zostaw to pole puste">
                 <div class="form-group">
 
                             <textarea class="form-control" type="textarea" id="message" placeholder="Wiadomość"
@@ -118,118 +253,28 @@
                                                 class="help-block ">Przekroczono limit znaków</p></span>
                 </div>
 
-                <button type="button" id="submit" name="submit" class="btn btn-primary pull-right">Wyślij
+                <button type="submit" id="submit2" name="submit2" class="btn btn-primary pull-right">Wyślij
                 </button>
             </form>
         </div>
     </div>
 </section>
-
+<!--The End of Contact-->
+<!--Navigate-->
 <section id="Navigate">
-    <div class="trasa">
+    <div class="track marginfix">
         <h4><p>Tu powstanie informacja jak bez problemu dostaniesz się z punktu A do punktu B</p></h4>
         <img src="Assets/Photos/Gdansk.jpg" alt="mapa" class="img-responsive">
     </div>
 </section>
-
-<!--o nas-->
-<section id="AboutUs">
-    <div class="key-personnel">
-        <div class="container">
-            <h1>Poznaj nasz zespół</h1>
-            <div class="row persons-list">
-                <div class="col-md-3 col-xs-6 person">
-                    <figure class="hover-effect-onas">
-                        <img class="img-responsive img-hover-onas"
-                             src="Assets/About%20Us/Kaja_Onas.jpg"
-                             alt="Kaja">
-                        <figcaption>
-                            <p>Zajmuję się tworzeniem stron i aplikacji internetowych. Kiedyś tylko fascynacja i zabawa,
-                                potem
-                                przedmiot siedmioletniej edukacji i liczne eksperymenty, aż wreszcie ulubiona praca.</p>
-                        </figcaption>
-                    </figure>
-                    <div class="name">Kaja</div>
-                    <div class="title">Design-team Leader</div>
-                    <div class="title"><a href="#onas">designers@theothers.com</a></div>
-                    <div class="social">
-                        <a target="_blank" href="https://twitter.com"><i class="fa fa-twitter fa-3x"></i></a>
-                        <a target="_blank" href="http://instagram.com"><i class="fa fa-instagram fa-3x"></i></a>
-                        <a target="_blank" href="https://pl.linkedin.com/"><i class="fa fa-linkedin fa-3x"></i></a>
-                    </div>
-                </div>
-                <div class="col-md-3 col-xs-6 person">
-                    <figure class="hover-effect-onas">
-                        <img class="img-responsive img-hover-onas"
-                             src="Assets/About%20Us/Marcin_Onas.jpg"
-                             alt="Marcin">
-                        <figcaption>
-                            <p>Tworzymy zespół doświadczonych testerów o umiejętnościach mentorskich. Pracujemy z
-                                najlepszymi specjalistami w branży testowania w Polsce i nie tylko :)</p>
-                        </figcaption>
-                    </figure>
-                    <div class="name">Marcin</div>
-                    <div class="title">Testers-team Leader</div>
-                    <div class="title"><a href="#onas">testers@theothers.com</a></div>
-                    <div class="social">
-                        <a target="_blank" href="https://twitter.com"><i class="fa fa-twitter fa-3x"></i></a>
-                        <a target="_blank" href="http://instagram.com"><i class="fa fa-instagram fa-3x"></i></a>
-                        <a target="_blank" href="https://pl.linkedin.com/"><i class="fa fa-linkedin fa-3x"></i></a>
-                    </div>
-                </div>
-                <div class="col-md-3 col-xs-6 person">
-                    <figure class="hover-effect-onas">
-                        <img class="img-responsive img-hover-onas"
-                             src="Assets/About%20Us/Norbert_Onas.jpg"
-                             alt="">
-                        <figcaption>
-                            <p>"Dobrze jest znać swoje granice, swoją strefę komfortu, ale nie po to, żeby traktować
-                                ją
-                                jako wymówkę, tylko po to, żeby ją poszerzać."</p>
-                        </figcaption>
-                    </figure>
-                    <div class="name">Norbert</div>
-                    <div class="title">Developers-team Leader</div>
-                    <div class="title"><a href="#onas">developers@theothers.com</a></div>
-                    <div class="social">
-                        <a target="_blank" href="https://twitter.com"><i class="fa fa-twitter fa-3x"></i></a>
-                        <a target="_blank" href="http://instagram.com"><i class="fa fa-instagram fa-3x"></i></a>
-                        <a target="_blank" href="https://pl.linkedin.com/"><i class="fa fa-linkedin fa-3x"></i></a>
-                    </div>
-                </div>
-                <div class="col-md-3 col-xs-6 person">
-                    <figure class="hover-effect-onas">
-                        <img class="img-responsive img-hover-onas"
-                             src="Assets/About%20Us/Piotr_Onas.jpg"
-                             alt="">
-                        <figcaption>
-                            <p>Bierzemy czynny udział w R&D, mającym na celu tworzenie nowych rozwiązań dla firmy
-                                oraz w
-                                wielu inicjatywach mających na celu usprawnienie procesów już funkcjonujących.</p>
-                        </figcaption>
-                    </figure>
-                    <div class="name">Piotr</div>
-                    <div class="title">Delivery Manager</div>
-                    <div class="title"><a href="#onas">delivery@theothers.com</a></div>
-                    <div class="social">
-                        <a target="_blank" href="https://twitter.com"><i class="fa fa-twitter fa-3x"></i></a>
-                        <a target="_blank" href="http://instagram.com"><i class="fa fa-instagram fa-3x"></i></a>
-                        <a target="_blank" href="https://pl.linkedin.com/"><i class="fa fa-linkedin fa-3x"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-</section>
-<!--koniec o nas-->
+<!--The End of Navigate-->
 
 
-<!--poczatek sekcji info-->
-<section id="Info">
+<!--Info-->
+<section id="Info" class="marginmenu" >
     <div class="info container animated fadeInDown">
-        <h1 class="skm-hist-button"><span>Historia SKM</span></h1>
-        <div class="skm-hist">
+        <h1 class="info-button"><span>Historia SKM</span></h1>
+        <div class="info-section">
             <div class="carousel-container">
                 <div id="myCarousel-skm-hist" class="carousel slide" data-ride="carousel">
                     <!-- Indicators -->
@@ -412,8 +457,8 @@
             <p class="content">11 grudnia 2016 uruchomione zostało połączenie Gdynia Główna – Gdańsk Wrzeszcz – Gdańsk
                 Port Lotniczy – Kościerzyna.</p>
         </div>
-        <h1 class="skm-tab-button"><span>Tabor SKM</span></h1>
-        <div class="skm-tab">
+        <h1 class="info-button"><span>Tabor SKM</span></h1>
+        <div class="info-section">
             <div class="carousel-container">
                 <div id="myCarousel-skm-tab" class="carousel slide" data-ride="carousel">
                     <!-- Indicators -->
@@ -464,8 +509,8 @@
                 marca 2016 r. Umowę na dostarczenie składów SKM zawarła z firmą Newag dnia 23 marca 2015. 13 stycznia
                 2016 PKP SKM ogłosiło zamiar zakupu jednego SZT do obsługi linii PKM, Kartuz i Kościerzyny.</p>
         </div>
-        <h1 class="pkm-hist-button"><span>Historia PKM</span></h1>
-        <div class="pkm-hist">
+        <h1 class="info-button"><span>Historia PKM</span></h1>
+        <div class="info-section">
             <div class="carousel-container">
                 <div id="myCarousel-pkm-hist" class="carousel slide" data-ride="carousel">
                     <!-- Indicators -->
@@ -530,8 +575,8 @@
                 terenie terminalu T2 Portu Lotniczego im. Lecha Wałęsy w Gdańsku, natomiast oddanie linii do użytku
                 miało miejsce dwa dni później, 1 września.</p>
         </div>
-        <h1 class="pkm-tab-button"><span>Tabor PKM</span></h1>
-        <div class="pkm-tab">
+        <h1 class="info-button"><span>Tabor PKM</span></h1>
+        <div class="info-section">
             <div class="carousel-container">
                 <div id="myCarousel-pkm-tab" class="carousel slide" data-ride="carousel">
                     <!-- Indicators -->
@@ -585,11 +630,8 @@
                 nastąpi zakup elektrycznych zespołów trakcyjnych, te spalinowe zostaną przeznaczone do obsługi połączeń
                 w innych częściach województwa.</p>
         </div>
-
-
-        <h1 class="ztm-hist-button center"><span>Historia ZTM</span></h1>
-
-        <div class="ztmhsjq">
+        <h1 class="info-button center"><span>Historia ZTM</span></h1>
+        <div class="info-section">
             <div class="carousel-container">
                 <div id="myCarousel-ztm-hist" class="carousel slide" data-ride="carousel">
                     <!-- Indicators -->
@@ -714,11 +756,8 @@
 
 
         </div>
-
-
-        <h1 class="ztm-tab-button"><span>Tabor ZTM</span></h1>
-
-        <div class="ztmtbjq">
+        <h1 class="info-button"><span>Tabor ZTM</span></h1>
+        <div class="info-section">
             <div class="carousel-container">
                 <div id="myCarousel-ztm-tab" class="carousel slide" data-ride="carousel">
                     <!-- Indicators -->
@@ -898,32 +937,29 @@
 
         </div>
     </div>
-
 </section>
+<!--The End of Info-->
 
 
-<!--koniec sekcji info-->
-
-
-<!--sekcje rozkładu jazdy-->
+<!--Timetable-->
 <section id="Timetable">
-    <div class="timetable">
-        <div id="Buses"><i class="fa fa-bus fa-5x" aria-hidden="true"></i>
+    <div class="timetable marginfix">
+        <div id="Timetable/Buses"><i class="  fa fa-bus fa-5x" aria-hidden="true"></i>
             <h3><p>Tu powstanie rozkład jazdy i informacje o Gdańskich autobusach.</p></h3>
             <img src="Assets/Do_rozkladu/bus.jpg" alt="autobus">
         </div>
 
-        <div id="Trams"><i class="fa fa-subway fa-5x" aria-hidden="true"></i>
+        <div id="Timetable/Trams"><i class="  fa fa-subway fa-5x" aria-hidden="true"></i>
             <h3><p>Tu powstanie rozkład jazdy i informacje o Gdańskich tramwajach.</p></h3>
             <img src="Assets/Do_rozkladu/tramwaj.jpg" alt="tramwaj">
         </div>
 
-        <div id="SKM"><i class="fa fa-train fa-5x" aria-hidden="true"></i>
+        <div id="Timetable/SKM"><i class="   fa fa-train fa-5x" aria-hidden="true"></i>
             <h3><p>Tu powstanie rozkład jazdy i informacje o Trójmiejskich SKM.</p></h3>
             <img src="Assets/Do_rozkladu/skm1.jpg" alt="skm">
         </div>
 
-        <div id="PKM"><i class="fa fa-train fa-5x" aria-hidden="true"></i>
+        <div id="Timetable/PKM"><i class="  fa fa-train fa-5x" aria-hidden="true"></i>
             <h3><p>Tu powstanie rozkład jazdy i informacje o Trójmiejskich PKM.</p></h3>
             <img src="Assets/Do_rozkladu/pkm1.jpg" alt="pkm">
         </div>
@@ -931,24 +967,61 @@
 
 
 </section>
-<!--koniec sekcji rozkładu jazdy-->
-<!--przycisk powrotu na górę strony-->
+<!--The end of Timetable-->
+
+<!--Bus trip-->
+<section id="Game">
+	<div id="game">
+		<div id="board"></div>
+		<div id="game_info">
+			<div class="game_info_div">Welcome to<p style="font-family: Arial Black; font-weight: bold; font-size: 16;">THE
+				BUS TRIP</p></div>
+			<div class="game_info_div">
+				<p>Time:</p>
+				<p class="timer"><span id="minutes"></span>:<span id="seconds"></span></p>
+			</div>
+			<form class="game_info_div">
+				<input type="radio" name="level" value="300"> <span> Easy</span><br>
+				<input type="radio" name="level" value="120" checked="checked"> <span> Medium</span><br>
+				<input type="radio" name="level" value="75"> <span> Hard</span><br>
+				<input type="radio" name="level" value="10"> <span> Impossible</span>
+			</form>
+			<div class="game_info_div">
+				<p>Coins:</p>
+				<p class="coins"></p>
+			</div>
+			<div class="game_info_div">
+				<p>Top 5 Leaderboard</p>
+				<ol class="leaderboard">
+					<li></li>
+					<li></li>
+					<li></li>
+                    <li></li>
+                    <li></li>
+				</ol>
+			</div>
+			<div class="game_info_div">
+				<p>Collect all coins and head for the finishing post!</p>
+			</div>
+		</div>
+	</div>
+</section>
+<!--The end of Bus trip>
+
+<!--Top Button-->
 <button onclick="topFunction()" id="top-button" title="Powrót na górę strony"><i class="fa fa-arrow-circle-up fa-3x"
                                                                                  aria-hidden="true"></i></button>
-<!--koniec przycisku-->
+<!--The End of Top Button-->
 
 <script src="cookies.js"></script>
 <script src="top-button.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<!-- Latest compiled and minified JavaScript -->
-
-
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
         integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
         crossorigin="anonymous"></script>
 <script src="contactform.js"></script>
 <script src="main.js"></script>
-
+<script src="game.js"></script>
 
 </body>
 </html>
