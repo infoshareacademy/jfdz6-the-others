@@ -151,26 +151,70 @@ figure > img {
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 15%;
+    height: 20%;
     background-color: black;
     z-index: 1000;
 }
 
 #cookieInfo p {
-    padding: 10px 60px 5px 60px;
+    padding: 5px 10px 3px 10px;
     text-align: center;
     font-size: medium;
     color: white;
+    display: block;
+    float: left;
+    width: 88%;
+    overflow: auto;
+}
+
+@media (max-width: 1200px) {
+    #cookieInfo {
+        height: 25%;
+    }
+}
+
+@media (max-width: 850px) {
+
+    #cookieInfo p {
+        font-size: small;
+    }
+}
+
+@media (max-width: 600px) {
+
+    #cookieInfo {
+        height: 30%;
+    }
+
+}
+
+@media (max-width: 500px) {
+    #cookieInfo {
+        height: 36%;
+    }
+
+    #cookieInfo p {
+        font-size: smaller;
+    }
+}
+
+@media (max-width: 350px) {
+    #cookieInfo {
+        height: 41%;
+    }
 }
 
 #cookieInfo span {
-    position: relative;
-    left: 97%;
+    left: 98%;
     top: -7vh;
     font-size: 40px;
     color: white;
     cursor: pointer;
     border: 1px solid white;
+    display: block;
+    width: 34px;
+    float: left;
+    text-align: center;
 }
 
 /*The End of Cookies*/
@@ -705,7 +749,7 @@ ul {
 }
 
 /*social*/
-@media (max-width: 320px) {
+@media (max-width: 400px) {
     .med {
         font-size: 1em;
     }
