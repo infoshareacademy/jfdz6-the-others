@@ -265,7 +265,6 @@ a:hover {
     margin-top: -20px;
 }
 
-
 .menu-nav-bar {
     list-style-type: none;
     margin: 0;
@@ -299,8 +298,46 @@ a, label, input[type=submit] {
     color: #acadaf;
 }
 
-.btncollapse{
-    font-size: 1.2vw;
+.navbar-header {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-header span {
+    display: none;
+}
+
+.header-container {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    vertical-align: middle;
+}
+
+.button-container {
+    width: 15%;
+}
+
+@media (max-width: 767px) {
+    .navbar-header span {
+        display: inline-block;
+        color: #acadaf;
+        font-size: 2.5vw;
+        margin: 0 auto;
+    }
+    .navbar-default .navbar-nav > li > a {
+        font-size: 3.0vw;
+    }
+}
+
+@media (max-width: 483px) {
+    .navbar-default .navbar-nav > li > a {
+        font-size: 3.3vw;
+    }
+}
+
+.btncollapse {
+    font-size: 2vw;
 }
 
 .something-else-semantic {
@@ -308,21 +345,22 @@ a, label, input[type=submit] {
     text-align: center;
     vertical-align: middle;
 }
+
 .navbar-default .navbar-collapse, .navbar-default .navbar-form {
     border-color: #e7e7e7;
     background: black;
 }
+
 .container-fluid {
     padding-right: 15px;
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
-
 }
+
 .menubg {
-    background:black;
+    background: black;
 }
-
 
 .imagepad {
     margin-right: 5px;
