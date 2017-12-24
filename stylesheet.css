@@ -288,12 +288,15 @@ a, label, input[type=submit] {
     text-align: center;
     text-decoration: none;
     font-weight: bold;
-
 }
 
 .navbar-default .navbar-nav>li>a {
     color: white;
     font-size: 1.1vw;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+    color: #acadaf;
 }
 
 .btncollapse{
