@@ -760,6 +760,12 @@ ul {
 
 /*Game*/
 
+@media (max-width: 1120px) {
+    #Game, li a[href="#Game"] {
+        display: none;
+    }
+}
+
 #Game {
     background-color: black;
     margin-top: -20px;
