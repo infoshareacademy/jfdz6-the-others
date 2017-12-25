@@ -318,6 +318,10 @@ a, label, input[type=submit] {
     width: 15%;
 }
 
+.btncollapse {
+    font-size: 1.1vw;
+}
+
 @media (max-width: 767px) {
     .navbar-header span {
         display: inline-block;
@@ -325,19 +329,15 @@ a, label, input[type=submit] {
         font-size: 2.5vw;
         margin: 0 auto;
     }
-    .navbar-default .navbar-nav > li > a {
+    .navbar-default .navbar-nav > li > a, .btncollapse {
         font-size: 3.0vw;
     }
 }
 
-@media (max-width: 483px) {
+@media (max-width: 483px), .btncollapse {
     .navbar-default .navbar-nav > li > a {
         font-size: 3.3vw;
     }
-}
-
-.btncollapse {
-    font-size: 2vw;
 }
 
 .something-else-semantic {
