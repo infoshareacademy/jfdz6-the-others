@@ -677,12 +677,12 @@ table {
 }
 
 .image1 {
-    background-image: url("assets/mainbus.jpg");
+    background-image: url("Assets/Photos/mainbus.jpg");
     margin-bottom: -50px;
 }
 
 .image2 {
-    background-image: url("assets/maintrain.jpg");
+    background-image: url("Assets/Photos/maintrain.jpg");
 }
 
 /*edit main page*/
@@ -824,6 +824,11 @@ ul {
 .bus {
 	background-image: url(Assets/Photos/bus.jpg);
 	background-size: 30px 30px;
+}
+
+.coin {
+    background-image: url(Assets/Photos/coin.jpg);
+    background-size: 30px 30px;
 }
 
 #game {
