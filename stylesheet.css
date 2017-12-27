@@ -151,26 +151,70 @@ figure > img {
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 15%;
+    height: 20%;
     background-color: black;
     z-index: 1000;
 }
 
 #cookieInfo p {
-    padding: 10px 60px 5px 60px;
+    padding: 5px 10px 3px 10px;
     text-align: center;
     font-size: medium;
     color: white;
+    display: block;
+    float: left;
+    width: 88%;
+    overflow: auto;
+}
+
+@media (max-width: 1200px) {
+    #cookieInfo {
+        height: 25%;
+    }
+}
+
+@media (max-width: 850px) {
+
+    #cookieInfo p {
+        font-size: small;
+    }
+}
+
+@media (max-width: 600px) {
+
+    #cookieInfo {
+        height: 30%;
+    }
+
+}
+
+@media (max-width: 500px) {
+    #cookieInfo {
+        height: 36%;
+    }
+
+    #cookieInfo p {
+        font-size: smaller;
+    }
+}
+
+@media (max-width: 350px) {
+    #cookieInfo {
+        height: 41%;
+    }
 }
 
 #cookieInfo span {
-    position: relative;
-    left: 97%;
+    left: 98%;
     top: -7vh;
     font-size: 40px;
     color: white;
     cursor: pointer;
     border: 1px solid white;
+    display: block;
+    width: 34px;
+    float: left;
+    text-align: center;
 }
 
 /*The End of Cookies*/
@@ -221,7 +265,6 @@ a:hover {
     margin-top: -20px;
 }
 
-
 .menu-nav-bar {
     list-style-type: none;
     margin: 0;
@@ -244,7 +287,6 @@ a, label, input[type=submit] {
     text-align: center;
     text-decoration: none;
     font-weight: bold;
-
 }
 
 .navbar-default .navbar-nav>li>a {
@@ -252,8 +294,50 @@ a, label, input[type=submit] {
     font-size: 1.1vw;
 }
 
-.btncollapse{
-    font-size: 1.2vw;
+.navbar-default .navbar-nav > li > a:hover {
+    color: #acadaf;
+}
+
+.navbar-header {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-header span {
+    display: none;
+}
+
+.header-container {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    vertical-align: middle;
+}
+
+.button-container {
+    width: 15%;
+}
+
+.btncollapse {
+    font-size: 1.1vw;
+}
+
+@media (max-width: 767px) {
+    .navbar-header span {
+        display: inline-block;
+        color: #acadaf;
+        font-size: 2.5vw;
+        margin: 0 auto;
+    }
+    .navbar-default .navbar-nav > li > a, .btncollapse {
+        font-size: 3.0vw;
+    }
+}
+
+@media (max-width: 483px), .btncollapse {
+    .navbar-default .navbar-nav > li > a {
+        font-size: 3.3vw;
+    }
 }
 
 .something-else-semantic {
@@ -261,21 +345,22 @@ a, label, input[type=submit] {
     text-align: center;
     vertical-align: middle;
 }
+
 .navbar-default .navbar-collapse, .navbar-default .navbar-form {
     border-color: #e7e7e7;
     background: black;
 }
+
 .container-fluid {
     padding-right: 15px;
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
-
 }
+
 .menubg {
-    background:black;
+    background: black;
 }
-
 
 .imagepad {
     margin-right: 5px;
@@ -592,12 +677,12 @@ table {
 }
 
 .image1 {
-    background-image: url("assets/mainbus.jpg");
+    background-image: url("Assets/Photos/mainbus.jpg");
     margin-bottom: -50px;
 }
 
 .image2 {
-    background-image: url("assets/maintrain.jpg");
+    background-image: url("Assets/Photos/maintrain.jpg");
 }
 
 /*edit main page*/
@@ -705,13 +790,19 @@ ul {
 }
 
 /*social*/
-@media (max-width: 320px) {
+@media (max-width: 400px) {
     .med {
         font-size: 1em;
     }
 }
 
 /*Game*/
+
+@media (max-width: 1120px) {
+    #Game, li a[href="#Game"] {
+        display: none;
+    }
+}
 
 #Game {
     background-color: black;
@@ -733,6 +824,11 @@ ul {
 .bus {
 	background-image: url(Assets/Photos/bus.jpg);
 	background-size: 30px 30px;
+}
+
+.coin {
+    background-image: url(Assets/Photos/coin.jpg);
+    background-size: 30px 30px;
 }
 
 #game {
