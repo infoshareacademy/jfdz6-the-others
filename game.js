@@ -43,7 +43,7 @@ function createTable(width, height) {
             "#": {img: "zielonyplot", class: 'wall'},
             "x": {img: "cegla", class: 'wall'},
             "m": {img: "meta", bg: "black", class: "meta"},
-            "C": {img: "coin"}
+            "C": {img: "coin", class: 'coin'}
         };
         for (var i = 0; i < width; i += 1) {
             var col = '-';
@@ -64,7 +64,6 @@ function createTable(width, height) {
     return $table;
 }
 
-
 var $board = $('#board');
 var $table = createTable(30, 20);
 $('td', $table).addClass('point');
@@ -84,13 +83,17 @@ var timer;
 $(document).keydown(function (e) {
 
     if (e.keyCode == 39 && !timerOn) {
+        timerOn = true;
         timer = setInterval(function () {
             $("#seconds").html(pad(++sec % 60));
             $("#minutes").html(pad(parseInt(sec / 60, 10)));
         }, 1000);
-        timerOn = true;
     }
+
 });
+
+$('#seconds').html("00");
+$('#minutes').html("00");
 
 $('tr:first td:first', $table).addClass('bus');
 
@@ -153,13 +156,14 @@ function move(element, way, elClass) {
         $target.addClass(elClass);
 
         if ($target.hasClass('bus') && $target.hasClass('coin')) {
-            $target.removeClass('coin');
+            $target.removeClass('coin').addClass('coinCollected');
             coinCounter++;
             $('.coins').html(coinCounter);
             $target.html(" ");
         }
         if ($target.hasClass('bus') && $target.hasClass('monster')) {
             youDied();
+            $target.removeClass('bus');
             finishGame();
         }
 
@@ -167,12 +171,15 @@ function move(element, way, elClass) {
             finishGame(true);
         }
     }
-
 }
 
 function youDied() {
     $('#Game').hide();
-    $('body').append('<div id="youdied" style="background-image:url(https://res.cloudinary.com/teepublic/image/private/s--_AuUiZ2n--/t_Preview/b_rgb:191919,c_lpad,f_jpg,h_630,q_90,w_1200/v1480428599/production/designs/877345_1.jpg); background-repeat; no-repeat; background-size: cover; width: 100%; height: 100%; position: fixed;"></div>')
+    $('body').append('<div id="youdied" style="background-image:url(https://res.cloudinary.com/teepublic/image/private/s--_AuUiZ2n--/t_Preview/b_rgb:191919,c_lpad,f_jpg,h_630,q_90,w_1200/v1480428599/production/designs/877345_1.jpg); background-repeat; no-repeat; background-size: cover; width: 100%; height: 100%; position: fixed;"></div>');
+    setTimeout(function () {
+        $('#youdied').remove();
+        $('#Game').show();
+    }, 3000);
 }
 
 function finishGame(hasWon) {
@@ -185,10 +192,16 @@ function finishGame(hasWon) {
         localStorage.setItem("game-best-time", JSON.stringify(gbt));
         createLeaderboard();
     }
+    coinCounter = 0;
+    $('.coinCollected').removeClass().addClass('coin');
+    $('td', $table).removeClass('bus');
+    $('tr:first td:first', $table).addClass('bus');
+    $('.coins').html(0);
     clearInterval(timer);
-    setTimeout(function () {
-        document.location.reload();
-    }, 5000);
+    sec = 0;
+    $('#seconds').html("00");
+    $('#minutes').html("00");
+    timerOn = false;
 }
 
 function createLeaderboard() {
